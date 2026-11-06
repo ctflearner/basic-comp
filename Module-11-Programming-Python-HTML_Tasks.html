@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-11-Programming-Python-HTML — Tasks</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-11-introduction-to-programming-python-html-tasks-assignments">Module 11: Introduction to Programming (Python &amp; HTML) — Tasks &amp; Assignments</h1>
+<h2 id="task-overview">Task Overview</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Topic</th>
+<th>Duration</th>
+<th>Difficulty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Task 1</td>
+<td>Python — Name and Age Program</td>
+<td>20 min</td>
+<td>Beginner</td>
+</tr>
+<tr>
+<td>Task 2</td>
+<td>Python — Calculator</td>
+<td>30 min</td>
+<td>Beginner</td>
+</tr>
+<tr>
+<td>Task 3</td>
+<td>Python — Marks Calculator</td>
+<td>30 min</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>Task 4</td>
+<td>HTML — My Profile Page</td>
+<td>40 min</td>
+<td>Beginner</td>
+</tr>
+<tr>
+<td>Task 5</td>
+<td>HTML — Favorite Foods Table</td>
+<td>30 min</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>Task 6</td>
+<td>HTML/CSS — Portfolio Website Project</td>
+<td>90 min</td>
+<td>Intermediate</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="task-1-python-name-and-age-program">Task 1: Python — Name and Age Program</h2>
+<h3 id="instructions">Instructions</h3>
+<ol>
+<li>Open <strong>IDLE</strong> (Python's editor)</li>
+<li>Go to <strong>File &gt; New File</strong> to open a blank editor window</li>
+<li>Write a Python program that:</li>
+<li>Asks the user for their <strong>name</strong> using <code>input()</code></li>
+<li>Asks the user for their <strong>age</strong> using <code>input()</code> (convert to integer)</li>
+<li>Prints a greeting using f-strings: <code>"Hello [name], you will be [age+1] next year!"</code></li>
+<li>Also prints: <code>"You were born approximately in [current_year - age]"</code></li>
+<li>Save the file as <code>name_age.py</code> on your Desktop</li>
+<li>Run the program: press <strong>F5</strong> (or Run &gt; Run Module)</li>
+<li>Test it by entering your own details</li>
+</ol>
+<h3 id="expected-code-structure">Expected Code Structure</h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># My first Python program</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your name? "</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"How old are you? "</span><span class="p">))</span>
+
+<span class="c1"># Your print statements here using f-strings</span>
+<span class="c1"># ...</span>
+</code></pre></div>
+
+<h3 id="expected-result">Expected Result</h3>
+<div class="codehilite"><pre><span></span><code>What is your name? Rahul
+How old are you? 20
+Hello Rahul, you will be 21 next year!
+You were born approximately in 2006
+</code></pre></div>
+
+<h3 id="bonus-challenge">Bonus Challenge</h3>
+<ul>
+<li>Add a third question: "What is your city?"</li>
+<li>Print a full introduction: "Hello! I am [name], [age] years old, from [city]."</li>
+<li>Ask for the user's favorite subject and print: "[name] loves studying [subject]!"</li>
+</ul>
+<hr />
+<h2 id="task-2-python-calculator-program">Task 2: Python — Calculator Program</h2>
+<h3 id="instructions_1">Instructions</h3>
+<ol>
+<li>Open IDLE and create a new file</li>
+<li>Write a program that:</li>
+<li>Prints "=== My Calculator ==="</li>
+<li>Asks the user for the <strong>first number</strong> (convert to float for decimal support)</li>
+<li>Asks the user for the <strong>operator</strong> (+, -, *, /)</li>
+<li>Asks the user for the <strong>second number</strong> (convert to float)</li>
+<li>Uses <strong>if/elif/else</strong> to perform the correct calculation</li>
+<li><strong>Handles division by zero</strong>: If the user tries to divide by 0, print "Error: Cannot divide by zero!" instead of crashing</li>
+<li>Prints the result in the format: <code>"5.0 + 3.0 = 8.0"</code></li>
+<li>If the user enters an invalid operator, prints "Error: Invalid operator!"</li>
+<li>Save as <code>calculator.py</code> on your Desktop</li>
+<li>Run and test with these inputs:</li>
+<li>10 + 5 (should give 15.0)</li>
+<li>20 - 8 (should give 12.0)</li>
+<li>7 * 6 (should give 42.0)</li>
+<li>15 / 4 (should give 3.75)</li>
+<li>10 / 0 (should show error message, NOT crash)</li>
+<li>5 ^ 2 (should show "Invalid operator!")</li>
+</ol>
+<h3 id="expected-result_1">Expected Result</h3>
+<div class="codehilite"><pre><span></span><code>=== My Calculator ===
+Enter first number: 15
+Enter operator (+, -, *, /): /
+Enter second number: 4
+15.0 / 4.0 = 3.75
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>=== My Calculator ===
+Enter first number: 10
+Enter operator (+, -, *, /): /
+Enter second number: 0
+Error: Cannot divide by zero!
+</code></pre></div>
+
+<h3 id="bonus-challenge_1">Bonus Challenge</h3>
+<ul>
+<li>Add support for <code>**</code> (power) and <code>%</code> (remainder) operators</li>
+<li>After showing the result, ask "Calculate again? (yes/no)" — if yes, repeat. Use a <code>while</code> loop to keep the calculator running until the user types "no"</li>
+<li>Add a <code>//</code> (integer division) operator</li>
+</ul>
+<hr />
+<h2 id="task-3-python-marks-calculator-passfail">Task 3: Python — Marks Calculator (Pass/Fail)</h2>
+<h3 id="instructions_2">Instructions</h3>
+<ol>
+<li>Create a new Python file in IDLE</li>
+<li>Write a program that:</li>
+<li>Prints "=== Marks Calculator ==="</li>
+<li>Asks for the student's <strong>name</strong></li>
+<li>Asks for marks in <strong>5 subjects</strong> (one at a time). Example subjects: Math, Science, English, Hindi, Computer</li>
+<li>Store all marks in a <strong>list</strong></li>
+<li>Calculate the <strong>total</strong> of all marks (use <code>sum()</code>)</li>
+<li>Calculate the <strong>average</strong> (total divided by 5)</li>
+<li>Find the <strong>highest mark</strong> (use <code>max()</code>)</li>
+<li>Find the <strong>lowest mark</strong> (use <code>min()</code>)</li>
+<li>Print the results:<ul>
+<li>Student name</li>
+<li>Each subject with its marks</li>
+<li>Total marks (out of 500)</li>
+<li>Average marks</li>
+<li>Highest and lowest marks</li>
+<li>Result: <strong>Pass</strong> if average &gt;= 35, <strong>Fail</strong> if average &lt; 35</li>
+</ul>
+</li>
+<li>If average &gt;= 75, also print "Distinction!"</li>
+<li>Save as <code>marks_calculator.py</code></li>
+<li>Test with different sets of marks</li>
+</ol>
+<h3 id="expected-result_2">Expected Result</h3>
+<div class="codehilite"><pre><span></span><code>=== Marks Calculator ===
+Student name: Priya
+Enter marks for Math: 85
+Enter marks for Science: 72
+Enter marks for English: 68
+Enter marks for Hindi: 90
+Enter marks for Computer: 95
+
+=== Results for Priya ===
+Math:     85
+Science:  72
+English:  68
+Hindi:    90
+Computer: 95
+-----------------------
+Total:    410 / 500
+Average:  82.0
+Highest:  95 (Computer)
+Lowest:   68 (English)
+Result:   PASS
+Distinction!
+</code></pre></div>
+
+<h3 id="bonus-challenge_2">Bonus Challenge</h3>
+<ul>
+<li>Validate that each mark is between 0 and 100. If someone enters 105 or -5, print "Invalid marks! Enter between 0 and 100." and ask again</li>
+<li>Calculate a <strong>grade</strong> based on average: A (90+), B (75+), C (60+), D (35+), F (below 35)</li>
+<li>At the end, ask "Check another student? (yes/no)" and loop if yes</li>
+</ul>
+<hr />
+<h2 id="task-4-html-my-profile-page">Task 4: HTML — "My Profile" Page</h2>
+<h3 id="instructions_3">Instructions</h3>
+<ol>
+<li>Open <strong>Notepad</strong></li>
+<li>Write an HTML page that includes ALL of the following:</li>
+<li>Proper HTML structure (<code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>)</li>
+<li>A <code>&lt;title&gt;</code> tag with your name</li>
+<li>An <code>&lt;h1&gt;</code> heading with your full name</li>
+<li>An <code>&lt;h2&gt;</code> heading that says "About Me"</li>
+<li>A paragraph (<code>&lt;p&gt;</code>) about yourself — at least 3 sentences (where you are from, what you study, what you want to become)</li>
+<li>A photo of yourself (use <code>&lt;img&gt;</code> — save a photo in the same folder as your HTML file, or use an online image URL)</li>
+<li>An <code>&lt;h2&gt;</code> heading that says "My Hobbies"</li>
+<li>An unordered list (<code>&lt;ul&gt;</code>) with at least 5 hobbies</li>
+<li>An <code>&lt;h2&gt;</code> heading that says "Favorite Websites"</li>
+<li>An ordered list (<code>&lt;ol&gt;</code>) with links (<code>&lt;a&gt;</code>) to 3 websites you visit often. Each link should open in a new tab (<code>target="_blank"</code>)</li>
+<li>A horizontal line (<code>&lt;hr&gt;</code>) before a footer paragraph that says "Created by [Your Name] - [Year]"</li>
+<li>Save as <code>profile.html</code> on your Desktop (File &gt; Save As &gt; All Files &gt; <code>profile.html</code>)</li>
+<li>Double-click the file to open in Chrome</li>
+<li>Check that everything displays correctly</li>
+</ol>
+<h3 id="expected-result_3">Expected Result</h3>
+<p>A webpage in your browser showing:<br />
+- Your name as a large heading<br />
+- A paragraph about you<br />
+- Your photo<br />
+- A bullet list of hobbies<br />
+- A numbered list of favorite websites (clickable links that open in new tabs)<br />
+- A footer with your name</p>
+<h3 id="bonus-challenge_3">Bonus Challenge</h3>
+<ul>
+<li>Add a background color to the body using inline CSS: <code>&lt;body style="background-color: #f5f5f5;"&gt;</code></li>
+<li>Make the heading centered: <code>&lt;h1 style="text-align: center; color: darkblue;"&gt;</code></li>
+<li>Add a border around your photo: <code>&lt;img style="border: 3px solid darkblue; border-radius: 10px;" ...&gt;</code></li>
+</ul>
+<hr />
+<h2 id="task-5-html-my-favorite-foods-table">Task 5: HTML — "My Favorite Foods" Table</h2>
+<h3 id="instructions_4">Instructions</h3>
+<ol>
+<li>Open Notepad</li>
+<li>Create an HTML page with a styled table of your 10 favorite foods</li>
+<li>The table must have:</li>
+<li>A title above the table: <code>&lt;h1&gt;My Favorite Foods&lt;/h1&gt;</code></li>
+<li>A table with <strong>4 columns</strong>: Rank, Food Name, Cuisine, Rating (out of 5)</li>
+<li><strong>10 rows</strong> of data (your actual favorite foods)</li>
+<li>A header row with <strong>bold text</strong> (<code>&lt;th&gt;</code> tags)</li>
+<li><code>border="1"</code> on the <code>&lt;table&gt;</code> tag</li>
+<li><strong>Style with inline CSS:</strong></li>
+<li>Header row: dark background color, white text</li>
+<li>Alternate rows: slightly different background colors (like light gray and white)</li>
+<li>All cells: padding of 10px</li>
+<li>Table: width 80%, centered on page</li>
+<li>Ratings of 5 should be in <strong>bold green text</strong></li>
+<li>Ratings of 1-2 should be in <strong>red text</strong></li>
+<li>Page background: a light color</li>
+<li>Save as <code>foods.html</code> and open in browser</li>
+</ol>
+<h3 id="example-table-structure">Example Table Structure</h3>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">table</span> <span class="na">style</span><span class="o">=</span><span class="s">"width: 80%; margin: auto; border-collapse: collapse;"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color: #2c3e50; color: white;"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 12px;"</span><span class="p">&gt;</span>Rank<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 12px;"</span><span class="p">&gt;</span>Food<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 12px;"</span><span class="p">&gt;</span>Cuisine<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 12px;"</span><span class="p">&gt;</span>Rating<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color: #ffffff;"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 10px; text-align: center;"</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 10px;"</span><span class="p">&gt;</span>Biryani<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 10px;"</span><span class="p">&gt;</span>Indian<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 10px; text-align: center; color: green; font-weight: bold;"</span><span class="p">&gt;</span>5/5<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="cm">&lt;!-- Add 9 more rows --&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<h3 id="expected-result_4">Expected Result</h3>
+<p>A nicely styled table in your browser with 10 foods, proper colors, and readable formatting.</p>
+<h3 id="bonus-challenge_4">Bonus Challenge</h3>
+<ul>
+<li>Add a "Notes" column with a short comment about each food</li>
+<li>Add an image column with a small food image for each item (use free images from the internet)</li>
+<li>Below the table, add a paragraph explaining your food preferences</li>
+</ul>
+<hr />
+<h2 id="task-6-real-life-project-personal-portfolio-website">Task 6: Real-Life Project — Personal Portfolio Website</h2>
+<h3 id="instructions_5">Instructions</h3>
+<p>This is your final project for Module 11. You will create a multi-page personal website that you can show to employers, friends, or family.</p>
+<p><strong>Create 3 HTML pages in the same folder on your Desktop (create a folder called "my-portfolio"):</strong></p>
+<h3 id="page-1-home-page-indexhtml">Page 1: Home Page (<code>index.html</code>)</h3>
+<p>Must include:<br />
+- Your full name as the main heading<br />
+- A professional-looking subtitle (e.g., "Computer Science Student | Tech Enthusiast")<br />
+- A paragraph introducing yourself (4-5 sentences)<br />
+- Your photo<br />
+- <strong>Navigation links</strong> to the other two pages: <code>&lt;a href="skills.html"&gt;My Skills&lt;/a&gt;</code> | <code>&lt;a href="contact.html"&gt;Contact Me&lt;/a&gt;</code><br />
+- Styled with inline CSS: colors, centered text, background color, nice font</p>
+<h3 id="page-2-skills-page-skillshtml">Page 2: Skills Page (<code>skills.html</code>)</h3>
+<p>Must include:<br />
+- Heading: "My Skills"<br />
+- Navigation links back to Home and to Contact<br />
+- A <strong>table</strong> listing at least 8 skills with columns: Skill Name, Category (Technical/Soft Skill), Level (Beginner/Intermediate/Advanced)<br />
+- Below the table, a section called "What I Am Learning" with a paragraph about this course<br />
+- An <strong>ordered list</strong> of your top 5 career goals<br />
+- Styled with CSS</p>
+<h3 id="page-3-contact-page-contacthtml">Page 3: Contact Page (<code>contact.html</code>)</h3>
+<p>Must include:<br />
+- Heading: "Contact Me"<br />
+- Navigation links back to Home and Skills<br />
+- Your email address (as a clickable mailto link)<br />
+- Your phone number<br />
+- Links to your social media profiles (Instagram, LinkedIn, etc.) — each opening in a new tab<br />
+- A section called "Find Me Online" with links to your blog (from Module 10) and any other online presence<br />
+- A simple message: "Feel free to reach out for collaboration or just to say hello!"<br />
+- Styled with CSS</p>
+<h3 id="styling-requirements-all-pages">Styling Requirements (All Pages)</h3>
+<ul>
+<li>Consistent color scheme across all 3 pages (same header color, same font)</li>
+<li>Body padding/margin for readability</li>
+<li>Centered headings</li>
+<li>Links should be styled (a different color, or underlined)</li>
+<li>Each page should have a footer: "Created by [Your Name] | Digital Skills Course 2024"</li>
+</ul>
+<h3 id="step-by-step">Step-by-Step</h3>
+<ol>
+<li>Create a folder on your Desktop called <code>my-portfolio</code></li>
+<li>Create <code>index.html</code> in Notepad, save inside the folder</li>
+<li>Create <code>skills.html</code> in Notepad, save inside the folder</li>
+<li>Create <code>contact.html</code> in Notepad, save inside the folder</li>
+<li>Open <code>index.html</code> in Chrome</li>
+<li>Click on the navigation links — you should be able to move between all 3 pages</li>
+<li>Check that all images load, all links work, and the styling looks good</li>
+</ol>
+<h3 id="expected-result_5">Expected Result</h3>
+<ul>
+<li>3 connected HTML pages that form a personal portfolio website</li>
+<li>Navigation works between all pages</li>
+<li>Consistent styling across all pages</li>
+<li>Content is personal and genuine (your real skills, real goals, real contact info)</li>
+<li>Anyone who opens <code>index.html</code> can browse your complete portfolio</li>
+</ul>
+<h3 id="bonus-challenge_5">Bonus Challenge</h3>
+<ul>
+<li>Add a 4th page: "Projects" — describe 3 things you have built or achieved in this course</li>
+<li>Add a CSS animation to your name heading (search "CSS text animation" for examples)</li>
+<li>Add a table of contents on the home page with anchor links to sections</li>
+</ul>
+<hr />
+<h2 id="module-assessment">Module Assessment</h2>
+<h3 id="knowledge-check-python-answer-these-questions">Knowledge Check — Python (Answer these questions)</h3>
+<ol>
+<li>What is a variable? Give an example.</li>
+<li>What is the difference between <code>int</code> and <code>float</code>?</li>
+<li>What does <code>input()</code> return — a string or a number?</li>
+<li>Write the Python code to check if a number is even or odd.</li>
+<li>What is the difference between a <code>for</code> loop and a <code>while</code> loop?</li>
+<li>How do you add an item to a list?</li>
+<li>What happens if you try <code>10 / 0</code> in Python?</li>
+<li>What does <code>f"Hello {name}"</code> do? What is the <code>f</code> for?</li>
+</ol>
+<h3 id="knowledge-check-html-answer-these-questions">Knowledge Check — HTML (Answer these questions)</h3>
+<ol>
+<li>What does HTML stand for?</li>
+<li>What is the difference between <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>?</li>
+<li>Write the HTML code for a link that opens Google in a new tab.</li>
+<li>What is the <code>alt</code> attribute in an <code>&lt;img&gt;</code> tag used for?</li>
+<li>What is the difference between <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>?</li>
+<li>What are <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code> used for in tables?</li>
+<li>How do you change text color using inline CSS?</li>
+<li>How do you save and open an HTML file in your browser?</li>
+</ol>
+<h3 id="practical-assessment">Practical Assessment</h3>
+<p>Your instructor will ask you to:<br />
+1. Write a Python program live — take input, do a calculation, use an if/else condition<br />
+2. Create an HTML page from scratch with a heading, paragraph, image, list, and a table<br />
+3. Show your portfolio website and navigate between all pages</p>
+<hr />
+<h2 id="real-life-mini-project">Real-Life Mini Project</h2>
+<h3 id="class-directory">"Class Directory"</h3>
+<p>Work with 3-4 classmates:</p>
+<ol>
+<li><strong>Python part</strong>: Write a Python program that stores student data (name, roll number, email, city) in a list of lists. The program should:</li>
+<li>Let the user add a new student</li>
+<li>View all students</li>
+<li>Search for a student by name</li>
+<li>
+<p>Exit</p>
+</li>
+<li>
+<p><strong>HTML part</strong>: Create an HTML page called <code>class-directory.html</code> that displays all classmates' information in a nicely styled table. Each student adds their own row. Include:</p>
+</li>
+<li>Photo (or placeholder)</li>
+<li>Name, Roll Number, City</li>
+<li>One fun fact about themselves</li>
+<li>Link to their portfolio website (from Task 6)</li>
+</ol>
+<p><strong>Deliverables:</strong><br />
+- The Python program file (<code>.py</code>)<br />
+- The HTML class directory page<br />
+- Each student's portfolio website link</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

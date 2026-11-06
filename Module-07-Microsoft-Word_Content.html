@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-07-Microsoft-Word — Content</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-7-mastering-microsoft-word">Module 7: Mastering Microsoft Word</h1>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this module, you will be able to:</p>
+<ol>
+<li>Understand what Microsoft Word is and why it matters for every career</li>
+<li>Navigate the Word interface confidently (Ribbon, Quick Access Toolbar, Status Bar)</li>
+<li>Create, save, and manage documents in multiple formats</li>
+<li>Format text professionally (fonts, sizes, alignment, spacing, lists, headings)</li>
+<li>Insert and format images, tables, and other elements</li>
+<li>Set up page layout, headers, footers, and page numbers</li>
+<li>Use Spell Check, Find &amp; Replace, and Print features</li>
+<li>Create a professional resume you can actually use</li>
+</ol>
+<h2 id="duration">Duration</h2>
+<p>4 hours (2 hours lecture + 2 hours hands-on practice)</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Completed Module 6 (or basic internet and email skills)</li>
+<li>A computer with Microsoft Word installed (MS Office 2019 or Microsoft 365)</li>
+<li>Alternatively: free access at office.com (Microsoft 365 online)</li>
+</ul>
+<hr />
+<h2 id="topic-1-what-is-microsoft-word">Topic 1: What Is Microsoft Word?</h2>
+<h3 id="explanation">Explanation</h3>
+<p>Microsoft Word is a <strong>word processor</strong> -- a program designed for writing, formatting, and printing documents. Think of it as a very powerful, digital version of a typewriter. But unlike a typewriter, you can edit, rearrange, and format your text after writing it.</p>
+<p><strong>Why Word matters:</strong></p>
+<p>Almost every job in every industry requires basic Word skills. You will use Word to write:</p>
+<ul>
+<li><strong>Resumes</strong> and cover letters (when applying for jobs)</li>
+<li><strong>Letters</strong> (formal letters to companies, government offices, schools)</li>
+<li><strong>Reports</strong> (school assignments, work reports, research papers)</li>
+<li><strong>Notices, invitations, and certificates</strong></li>
+<li><strong>Contracts and agreements</strong></li>
+</ul>
+<p>If someone asks "Do you know MS Office?" in a job interview, they are primarily asking about Word, Excel, and PowerPoint.</p>
+<h3 id="the-microsoft-office-suite">The Microsoft Office Suite</h3>
+<p>Microsoft Word is part of a family of programs called <strong>Microsoft Office</strong> (also called Microsoft 365):</p>
+<table>
+<thead>
+<tr>
+<th>Program</th>
+<th>What It Does</th>
+<th>Icon Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Word</strong></td>
+<td>Write documents (letters, reports, resumes)</td>
+<td>Blue "W"</td>
+</tr>
+<tr>
+<td><strong>Excel</strong></td>
+<td>Organize data and do calculations (spreadsheets)</td>
+<td>Green "X"</td>
+</tr>
+<tr>
+<td><strong>PowerPoint</strong></td>
+<td>Create visual presentations (slides)</td>
+<td>Orange "P"</td>
+</tr>
+<tr>
+<td><strong>Outlook</strong></td>
+<td>Send and receive email (used in offices)</td>
+<td>Blue envelope</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-by-step-guide-opening-microsoft-word">Step-by-Step Guide: Opening Microsoft Word</h3>
+<p><strong>Method 1: Start Menu</strong><br />
+1. Click the <strong>Start</strong> button (bottom-left corner or press the Windows key)<br />
+2. Type <strong>Word</strong> on your keyboard<br />
+3. Click <strong>Word</strong> when it appears in the search results</p>
+<p><strong>Method 2: Desktop Shortcut</strong><br />
+- If there is a Word icon on your desktop, double-click it</p>
+<p><strong>Method 3: Microsoft 365 Online (if Word is not installed)</strong><br />
+1. Open Chrome<br />
+2. Go to <strong>www.office.com</strong><br />
+3. Sign in with your Microsoft account (or create one for free)<br />
+4. Click the <strong>Word</strong> icon</p>
+<h3 id="key-points">Key Points</h3>
+<ul>
+<li>Word is used for writing and formatting any kind of document</li>
+<li>It is the most essential software skill for any office job</li>
+<li>You can access Word through the installed application or free online at office.com</li>
+</ul>
+<hr />
+<h2 id="topic-2-the-word-interface">Topic 2: The Word Interface</h2>
+<h3 id="explanation_1">Explanation</h3>
+<p>When you open Word and create a new blank document, you will see the Word interface. Let us learn each part.</p>
+<h3 id="step-by-step-guide-understanding-the-interface">Step-by-Step Guide: Understanding the Interface</h3>
+<p><strong>The Ribbon (Top Section)</strong></p>
+<p>The Ribbon is the wide toolbar at the top of the screen. It is organized into <strong>tabs</strong>, and each tab contains groups of related tools.</p>
+<table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>What It Contains</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Home</strong></td>
+<td>Font formatting, paragraph formatting, styles, clipboard (copy/paste)</td>
+</tr>
+<tr>
+<td><strong>Insert</strong></td>
+<td>Pictures, tables, shapes, headers/footers, page numbers, charts</td>
+</tr>
+<tr>
+<td><strong>Design</strong></td>
+<td>Document themes, colors, page borders</td>
+</tr>
+<tr>
+<td><strong>Layout</strong></td>
+<td>Margins, orientation (portrait/landscape), size, columns, spacing</td>
+</tr>
+<tr>
+<td><strong>References</strong></td>
+<td>Table of contents, footnotes, citations</td>
+</tr>
+<tr>
+<td><strong>Review</strong></td>
+<td>Spell check, grammar, comments, track changes</td>
+</tr>
+<tr>
+<td><strong>View</strong></td>
+<td>Page views, zoom, ruler, navigation pane</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Quick Access Toolbar</strong></p>
+<p>The very top-left corner shows a small toolbar with a few quick-access buttons:<br />
+- <strong>Save</strong> (floppy disk icon)<br />
+- <strong>Undo</strong> (curved left arrow) -- Ctrl+Z<br />
+- <strong>Redo</strong> (curved right arrow) -- Ctrl+Y</p>
+<p>You can customize this toolbar by clicking the small dropdown arrow next to it.</p>
+<p><strong>Document Area</strong></p>
+<p>The large white area in the center is where you type. The blinking vertical line is your <strong>cursor</strong> -- this is where your text will appear when you type.</p>
+<p><strong>Status Bar (Bottom)</strong></p>
+<p>The bar at the very bottom shows:<br />
+- <strong>Page number</strong> (e.g., "Page 1 of 1")<br />
+- <strong>Word count</strong> (how many words you have typed)<br />
+- <strong>Zoom slider</strong> (drag to zoom in or out)</p>
+<p><strong>Ruler</strong></p>
+<p>If you see a ruler at the top and left side of the document area, it helps you set margins and tab stops. If the ruler is not visible: go to <strong>View</strong> tab and check the <strong>Ruler</strong> checkbox.</p>
+<h3 id="key-points_1">Key Points</h3>
+<ul>
+<li>The Ribbon contains all your tools, organized by tabs</li>
+<li>Home tab is the most frequently used tab (formatting text)</li>
+<li>The Status Bar shows page count and word count</li>
+<li>Quick Access Toolbar gives fast access to Save, Undo, and Redo</li>
+</ul>
+<hr />
+<h2 id="topic-3-creating-and-saving-documents">Topic 3: Creating and Saving Documents</h2>
+<h3 id="explanation_2">Explanation</h3>
+<p>Before you start writing, you need to understand how to create a new document and, most importantly, how to <strong>save your work</strong>. Losing a document because you forgot to save is one of the most frustrating experiences with computers.</p>
+<h3 id="step-by-step-guide">Step-by-Step Guide</h3>
+<p><strong>Creating a New Document:</strong></p>
+<ol>
+<li>Open Word</li>
+<li>You will see the Start screen with template options</li>
+<li>Click <strong>Blank document</strong> for a new empty document</li>
+<li>Alternatively, if Word is already open: press <strong>Ctrl+N</strong> for a new blank document</li>
+</ol>
+<p><strong>Saving Your Document (CRITICAL -- DO THIS OFTEN):</strong></p>
+<p><strong>First-time save (Save As):</strong><br />
+1. Press <strong>Ctrl+S</strong> (or click the Save icon)<br />
+2. A "Save As" window appears<br />
+3. Choose where to save:<br />
+   - <strong>Desktop</strong> (easy to find) -- click "Desktop" in the left panel<br />
+   - <strong>Documents</strong> folder (organized)<br />
+   - <strong>OneDrive</strong> (cloud -- accessible from any computer)<br />
+4. Type a meaningful file name (e.g., "My-Resume-2024" not "Document1")<br />
+5. Click <strong>Save</strong></p>
+<p><strong>Saving again (after making changes):</strong><br />
+- Just press <strong>Ctrl+S</strong> -- it saves to the same location with the same name<br />
+- <strong>Save frequently</strong> -- every few minutes. Make it a habit.</p>
+<p><strong>Save As (save a copy with different name or format):</strong><br />
+1. Press <strong>F12</strong> (or go to File menu then Save As)<br />
+2. Choose a new name or location<br />
+3. Change the file format if needed (see below)<br />
+4. Click <strong>Save</strong></p>
+<p><strong>File Formats:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Extension</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Word Document</td>
+<td>.docx</td>
+<td>Default. Use for editing and sharing with Word users.</td>
+</tr>
+<tr>
+<td>PDF</td>
+<td>.pdf</td>
+<td>For sharing final documents. Cannot be easily edited by others. Use for resumes, reports.</td>
+</tr>
+<tr>
+<td>Plain Text</td>
+<td>.txt</td>
+<td>Simple text without formatting. Use rarely.</td>
+</tr>
+<tr>
+<td>Old Word Format</td>
+<td>.doc</td>
+<td>For compatibility with very old versions of Word.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Saving as PDF:</strong><br />
+1. Go to <strong>File</strong> menu then <strong>Save As</strong> (or press F12)<br />
+2. In the "Save as type" dropdown, select <strong>PDF</strong><br />
+3. Click <strong>Save</strong><br />
+4. Your document is now saved as a PDF file</p>
+<h3 id="real-world-example">Real-World Example</h3>
+<p>You write your resume in Word (.docx format) so you can edit it anytime. When you email it to a company, you save a copy as PDF so the formatting stays perfect on any computer. The company sees exactly what you designed -- fonts, spacing, everything intact.</p>
+<h3 id="key-points_2">Key Points</h3>
+<ul>
+<li>Press Ctrl+S frequently to save your work -- every few minutes</li>
+<li>Use Save As (F12) to save a copy with a different name or format</li>
+<li>Save as .docx for editing, save as .pdf for sharing</li>
+<li>Give your files meaningful names -- never leave them as "Document1"</li>
+</ul>
+<hr />
+<h2 id="topic-4-text-formatting">Topic 4: Text Formatting</h2>
+<h3 id="explanation_3">Explanation</h3>
+<p>Formatting is what makes your document look professional and easy to read. An unformatted document (all the same size, no bold, no structure) is hard to read and looks unprofessional. Proper formatting guides the reader's eye and shows you care about presentation.</p>
+<h3 id="step-by-step-guide_1">Step-by-Step Guide</h3>
+<p><strong>Changing Font and Size:</strong></p>
+<ol>
+<li><strong>Select the text</strong> you want to format (click and drag over it, or double-click a word to select it, or Ctrl+A to select all)</li>
+<li>On the <strong>Home</strong> tab, find the <strong>Font</strong> section</li>
+<li><strong>Font name dropdown:</strong> Click it to choose a font</li>
+<li>Professional documents: <strong>Calibri</strong> (modern, clean), <strong>Arial</strong> (simple), <strong>Times New Roman</strong> (formal, academic)</li>
+<li>Avoid: Comic Sans, Papyrus, decorative fonts (these look unprofessional)</li>
+<li><strong>Font size dropdown:</strong> Click it to choose a size</li>
+<li>Body text: <strong>11 or 12</strong></li>
+<li>Headings: <strong>14, 16, or 18</strong></li>
+<li>Title: <strong>20 to 28</strong></li>
+</ol>
+<p><strong>Bold, Italic, Underline:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Shortcut</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bold</strong></td>
+<td>Ctrl+B</td>
+<td>For emphasis, headings, important words</td>
+</tr>
+<tr>
+<td><em>Italic</em></td>
+<td>Ctrl+I</td>
+<td>For titles of books/movies, foreign words, subtle emphasis</td>
+</tr>
+<tr>
+<td>Underline</td>
+<td>Ctrl+U</td>
+<td>For headings (sometimes), hyperlinks. Use sparingly.</td>
+</tr>
+</tbody>
+</table>
+<p>To apply: select text first, then press the shortcut (or click the button on the Ribbon).</p>
+<p><strong>Text Alignment:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Alignment</th>
+<th>Shortcut</th>
+<th>What It Does</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Left</td>
+<td>Ctrl+L</td>
+<td>Text aligns to the left edge</td>
+<td>Default for most text</td>
+</tr>
+<tr>
+<td>Center</td>
+<td>Ctrl+E</td>
+<td>Text is centered on the page</td>
+<td>Titles, headings, invitations</td>
+</tr>
+<tr>
+<td>Right</td>
+<td>Ctrl+R</td>
+<td>Text aligns to the right edge</td>
+<td>Dates, page numbers</td>
+</tr>
+<tr>
+<td>Justify</td>
+<td>Ctrl+J</td>
+<td>Text stretches to fill both edges evenly</td>
+<td>Books, newspapers, formal reports</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Line Spacing:</strong></p>
+<p>Line spacing controls how much space is between each line of text.</p>
+<ol>
+<li>Select your text (Ctrl+A for all text)</li>
+<li>Go to <strong>Home</strong> tab</li>
+<li>In the <strong>Paragraph</strong> section, click the <strong>Line Spacing</strong> button (icon with up/down arrows next to lines)</li>
+<li>Choose your spacing:</li>
+<li><strong>1.0</strong> -- tight, hard to read (avoid for documents)</li>
+<li><strong>1.15</strong> -- Word's default, good for general documents</li>
+<li><strong>1.5</strong> -- good for reports and assignments</li>
+<li><strong>2.0</strong> -- double spacing, required for many academic papers</li>
+</ol>
+<p><strong>Bullet Points and Numbered Lists:</strong></p>
+<p>Bullets are used for lists where order does not matter. Numbers are used for steps or ranked items.</p>
+<ol>
+<li>Click where you want the list to start</li>
+<li>On the <strong>Home</strong> tab, click:</li>
+<li><strong>Bullet list button</strong> (three dots with lines) for unordered lists</li>
+<li><strong>Numbered list button</strong> (1-2-3 with lines) for ordered lists</li>
+<li>Type your first item and press <strong>Enter</strong> for the next item</li>
+<li>Press <strong>Enter twice</strong> or click the button again to end the list</li>
+</ol>
+<p><strong>Headings:</strong></p>
+<p>Headings give your document structure. They are NOT just big, bold text -- they are special styles that tell Word "this is a section title."</p>
+<ol>
+<li>Click on the line you want to make a heading</li>
+<li>On the <strong>Home</strong> tab, look at the <strong>Styles</strong> section (right side of Ribbon)</li>
+<li>Click:</li>
+<li><strong>Heading 1</strong> -- for main section titles (largest)</li>
+<li><strong>Heading 2</strong> -- for subsections</li>
+<li><strong>Heading 3</strong> -- for sub-subsections</li>
+<li><strong>Normal</strong> -- for regular body text</li>
+</ol>
+<p><strong>Why headings matter:</strong><br />
+- They create a professional, organized look<br />
+- Word can auto-generate a Table of Contents from headings<br />
+- You can navigate large documents using the Navigation Pane (View tab, check "Navigation Pane")</p>
+<h3 id="real-world-example_1">Real-World Example</h3>
+<p>You are writing a school report on Renewable Energy. You use:<br />
+- <strong>Heading 1:</strong> "Renewable Energy in India" (title)<br />
+- <strong>Heading 2:</strong> "Solar Energy," "Wind Energy," "Hydroelectric Energy" (sections)<br />
+- <strong>Body text:</strong> 12pt Calibri, 1.5 line spacing<br />
+- <strong>Bullet points</strong> for listing advantages of each energy type<br />
+- <strong>Bold</strong> for key terms like "photovoltaic cells"</p>
+<p>The result is a clean, easy-to-read, professional document.</p>
+<h3 id="key-points_3">Key Points</h3>
+<ul>
+<li>Select text first, then apply formatting</li>
+<li>Use professional fonts (Calibri, Arial, Times New Roman) in sizes 11-12 for body</li>
+<li>Bold for emphasis, Italic for titles/subtle emphasis</li>
+<li>Use Headings (not just big bold text) for document structure</li>
+<li>1.15 or 1.5 line spacing for most documents</li>
+<li>Bullets for unordered lists, numbers for steps or ranked items</li>
+</ul>
+<hr />
+<h2 id="topic-5-paragraph-formatting">Topic 5: Paragraph Formatting</h2>
+<h3 id="explanation_4">Explanation</h3>
+<p>Beyond formatting individual words, you can format entire paragraphs to control spacing, indentation, and layout.</p>
+<h3 id="step-by-step-guide_2">Step-by-Step Guide</h3>
+<p><strong>Indentation:</strong></p>
+<p>Indentation moves text inward from the left margin. In essays, the first line of each paragraph is often indented.</p>
+<p><strong>To set first-line indent:</strong><br />
+1. Click anywhere in the paragraph<br />
+2. Go to <strong>Home</strong> tab, click the small arrow in the bottom-right of the <strong>Paragraph</strong> section<br />
+3. Under "Indentation," find "Special"<br />
+4. Select <strong>First line</strong><br />
+5. Set the indent (usually 0.5 inches or 1.27 cm)<br />
+6. Click <strong>OK</strong></p>
+<p><strong>Spacing Before/After Paragraphs:</strong><br />
+1. Open the same Paragraph dialog box (click the small arrow in Paragraph section)<br />
+2. Under "Spacing," set:<br />
+   - <strong>Before:</strong> space above the paragraph (6pt or 12pt)<br />
+   - <strong>After:</strong> space below the paragraph (6pt or 12pt)<br />
+3. Click <strong>OK</strong></p>
+<p><strong>Tab Stops:</strong></p>
+<p>The Tab key moves your cursor to set positions on the line. By default, pressing Tab moves the cursor 0.5 inches to the right. You can set custom tab stops using the ruler.</p>
+<ol>
+<li>Make sure the ruler is visible (View tab, check "Ruler")</li>
+<li>Click on the ruler at the position where you want a tab stop</li>
+<li>A small "L" shape appears on the ruler</li>
+<li>Now when you press Tab, the cursor jumps to that position</li>
+</ol>
+<h3 id="key-points_4">Key Points</h3>
+<ul>
+<li>Use first-line indent for essay-style paragraphs</li>
+<li>Set spacing before/after paragraphs instead of pressing Enter multiple times</li>
+<li>Tab stops help align text at specific positions</li>
+</ul>
+<hr />
+<h2 id="topic-6-inserting-images">Topic 6: Inserting Images</h2>
+<h3 id="explanation_5">Explanation</h3>
+<p>Images make documents more engaging and informative. A resume might include a photo, a report might include charts or diagrams, a newsletter might include product images.</p>
+<h3 id="step-by-step-guide_3">Step-by-Step Guide</h3>
+<p><strong>Step 1: Place Your Cursor</strong><br />
+- Click where you want the image to appear in your document</p>
+<p><strong>Step 2: Insert the Image</strong><br />
+- Go to the <strong>Insert</strong> tab<br />
+- Click <strong>Pictures</strong><br />
+- Choose <strong>This Device</strong> to insert from your computer<br />
+- Navigate to the image file, select it, and click <strong>Insert</strong></p>
+<p><strong>Step 3: Resize the Image</strong><br />
+- Click on the image to select it (you will see small squares called "handles" at the corners and edges)<br />
+- To resize proportionally: <strong>drag a corner handle</strong> (top-left, top-right, bottom-left, or bottom-right). This keeps the image from looking stretched.<br />
+- NEVER drag an edge handle (top, bottom, left, right) -- this stretches the image and makes it look distorted</p>
+<p><strong>Step 4: Set Text Wrapping</strong></p>
+<p>Text wrapping controls how text flows around your image.</p>
+<ol>
+<li>Click on the image</li>
+<li>Click the small <strong>Layout Options</strong> icon that appears next to the image (or go to Format tab and click "Wrap Text")</li>
+<li>Choose a wrapping style:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Style</th>
+<th>What It Does</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>In Line with Text</strong></td>
+<td>Image sits on the text line like a character</td>
+<td>Simple placement, resumes</td>
+</tr>
+<tr>
+<td><strong>Square</strong></td>
+<td>Text wraps around the image in a rectangle</td>
+<td>Reports, newsletters</td>
+</tr>
+<tr>
+<td><strong>Behind Text</strong></td>
+<td>Image is behind the text (like a watermark)</td>
+<td>Background images, decorative</td>
+</tr>
+<tr>
+<td><strong>In Front of Text</strong></td>
+<td>Image sits on top of text</td>
+<td>Overlays, design elements</td>
+</tr>
+</tbody>
+</table>
+<p>For most cases, <strong>Square</strong> gives the best results.</p>
+<p><strong>Step 5: Add Alt Text (for Accessibility)</strong><br />
+1. Right-click the image<br />
+2. Select <strong>Edit Alt Text</strong> (or click "Alt Text" on the Format tab)<br />
+3. Type a description of the image (e.g., "Bar chart showing monthly sales for 2024")<br />
+4. Alt text helps people using screen readers understand what the image shows</p>
+<h3 id="key-points_5">Key Points</h3>
+<ul>
+<li>Insert images from the Insert tab and Pictures</li>
+<li>Always resize from corner handles to maintain proportions</li>
+<li>Set text wrapping to control how text flows around the image</li>
+<li>Add Alt Text for accessibility</li>
+</ul>
+<hr />
+<h2 id="topic-7-inserting-tables">Topic 7: Inserting Tables</h2>
+<h3 id="explanation_6">Explanation</h3>
+<p>Tables organize information into rows and columns, making it easy to compare data at a glance. Use tables for schedules, price lists, comparison charts, contact directories, and any information that fits a grid layout.</p>
+<h3 id="step-by-step-guide_4">Step-by-Step Guide</h3>
+<p><strong>Step 1: Insert a Table</strong><br />
+1. Click where you want the table<br />
+2. Go to <strong>Insert</strong> tab<br />
+3. Click <strong>Table</strong><br />
+4. Hover over the grid to select the number of rows and columns you need (e.g., 4 columns by 5 rows)<br />
+5. Click to insert</p>
+<p><strong>Step 2: Enter Data</strong><br />
+- Click in any cell and start typing<br />
+- Press <strong>Tab</strong> to move to the next cell<br />
+- Press <strong>Shift+Tab</strong> to move to the previous cell<br />
+- Press <strong>Enter</strong> within a cell to add a new line inside that cell</p>
+<p><strong>Step 3: Add or Delete Rows and Columns</strong><br />
+- Right-click inside the table<br />
+- Choose <strong>Insert</strong> and then:<br />
+  - Insert Rows Above / Below<br />
+  - Insert Columns to the Left / Right<br />
+- To delete: right-click and choose <strong>Delete</strong> then select Rows, Columns, or entire Table</p>
+<p><strong>Step 4: Format the Table</strong><br />
+1. Click anywhere in the table<br />
+2. The <strong>Table Design</strong> tab appears in the Ribbon<br />
+3. Choose a <strong>Table Style</strong> (pre-designed color schemes)<br />
+4. Customize:<br />
+   - <strong>Borders:</strong> Make borders thicker, thinner, or remove them<br />
+   - <strong>Shading:</strong> Change the background color of cells<br />
+   - <strong>Header Row:</strong> Check "Header Row" to make the first row bold and shaded</p>
+<p><strong>Step 5: Adjust Column Width</strong><br />
+- Hover over a column border until the cursor changes to a double-headed arrow<br />
+- Drag to resize<br />
+- Or: double-click the column border to auto-fit to the content</p>
+<h3 id="real-world-example_2">Real-World Example</h3>
+<p>You are creating a weekly schedule:</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9:00 AM</td>
+<td>Math</td>
+<td>English</td>
+<td>Science</td>
+<td>Math</td>
+<td>English</td>
+</tr>
+<tr>
+<td>10:00 AM</td>
+<td>English</td>
+<td>Science</td>
+<td>Math</td>
+<td>Art</td>
+<td>Science</td>
+</tr>
+<tr>
+<td>11:00 AM</td>
+<td>Break</td>
+<td>Break</td>
+<td>Break</td>
+<td>Break</td>
+<td>Break</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-points_6">Key Points</h3>
+<ul>
+<li>Use tables to organize any grid-style data</li>
+<li>Tab key moves between cells</li>
+<li>Right-click to add or delete rows and columns</li>
+<li>Apply Table Styles for professional formatting</li>
+<li>Auto-fit columns by double-clicking column borders</li>
+</ul>
+<hr />
+<h2 id="topic-8-page-layout">Topic 8: Page Layout</h2>
+<h3 id="explanation_7">Explanation</h3>
+<p>Page Layout controls how your document appears on the printed page. Getting these settings right is important, especially for formal documents like letters, resumes, and reports.</p>
+<h3 id="step-by-step-guide_5">Step-by-Step Guide</h3>
+<p><strong>Margins:</strong></p>
+<p>Margins are the blank space around the edges of your page.</p>
+<ol>
+<li>Go to the <strong>Layout</strong> tab</li>
+<li>Click <strong>Margins</strong></li>
+<li>Choose a preset:</li>
+<li><strong>Normal:</strong> 1 inch on all sides (good for most documents)</li>
+<li><strong>Narrow:</strong> 0.5 inch (fits more text, used when space is limited)</li>
+<li><strong>Wide:</strong> 1.25 inch (more white space, easier to read)</li>
+<li><strong>Custom Margins:</strong> Set your own values</li>
+</ol>
+<p><strong>Orientation:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Orientation</th>
+<th>What It Does</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Portrait</strong></td>
+<td>Page is taller than it is wide (default)</td>
+<td>Letters, reports, resumes</td>
+</tr>
+<tr>
+<td><strong>Landscape</strong></td>
+<td>Page is wider than it is tall</td>
+<td>Tables with many columns, certificates, posters</td>
+</tr>
+</tbody>
+</table>
+<p>To change: <strong>Layout</strong> tab, click <strong>Orientation</strong>, select Portrait or Landscape.</p>
+<p><strong>Paper Size:</strong><br />
+1. <strong>Layout</strong> tab, click <strong>Size</strong><br />
+2. Common sizes:<br />
+   - <strong>A4</strong> (21 x 29.7 cm) -- standard in India and most of the world<br />
+   - <strong>Letter</strong> (8.5 x 11 inches) -- standard in the US<br />
+3. Select the size that matches your printer paper</p>
+<p><strong>Page Breaks:</strong></p>
+<p>A page break forces the text after it to start on a new page. Use it when you want a new chapter or section to begin on a fresh page.</p>
+<ul>
+<li>Place your cursor where you want the break</li>
+<li>Press <strong>Ctrl+Enter</strong></li>
+<li>Everything after the cursor moves to the next page</li>
+</ul>
+<h3 id="key-points_7">Key Points</h3>
+<ul>
+<li>Normal margins (1 inch) work for most documents</li>
+<li>Portrait for most documents, Landscape for wide tables or certificates</li>
+<li>Use A4 paper size in India, Letter size in the US</li>
+<li>Use page breaks (Ctrl+Enter) to start a new page -- never press Enter repeatedly</li>
+</ul>
+<hr />
+<h2 id="topic-9-headers-footers-and-page-numbers">Topic 9: Headers, Footers, and Page Numbers</h2>
+<h3 id="explanation_8">Explanation</h3>
+<p>Headers appear at the top of every page. Footers appear at the bottom of every page. They are commonly used for document titles, author names, dates, and page numbers.</p>
+<h3 id="step-by-step-guide_6">Step-by-Step Guide</h3>
+<p><strong>Adding a Header:</strong><br />
+1. Go to the <strong>Insert</strong> tab<br />
+2. Click <strong>Header</strong><br />
+3. Choose a style (Blank, or one of the pre-designed options)<br />
+4. Type your header text (e.g., your name or document title)<br />
+5. Click <strong>Close Header and Footer</strong> (or double-click in the main document area)</p>
+<p><strong>Adding a Footer:</strong><br />
+1. Go to <strong>Insert</strong> tab<br />
+2. Click <strong>Footer</strong><br />
+3. Choose a style<br />
+4. Type your footer text or insert elements<br />
+5. Click <strong>Close Header and Footer</strong></p>
+<p><strong>Adding Page Numbers:</strong><br />
+1. Go to <strong>Insert</strong> tab<br />
+2. Click <strong>Page Number</strong><br />
+3. Choose position:<br />
+   - <strong>Top of Page</strong> (in the header area)<br />
+   - <strong>Bottom of Page</strong> (in the footer area -- most common)<br />
+4. Select a style (plain number, centered, left, right)</p>
+<p><strong>Tip:</strong> To edit an existing header or footer, double-click on the header/footer area at the top or bottom of the page.</p>
+<h3 id="key-points_8">Key Points</h3>
+<ul>
+<li>Headers appear at the top of every page, footers at the bottom</li>
+<li>Use headers for document title or author name</li>
+<li>Use footers for page numbers</li>
+<li>Insert, then Header/Footer/Page Number to set them up</li>
+</ul>
+<hr />
+<h2 id="topic-10-spell-check-and-grammar">Topic 10: Spell Check and Grammar</h2>
+<h3 id="explanation_9">Explanation</h3>
+<p>Word checks your spelling and grammar as you type. It underlines errors with colored lines:</p>
+<table>
+<thead>
+<tr>
+<th>Underline Color</th>
+<th>Meaning</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Red wavy line</strong></td>
+<td>Spelling error</td>
+<td>Right-click and choose the correct spelling</td>
+</tr>
+<tr>
+<td><strong>Blue wavy line</strong></td>
+<td>Grammar error</td>
+<td>Right-click to see the suggestion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-by-step-guide_7">Step-by-Step Guide</h3>
+<p><strong>Fix Errors One by One:</strong><br />
+1. Right-click on any underlined word<br />
+2. A menu appears with suggested corrections<br />
+3. Click the correct option to fix it<br />
+4. If the word is correct (like a name), click <strong>Ignore All</strong> or <strong>Add to Dictionary</strong></p>
+<p><strong>Run Full Spell Check:</strong><br />
+1. Go to the <strong>Review</strong> tab<br />
+2. Click <strong>Spelling &amp; Grammar</strong> (or press <strong>F7</strong>)<br />
+3. Word goes through every error in the document<br />
+4. For each error, you can: Accept the suggestion, Ignore it, or type your own correction</p>
+<p><strong>Important:</strong> Spell check catches misspellings, but it does NOT catch every mistake. For example, "their" vs "there" vs "they're" -- all are correctly spelled words, but used differently. Always read your document yourself before finalizing.</p>
+<h3 id="key-points_9">Key Points</h3>
+<ul>
+<li>Red underline = spelling error, Blue underline = grammar error</li>
+<li>Right-click to see suggestions and fix errors</li>
+<li>Press F7 to run a full spell check</li>
+<li>Spell check is helpful but not perfect -- always proofread manually</li>
+</ul>
+<hr />
+<h2 id="topic-11-printing">Topic 11: Printing</h2>
+<h3 id="explanation_10">Explanation</h3>
+<p>Even in the digital age, you will need to print documents -- resumes, letters, certificates, forms. Word makes printing straightforward.</p>
+<h3 id="step-by-step-guide_8">Step-by-Step Guide</h3>
+<p><strong>Step 1: Open Print Preview</strong><br />
+- Press <strong>Ctrl+P</strong> (or go to File menu, then Print)<br />
+- You will see a preview of how your document will look when printed</p>
+<p><strong>Step 2: Check the Preview</strong><br />
+- Look at the preview on the right side<br />
+- Make sure text is not cut off at the edges<br />
+- Make sure images and tables appear correctly<br />
+- Use the page arrows at the bottom to check every page</p>
+<p><strong>Step 3: Choose Print Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What It Controls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Printer</strong></td>
+<td>Select which printer to use (or "Microsoft Print to PDF" to save as PDF)</td>
+</tr>
+<tr>
+<td><strong>Pages</strong></td>
+<td>Print all pages, current page, or specific pages (e.g., "1-3" or "1,3,5")</td>
+</tr>
+<tr>
+<td><strong>Copies</strong></td>
+<td>Number of copies to print</td>
+</tr>
+<tr>
+<td><strong>One Sided / Two Sided</strong></td>
+<td>Print on one side or both sides of paper</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 4: Print to PDF (When You Do Not Have a Printer)</strong><br />
+- In the Printer dropdown, select <strong>Microsoft Print to PDF</strong><br />
+- Click <strong>Print</strong><br />
+- Choose where to save the PDF file<br />
+- This creates a PDF file without using a physical printer</p>
+<p><strong>Step 5: Click Print</strong><br />
+- Verify all settings are correct<br />
+- Click the <strong>Print</strong> button</p>
+<h3 id="key-points_10">Key Points</h3>
+<ul>
+<li>Ctrl+P opens the Print dialog</li>
+<li>Always check the print preview before printing</li>
+<li>Use "Microsoft Print to PDF" to save as PDF without a physical printer</li>
+<li>You can print specific pages instead of the whole document</li>
+</ul>
+<hr />
+<h2 id="topic-12-find-replace">Topic 12: Find &amp; Replace</h2>
+<h3 id="explanation_11">Explanation</h3>
+<p>Find &amp; Replace is one of the most powerful tools in Word. It lets you search for a specific word or phrase and replace it with another -- across the entire document in one click. This saves enormous time in large documents.</p>
+<h3 id="step-by-step-guide_9">Step-by-Step Guide</h3>
+<p><strong>Find (Search for Text):</strong><br />
+1. Press <strong>Ctrl+F</strong><br />
+2. A search box appears (usually on the left side or in a navigation pane)<br />
+3. Type the word or phrase you want to find<br />
+4. Word highlights all matches and lets you jump between them</p>
+<p><strong>Find &amp; Replace:</strong><br />
+1. Press <strong>Ctrl+H</strong><br />
+2. A dialog box appears with two fields:<br />
+   - <strong>Find what:</strong> Type the word you want to replace<br />
+   - <strong>Replace with:</strong> Type the new word<br />
+3. Click <strong>Replace</strong> to replace one at a time (and check each one)<br />
+4. Click <strong>Replace All</strong> to replace every instance at once<br />
+5. Word tells you how many replacements were made</p>
+<h3 id="real-world-example_3">Real-World Example</h3>
+<p>You wrote a 20-page report and your company name was "TechSoft Solutions." The company rebrands to "InnoTech Labs." Instead of manually finding and changing every instance, you press Ctrl+H, type "TechSoft Solutions" in Find, type "InnoTech Labs" in Replace, click "Replace All." Word replaces all 47 instances in less than a second.</p>
+<h3 id="key-points_11">Key Points</h3>
+<ul>
+<li>Ctrl+F to search for text</li>
+<li>Ctrl+H to find and replace text</li>
+<li>"Replace All" changes every instance in the entire document at once</li>
+<li>Always review after Replace All -- sometimes it changes things you did not intend</li>
+</ul>
+<hr />
+<h2 id="module-summary">Module Summary</h2>
+<p>In this module, you learned:</p>
+<ol>
+<li><strong>Microsoft Word</strong> is essential for writing professional documents</li>
+<li>The <strong>Ribbon</strong> organizes tools into tabs (Home, Insert, Layout, Review, etc.)</li>
+<li><strong>Save often</strong> (Ctrl+S) and use Save As for different formats (.docx, .pdf)</li>
+<li><strong>Format text</strong> with fonts, sizes, bold/italic, alignment, spacing, and headings</li>
+<li><strong>Paragraph formatting</strong> controls indentation and spacing</li>
+<li><strong>Insert images</strong> and use text wrapping to position them</li>
+<li><strong>Insert tables</strong> to organize data in rows and columns</li>
+<li><strong>Page Layout</strong> sets margins, orientation, and page breaks</li>
+<li><strong>Headers and Footers</strong> add consistent information to every page</li>
+<li><strong>Spell Check</strong> catches errors (but always proofread too)</li>
+<li><strong>Printing</strong> and saving as PDF for sharing</li>
+<li><strong>Find &amp; Replace</strong> saves time in large documents</li>
+</ol>
+<p><strong>Next Module:</strong> Module 8 -- Mastering Microsoft Excel</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

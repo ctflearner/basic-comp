@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-11-Programming-Python-HTML — Content</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-11-introduction-to-programming-python-html">Module 11: Introduction to Programming (Python &amp; HTML)</h1>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this module, you will be able to:</p>
+<ol>
+<li>Understand what programming is and why it matters</li>
+<li>Install Python on your computer</li>
+<li>Write basic Python programs using variables, input/output, conditions, and loops</li>
+<li>Understand basic data types (strings, integers, floats, booleans)</li>
+<li>Create simple useful programs (calculator, grade checker, guessing game)</li>
+<li>Understand what HTML is and how websites are built</li>
+<li>Write HTML pages with headings, paragraphs, images, links, lists, and tables</li>
+<li>Apply basic CSS styling to HTML elements</li>
+<li>Create a multi-page personal portfolio website</li>
+</ol>
+<h2 id="duration">Duration</h2>
+<p><strong>12 hours</strong> (6 sessions of 2 hours each)</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Module 5: File Management (creating and saving files)</li>
+<li>Module 4: Keyboard and Typing Skills</li>
+<li>Basic math skills (addition, subtraction, multiplication, division)</li>
+</ul>
+<hr />
+<h2 id="part-1-what-is-programming">Part 1: What is Programming?</h2>
+<h3 id="explanation">Explanation</h3>
+<p>Programming is the art of giving instructions to a computer in a language it understands. A computer is incredibly fast and accurate, but it is also incredibly stupid — it cannot figure anything out on its own. It does exactly what you tell it, nothing more, nothing less.</p>
+<p>Think of it like writing a very detailed recipe. When you tell a friend "make tea," they know what you mean because they have common sense. But a computer has zero common sense. You would need to say:</p>
+<ol>
+<li>Pick up the kettle</li>
+<li>Walk to the sink</li>
+<li>Turn on the tap</li>
+<li>Fill the kettle with 500ml of water</li>
+<li>Turn off the tap</li>
+<li>Place the kettle on the stove</li>
+<li>Turn on the stove to high</li>
+<li>Wait until water boils</li>
+<li>Turn off the stove</li>
+<li>Place one tea bag in a cup</li>
+<li>Pour hot water into the cup</li>
+<li>Wait 3 minutes</li>
+<li>Remove tea bag</li>
+<li>Add 2 spoons of sugar</li>
+<li>Stir 5 times</li>
+</ol>
+<p>That is programming — breaking every task into tiny, exact steps.</p>
+<h3 id="why-learn-programming">Why Learn Programming?</h3>
+<ul>
+<li><strong>Automation</strong>: Make the computer do boring, repetitive tasks for you. Instead of renaming 500 files one by one, write a 5-line program to do it in seconds.</li>
+<li><strong>Problem Solving</strong>: Programming teaches you to think logically and break big problems into small steps — a skill useful in every career.</li>
+<li><strong>Career Opportunities</strong>: Software developer, data analyst, web developer, cybersecurity professional (your instructor's field!), AI/ML engineer — these are the fastest-growing, highest-paying careers globally.</li>
+<li><strong>Create Things</strong>: Build websites, apps, games, tools. Turn your ideas into reality.</li>
+<li><strong>It is the most in-demand skill worldwide</strong> — every industry needs people who can code.</li>
+</ul>
+<h3 id="programming-languages-a-quick-overview">Programming Languages — A Quick Overview</h3>
+<p>Just like humans have many languages (Hindi, English, Tamil, etc.), computers have many programming languages. Each is good for different things:</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Best For</th>
+<th>Difficulty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Python</strong></td>
+<td>AI, data science, automation, web, beginners</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td><strong>JavaScript</strong></td>
+<td>Websites, web apps</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>Java</strong></td>
+<td>Android apps, enterprise software</td>
+<td>Medium-Hard</td>
+</tr>
+<tr>
+<td><strong>C++</strong></td>
+<td>Games, operating systems</td>
+<td>Hard</td>
+</tr>
+<tr>
+<td><strong>HTML/CSS</strong></td>
+<td>Website structure and design</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td><strong>SQL</strong></td>
+<td>Databases, data analysis</td>
+<td>Easy</td>
+</tr>
+</tbody>
+</table>
+<p>In this module, we will learn <strong>Python</strong> (the most beginner-friendly and versatile language) and <strong>HTML</strong> (the language of every website).</p>
+<hr />
+<h2 id="part-2-python-programming">Part 2: Python Programming</h2>
+<h3 id="topic-1-installing-python">Topic 1: Installing Python</h3>
+<h4 id="step-by-step-guide">Step-by-Step Guide</h4>
+<p><strong>Step 1: Download Python</strong><br />
+1. Open Chrome and go to <strong>python.org</strong><br />
+2. Click the big yellow button that says <strong>"Download Python 3.x.x"</strong> (the latest version)<br />
+3. The installer file will download</p>
+<p><strong>Step 2: Install Python</strong><br />
+1. Open the downloaded file<br />
+2. <strong>VERY IMPORTANT</strong>: At the bottom of the installer, check the box that says <strong>"Add Python to PATH"</strong> — this is critical, do not skip it<br />
+3. Click <strong>"Install Now"</strong><br />
+4. Wait for installation to complete<br />
+5. Click <strong>"Close"</strong></p>
+<p><strong>Step 3: Verify Installation</strong><br />
+1. Open <strong>Command Prompt</strong> (press Windows key, type "cmd", press Enter)<br />
+2. Type: <code>python --version</code><br />
+3. Press Enter<br />
+4. You should see something like: <code>Python 3.12.1</code><br />
+5. If you see this, Python is installed correctly</p>
+<p><strong>Step 4: Open IDLE (Python's Editor)</strong><br />
+1. Press the Windows key<br />
+2. Type <strong>"IDLE"</strong><br />
+3. Click on <strong>"IDLE (Python 3.x)"</strong><br />
+4. You will see the <strong>Python Shell</strong> — a window with <code>&gt;&gt;&gt;</code> prompt<br />
+5. This is where you can type Python commands and see results immediately</p>
+<h4 id="key-points">Key Points</h4>
+<ul>
+<li>IDLE stands for Integrated Development and Learning Environment</li>
+<li>The <code>&gt;&gt;&gt;</code> prompt means Python is ready for your command</li>
+<li>Type a command and press Enter to run it immediately</li>
+<li>To write longer programs, go to File &gt; New File in IDLE (this opens a text editor)</li>
+</ul>
+<hr />
+<h3 id="topic-2-variables-storing-data">Topic 2: Variables — Storing Data</h3>
+<h4 id="explanation_1">Explanation</h4>
+<p>A <strong>variable</strong> is like a labeled box where you store information. You give the box a name, and put something inside it. Later, you can use that name to get the information back.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">"Rahul"</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">height</span> <span class="o">=</span> <span class="mf">5.8</span>
+<span class="n">is_student</span> <span class="o">=</span> <span class="kc">True</span>
+</code></pre></div>
+
+<p>In the example above:<br />
+- <code>name</code> is a box labeled "name" containing the text "Rahul"<br />
+- <code>age</code> is a box labeled "age" containing the number 20<br />
+- <code>height</code> is a box labeled "height" containing the decimal number 5.8<br />
+- <code>is_student</code> is a box labeled "is_student" containing True (yes)</p>
+<h4 id="variable-naming-rules">Variable Naming Rules</h4>
+<ul>
+<li>Must start with a letter or underscore (<code>_</code>), not a number</li>
+<li>Can contain letters, numbers, and underscores</li>
+<li>No spaces allowed (use underscores: <code>first_name</code>, not <code>first name</code>)</li>
+<li>Case-sensitive: <code>Name</code> and <code>name</code> are different variables</li>
+<li>Cannot use Python keywords (like <code>if</code>, <code>for</code>, <code>while</code>, <code>print</code>)</li>
+</ul>
+<h4 id="good-and-bad-variable-names">Good and Bad Variable Names</h4>
+<table>
+<thead>
+<tr>
+<th>Good</th>
+<th>Bad</th>
+<th>Why Bad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>student_name</code></td>
+<td><code>1name</code></td>
+<td>Starts with number</td>
+</tr>
+<tr>
+<td><code>total_marks</code></td>
+<td><code>total marks</code></td>
+<td>Contains space</td>
+</tr>
+<tr>
+<td><code>age</code></td>
+<td><code>if</code></td>
+<td>Reserved keyword</td>
+</tr>
+<tr>
+<td><code>phone_number</code></td>
+<td><code>phone#number</code></td>
+<td>Special character</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="topic-3-data-types">Topic 3: Data Types</h3>
+<h4 id="explanation_2">Explanation</h4>
+<p>Every piece of data in Python has a <strong>type</strong>. Think of it like how in real life, we have different types of information — text, whole numbers, decimal numbers, yes/no.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Examples</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>str</code></td>
+<td>String</td>
+<td><code>"Hello"</code>, <code>"Rahul"</code>, <code>"123"</code></td>
+<td>Text (always in quotes)</td>
+</tr>
+<tr>
+<td><code>int</code></td>
+<td>Integer</td>
+<td><code>42</code>, <code>-5</code>, <code>0</code>, <code>1000</code></td>
+<td>Whole numbers (no decimal)</td>
+</tr>
+<tr>
+<td><code>float</code></td>
+<td>Float</td>
+<td><code>3.14</code>, <code>99.99</code>, <code>-0.5</code></td>
+<td>Decimal numbers</td>
+</tr>
+<tr>
+<td><code>bool</code></td>
+<td>Boolean</td>
+<td><code>True</code>, <code>False</code></td>
+<td>Yes/No values</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important</strong>: <code>"123"</code> (in quotes) is a <strong>string</strong> (text), while <code>123</code> (no quotes) is an <strong>integer</strong> (number). They look similar but behave differently. You cannot do math with <code>"123"</code> because Python sees it as text, not a number.</p>
+<hr />
+<h3 id="topic-4-print-displaying-output">Topic 4: Print — Displaying Output</h3>
+<h4 id="explanation_3">Explanation</h4>
+<p>The <code>print()</code> function tells Python to display something on the screen. It is the most basic and most used function in Python.</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mf">3.14</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code>Hello World!
+42
+3.14
+</code></pre></div>
+
+<h4 id="using-variables-with-print">Using Variables with Print</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">"Priya"</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">22</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"My name is"</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"I am"</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="s2">"years old"</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code>My name is Priya
+I am 22 years old
+</code></pre></div>
+
+<h4 id="f-strings-the-best-way-to-insert-variables">f-strings — The Best Way to Insert Variables</h4>
+<p>The <code>f</code> before the quotes lets you put variables directly inside curly braces <code>{}</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">"Priya"</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">22</span>
+<span class="n">city</span> <span class="o">=</span> <span class="s2">"Mumbai"</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"My name is </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I am </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I live in </span><span class="si">{</span><span class="n">city</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Next year I will be </span><span class="si">{</span><span class="n">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code>My name is Priya
+I am 22 years old
+I live in Mumbai
+Next year I will be 23
+</code></pre></div>
+
+<hr />
+<h3 id="topic-5-input-getting-user-input">Topic 5: Input — Getting User Input</h3>
+<h4 id="explanation_4">Explanation</h4>
+<p>The <code>input()</code> function lets your program ask the user a question and wait for their answer. Whatever the user types becomes a <strong>string</strong>.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">user_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your name? "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Hello, </span><span class="si">{</span><span class="n">user_name</span><span class="si">}</span><span class="s2">!"</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>What happens when you run this:</strong></p>
+<div class="codehilite"><pre><span></span><code>What is your name? Rahul
+Hello, Rahul!
+</code></pre></div>
+
+<p>The program pauses at <code>input()</code>, waits for the user to type something and press Enter, then stores their answer in the variable.</p>
+<h4 id="converting-input-to-numbers">Converting Input to Numbers</h4>
+<p><code>input()</code> always returns a string. If you need a number for math, you must convert it:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your age: "</span><span class="p">))</span>       <span class="c1"># Convert to whole number</span>
+<span class="n">price</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the price: "</span><span class="p">))</span>   <span class="c1"># Convert to decimal number</span>
+</code></pre></div>
+
+<p><strong>Common mistake</strong>: If you forget to convert and try to do math with a string, you get an error:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># WRONG:</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter age: "</span><span class="p">)</span>   <span class="c1"># This is a string "20", not the number 20</span>
+<span class="n">next_year</span> <span class="o">=</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">1</span>           <span class="c1"># ERROR! Cannot add string + number</span>
+
+<span class="c1"># CORRECT:</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter age: "</span><span class="p">))</span>  <span class="c1"># Convert to integer</span>
+<span class="n">next_year</span> <span class="o">=</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">1</span>               <span class="c1"># Works! 20 + 1 = 21</span>
+</code></pre></div>
+
+<hr />
+<h3 id="topic-6-math-operations">Topic 6: Math Operations</h3>
+<h4 id="explanation_5">Explanation</h4>
+<p>Python can do math just like a calculator, but much faster and with much larger numbers.</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>Addition</td>
+<td><code>5 + 3</code></td>
+<td><code>8</code></td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Subtraction</td>
+<td><code>10 - 4</code></td>
+<td><code>6</code></td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Multiplication</td>
+<td><code>6 * 7</code></td>
+<td><code>42</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>Division</td>
+<td><code>15 / 4</code></td>
+<td><code>3.75</code></td>
+</tr>
+<tr>
+<td><code>//</code></td>
+<td>Integer Division (no decimal)</td>
+<td><code>15 // 4</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Remainder (modulo)</td>
+<td><code>15 % 4</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td>Power (exponent)</td>
+<td><code>2 ** 3</code></td>
+<td><code>8</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="real-world-example">Real-World Example</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">price</span> <span class="o">=</span> <span class="mi">499</span>
+<span class="n">quantity</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">subtotal</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="n">quantity</span>
+<span class="n">gst</span> <span class="o">=</span> <span class="n">subtotal</span> <span class="o">*</span> <span class="mf">0.18</span>          <span class="c1"># 18% GST</span>
+<span class="n">total</span> <span class="o">=</span> <span class="n">subtotal</span> <span class="o">+</span> <span class="n">gst</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Subtotal: Rs. </span><span class="si">{</span><span class="n">subtotal</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"GST (18%): Rs. </span><span class="si">{</span><span class="n">gst</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Total: Rs. </span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code>Subtotal: Rs. 1497
+GST (18%): Rs. 269.46
+Total: Rs. 1766.46
+</code></pre></div>
+
+<hr />
+<h3 id="topic-7-conditions-making-decisions-ifelifelse">Topic 7: Conditions — Making Decisions (if/elif/else)</h3>
+<h4 id="explanation_6">Explanation</h4>
+<p>Programs need to make decisions — do different things based on different situations. This is done using <code>if</code>, <code>elif</code> (else if), and <code>else</code> statements.</p>
+<p>Think of it like this: "IF it is raining, take an umbrella. ELSE IF it is sunny, wear sunglasses. ELSE wear a jacket."</p>
+<div class="codehilite"><pre><span></span><code><span class="n">marks</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your marks: "</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Grade: A - Excellent!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">75</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Grade: B - Very Good"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Grade: C - Good"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">35</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Grade: D - Pass"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Grade: F - Fail"</span><span class="p">)</span>
+</code></pre></div>
+
+<h4 id="comparison-operators">Comparison Operators</h4>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td>Equal to</td>
+<td><code>age == 18</code></td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>Not equal to</td>
+<td><code>name != "admin"</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>Greater than</td>
+<td><code>marks &gt; 90</code></td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>Less than</td>
+<td><code>price &lt; 100</code></td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>Greater than or equal</td>
+<td><code>marks &gt;= 35</code></td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>Less than or equal</td>
+<td><code>age &lt;= 65</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>IMPORTANT</strong>: Notice the <strong>indentation</strong> (4 spaces before <code>print</code>). In Python, indentation is not optional — it tells Python which code belongs inside the <code>if</code> block. Always use 4 spaces (or press Tab in IDLE).</p>
+<h4 id="combining-conditions">Combining Conditions</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter age: "</span><span class="p">))</span>
+<span class="n">has_id</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Do you have ID? (yes/no): "</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="ow">and</span> <span class="n">has_id</span> <span class="o">==</span> <span class="s2">"yes"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You can vote!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="ow">and</span> <span class="n">has_id</span> <span class="o">==</span> <span class="s2">"no"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You are old enough but need an ID card first"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You are too young to vote"</span><span class="p">)</span>
+</code></pre></div>
+
+<ul>
+<li><code>and</code> — both conditions must be true</li>
+<li><code>or</code> — at least one condition must be true</li>
+<li><code>not</code> — reverses a condition</li>
+</ul>
+<hr />
+<h3 id="topic-8-loops-repeating-actions">Topic 8: Loops — Repeating Actions</h3>
+<h4 id="explanation_7">Explanation</h4>
+<p>Loops let you repeat a block of code multiple times. Instead of writing the same code 100 times, you write it once inside a loop.</p>
+<h4 id="for-loop-repeat-a-fixed-number-of-times">for Loop — Repeat a Fixed Number of Times</h4>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Print numbers 0 to 4</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code>0
+1
+2
+3
+4
+</code></pre></div>
+
+<p><code>range(5)</code> generates numbers 0, 1, 2, 3, 4 (5 numbers starting from 0).</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Print "Hello" 3 times</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Hello!"</span><span class="p">)</span>
+
+<span class="c1"># Count from 1 to 10</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># Count by 2s: 2, 4, 6, 8, 10</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div>
+
+<h4 id="while-loop-repeat-while-a-condition-is-true">while Loop — Repeat While a Condition is True</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">count</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">while</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Countdown: </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Blast off!"</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code>Countdown: 5
+Countdown: 4
+Countdown: 3
+Countdown: 2
+Countdown: 1
+Blast off!
+</code></pre></div>
+
+<h4 id="looping-through-a-list">Looping Through a List</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"mango"</span><span class="p">,</span> <span class="s2">"guava"</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I like </span><span class="si">{</span><span class="n">fruit</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Output:</strong></p>
+<div class="codehilite"><pre><span></span><code>I like apple
+I like banana
+I like mango
+I like guava
+</code></pre></div>
+
+<hr />
+<h3 id="topic-9-lists-storing-multiple-items">Topic 9: Lists — Storing Multiple Items</h3>
+<h4 id="explanation_8">Explanation</h4>
+<p>A <strong>list</strong> is a variable that can hold multiple values. Think of it like a shopping list — one list, many items.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"red"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">,</span> <span class="s2">"yellow"</span><span class="p">]</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
+<span class="n">mixed</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Rahul"</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mf">5.8</span><span class="p">]</span>    <span class="c1"># Lists can hold different types</span>
+</code></pre></div>
+
+<h4 id="common-list-operations">Common List Operations</h4>
+<div class="codehilite"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"apple"</span><span class="p">,</span> <span class="s2">"banana"</span><span class="p">,</span> <span class="s2">"mango"</span><span class="p">]</span>
+
+<span class="c1"># Access by position (starts at 0, not 1!)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>       <span class="c1"># apple</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>       <span class="c1"># banana</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>       <span class="c1"># mango</span>
+
+<span class="c1"># Add an item</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"guava"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>          <span class="c1"># ["apple", "banana", "mango", "guava"]</span>
+
+<span class="c1"># Remove an item</span>
+<span class="n">fruits</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"banana"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>          <span class="c1"># ["apple", "mango", "guava"]</span>
+
+<span class="c1"># Length of list</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">))</span>     <span class="c1"># 3</span>
+
+<span class="c1"># Check if item exists</span>
+<span class="k">if</span> <span class="s2">"mango"</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Yes, mango is in the list!"</span><span class="p">)</span>
+</code></pre></div>
+
+<hr />
+<h3 id="topic-10-simple-programs-let-us-build-together">Topic 10: Simple Programs — Let Us Build Together</h3>
+<h4 id="program-1-simple-calculator">Program 1: Simple Calculator</h4>
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"=== Simple Calculator ==="</span><span class="p">)</span>
+<span class="n">num1</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter first number: "</span><span class="p">))</span>
+<span class="n">operator</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter operator (+, -, *, /): "</span><span class="p">)</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter second number: "</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">operator</span> <span class="o">==</span> <span class="s2">"+"</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
+<span class="k">elif</span> <span class="n">operator</span> <span class="o">==</span> <span class="s2">"-"</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">-</span> <span class="n">num2</span>
+<span class="k">elif</span> <span class="n">operator</span> <span class="o">==</span> <span class="s2">"*"</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">*</span> <span class="n">num2</span>
+<span class="k">elif</span> <span class="n">operator</span> <span class="o">==</span> <span class="s2">"/"</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">num2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error: Cannot divide by zero!"</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid operator!"</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">num1</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">operator</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">num2</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</code></pre></div>
+
+<h4 id="program-2-grade-calculator">Program 2: Grade Calculator</h4>
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"=== Grade Calculator ==="</span><span class="p">)</span>
+<span class="n">marks</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter marks (0-100): "</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">marks</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">marks</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid marks! Please enter between 0 and 100."</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Marks: </span><span class="si">{</span><span class="n">marks</span><span class="si">}</span><span class="s2"> — Grade: A (Outstanding)"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">75</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Marks: </span><span class="si">{</span><span class="n">marks</span><span class="si">}</span><span class="s2"> — Grade: B (Very Good)"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Marks: </span><span class="si">{</span><span class="n">marks</span><span class="si">}</span><span class="s2"> — Grade: C (Good)"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">marks</span> <span class="o">&gt;=</span> <span class="mi">35</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Marks: </span><span class="si">{</span><span class="n">marks</span><span class="si">}</span><span class="s2"> — Grade: D (Pass)"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Marks: </span><span class="si">{</span><span class="n">marks</span><span class="si">}</span><span class="s2"> — Grade: F (Fail)"</span><span class="p">)</span>
+</code></pre></div>
+
+<h4 id="program-3-number-guessing-game">Program 3: Number Guessing Game</h4>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="n">secret</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="n">attempts</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"=== Number Guessing Game ==="</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"I'm thinking of a number between 1 and 20."</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Your guess: "</span><span class="p">))</span>
+    <span class="n">attempts</span> <span class="o">=</span> <span class="n">attempts</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">if</span> <span class="n">guess</span> <span class="o">&lt;</span> <span class="n">secret</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Too low! Try higher."</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">guess</span> <span class="o">&gt;</span> <span class="n">secret</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Too high! Try lower."</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Correct! You got it in </span><span class="si">{</span><span class="n">attempts</span><span class="si">}</span><span class="s2"> attempts!"</span><span class="p">)</span>
+        <span class="k">break</span>
+</code></pre></div>
+
+<h4 id="program-4-simple-to-do-list">Program 4: Simple To-Do List</h4>
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"=== My To-Do List ==="</span><span class="p">)</span>
+<span class="n">tasks</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">1. Add task"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"2. View tasks"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"3. Remove task"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"4. Exit"</span><span class="p">)</span>
+
+    <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Choose (1-4): "</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">"1"</span><span class="p">:</span>
+        <span class="n">task</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter task: "</span><span class="p">)</span>
+        <span class="n">tasks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Added: </span><span class="si">{</span><span class="n">task</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">"2"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tasks</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"No tasks yet!"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Your tasks:"</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">task</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tasks</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">task</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">"3"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tasks</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"No tasks to remove!"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">task</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tasks</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">task</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter task number to remove: "</span><span class="p">))</span>
+            <span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;=</span> <span class="n">num</span> <span class="o">&lt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tasks</span><span class="p">):</span>
+                <span class="n">removed</span> <span class="o">=</span> <span class="n">tasks</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Removed: </span><span class="si">{</span><span class="n">removed</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid number!"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">"4"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Goodbye!"</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid choice. Try again."</span><span class="p">)</span>
+</code></pre></div>
+
+<hr />
+<h2 id="part-3-html-building-web-pages">Part 3: HTML — Building Web Pages</h2>
+<h3 id="topic-11-what-is-html">Topic 11: What is HTML?</h3>
+<h4 id="explanation_9">Explanation</h4>
+<p>HTML stands for <strong>HyperText Markup Language</strong>. It is the language that every website on the internet is built with. When you open any webpage in Chrome, your browser is reading HTML code and displaying it as a formatted page.</p>
+<p>HTML is not a programming language (it cannot do calculations or make decisions). It is a <strong>markup language</strong> — it tells the browser how to structure and display content.</p>
+<p>Think of it this way:<br />
+- <strong>HTML</strong> = the skeleton of a building (structure)<br />
+- <strong>CSS</strong> = the paint, tiles, and decoration (styling)<br />
+- <strong>JavaScript</strong> = the electricity, plumbing, elevators (interactivity)</p>
+<p>In this module, we will learn HTML (structure) with a touch of CSS (styling).</p>
+<h3 id="how-to-create-an-html-file">How to Create an HTML File</h3>
+<p>You do not need any special software. Just use Notepad:</p>
+<ol>
+<li>Open <strong>Notepad</strong> (press Windows key, type "notepad", press Enter)</li>
+<li>Write your HTML code</li>
+<li>Click <strong>File &gt; Save As</strong></li>
+<li>Change "Save as type" to <strong>All Files</strong></li>
+<li>Name the file with <code>.html</code> extension (example: <code>mypage.html</code>)</li>
+<li>Save it to your Desktop</li>
+<li>Double-click the saved file — it opens in Chrome!</li>
+</ol>
+<hr />
+<h3 id="topic-12-html-structure-the-skeleton">Topic 12: HTML Structure — The Skeleton</h3>
+<h4 id="explanation_10">Explanation</h4>
+<p>Every HTML page follows the same basic structure:</p>
+<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My First Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Welcome to My Website!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is my first webpage. I am learning HTML.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<p><strong>What each part does:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;!DOCTYPE html&gt;</code></td>
+<td>Tells browser this is an HTML5 document</td>
+</tr>
+<tr>
+<td><code>&lt;html&gt;</code></td>
+<td>The root element — everything goes inside this</td>
+</tr>
+<tr>
+<td><code>&lt;head&gt;</code></td>
+<td>Contains information about the page (title, settings) — not visible on page</td>
+</tr>
+<tr>
+<td><code>&lt;title&gt;</code></td>
+<td>The text shown in the browser tab</td>
+</tr>
+<tr>
+<td><code>&lt;body&gt;</code></td>
+<td>Everything visible on the page goes here</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="topic-13-html-tags-building-blocks">Topic 13: HTML Tags — Building Blocks</h3>
+<h4 id="explanation_11">Explanation</h4>
+<p>HTML uses <strong>tags</strong> to mark up content. Most tags come in pairs — an opening tag and a closing tag:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">tagname</span><span class="p">&gt;</span>content goes here<span class="p">&lt;/</span><span class="nt">tagname</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<p>The closing tag has a forward slash <code>/</code> before the tag name.</p>
+<p>Some tags are <strong>self-closing</strong> — they do not have content between opening and closing tags:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>     <span class="cm">&lt;!-- Line break --&gt;</span>
+<span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>     <span class="cm">&lt;!-- Horizontal line --&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span><span class="p">&gt;</span>    <span class="cm">&lt;!-- Image --&gt;</span>
+</code></pre></div>
+
+<h4 id="essential-tags">Essential Tags</h4>
+<p><strong>Headings</strong> — 6 levels, from biggest (h1) to smallest (h6):</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Main Heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Sub Heading<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Section Heading<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Smaller Heading<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span>Even Smaller<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span>Smallest Heading<span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<p><strong>Paragraphs and Text Formatting:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a paragraph. It creates a block of text with spacing.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>This is bold text<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>This is also bold (preferred — means "important")<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>This is italic text<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>This is also italic (preferred — means "emphasized")<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">u</span><span class="p">&gt;</span>This is underlined text<span class="p">&lt;/</span><span class="nt">u</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>  <span class="cm">&lt;!-- This creates a line break (like pressing Enter) --&gt;</span>
+<span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>  <span class="cm">&lt;!-- This creates a horizontal line across the page --&gt;</span>
+</code></pre></div>
+
+<hr />
+<h3 id="topic-14-links-and-images">Topic 14: Links and Images</h3>
+<h4 id="links">Links</h4>
+<p>Links let you connect to other pages — other websites, or other pages on your own site:</p>
+<div class="codehilite"><pre><span></span><code><span class="cm">&lt;!-- Link to another website --&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://google.com"</span><span class="p">&gt;</span>Go to Google<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- Open link in a new tab --&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://google.com"</span> <span class="na">target</span><span class="o">=</span><span class="s">"_blank"</span><span class="p">&gt;</span>Go to Google (new tab)<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- Link to another page on your site --&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"skills.html"</span><span class="p">&gt;</span>See My Skills<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- Link to an email --&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"mailto:rahul@gmail.com"</span><span class="p">&gt;</span>Email Me<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<h4 id="images">Images</h4>
+<div class="codehilite"><pre><span></span><code><span class="cm">&lt;!-- Image from your computer (same folder as HTML file) --&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"photo.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"My Photo"</span> <span class="na">width</span><span class="o">=</span><span class="s">"300"</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- Image from the internet --&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://example.com/image.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Description"</span> <span class="na">width</span><span class="o">=</span><span class="s">"400"</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<ul>
+<li><code>src</code> — the source (location) of the image</li>
+<li><code>alt</code> — alternative text (shown if image cannot load; also used by screen readers for accessibility)</li>
+<li><code>width</code> — width in pixels (height adjusts automatically)</li>
+</ul>
+<hr />
+<h3 id="topic-15-lists">Topic 15: Lists</h3>
+<h4 id="unordered-list-bullet-points">Unordered List (Bullet Points)</h4>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Python<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>JavaScript<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>SQL<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<p><strong>Result:</strong><br />
+- Python<br />
+- JavaScript<br />
+- HTML<br />
+- SQL</p>
+<h4 id="ordered-list-numbered">Ordered List (Numbered)</h4>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Wake up<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Brush teeth<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Have breakfast<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Go to class<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<p><strong>Result:</strong><br />
+1. Wake up<br />
+2. Brush teeth<br />
+3. Have breakfast<br />
+4. Go to class</p>
+<hr />
+<h3 id="topic-16-tables">Topic 16: Tables</h3>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">table</span> <span class="na">border</span><span class="o">=</span><span class="s">"1"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Age<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>City<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Rahul<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>20<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Mumbai<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Priya<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>22<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Delhi<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Arjun<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>19<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Bangalore<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<ul>
+<li><code>&lt;table&gt;</code> — the table container</li>
+<li><code>&lt;tr&gt;</code> — table row</li>
+<li><code>&lt;th&gt;</code> — table header (bold, centered)</li>
+<li><code>&lt;td&gt;</code> — table data (regular cell)</li>
+<li><code>border="1"</code> — adds visible borders (we will style better with CSS)</li>
+</ul>
+<hr />
+<h3 id="topic-17-basic-css-styling">Topic 17: Basic CSS Styling</h3>
+<h4 id="explanation_12">Explanation</h4>
+<p>CSS (Cascading Style Sheets) controls how HTML elements look — colors, fonts, sizes, spacing. For now, we will use <strong>inline CSS</strong> (style directly on elements) to get started.</p>
+<h4 id="inline-css-syntax">Inline CSS Syntax</h4>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">tagname</span> <span class="na">style</span><span class="o">=</span><span class="s">"property: value; property: value;"</span><span class="p">&gt;</span>content<span class="p">&lt;/</span><span class="nt">tagname</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<h4 id="common-css-properties">Common CSS Properties</h4>
+<div class="codehilite"><pre><span></span><code><span class="cm">&lt;!-- Text color --&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"color: blue;"</span><span class="p">&gt;</span>This text is blue<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"color: #FF5733;"</span><span class="p">&gt;</span>This text is orange (hex color)<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- Font size --&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"font-size: 24px;"</span><span class="p">&gt;</span>This text is larger<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- Background color --&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color: yellow;"</span><span class="p">&gt;</span>Yellow background<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- Text alignment --&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"text-align: center;"</span><span class="p">&gt;</span>This text is centered<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- Font family --&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"font-family: Arial, sans-serif;"</span><span class="p">&gt;</span>Arial font<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- Border --&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"border: 2px solid black; padding: 10px;"</span><span class="p">&gt;</span>Text with a border<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- Multiple styles --&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"color: white; background-color: darkblue; text-align: center; padding: 20px;"</span><span class="p">&gt;</span>
+    Styled Heading
+<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<h4 id="styling-a-full-page-example">Styling a Full Page Example</h4>
+<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Styled Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span> <span class="na">style</span><span class="o">=</span><span class="s">"font-family: Arial, sans-serif; margin: 40px; background-color: #f0f0f0;"</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"color: darkblue; text-align: center;"</span><span class="p">&gt;</span>My Styled Page<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"font-size: 18px; line-height: 1.6;"</span><span class="p">&gt;</span>
+        This paragraph has larger text and more spacing between lines,
+        making it easier to read.
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">table</span> <span class="na">style</span><span class="o">=</span><span class="s">"width: 100%; border-collapse: collapse;"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color: darkblue; color: white;"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 10px; border: 1px solid #ddd;"</span><span class="p">&gt;</span>Skill<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">th</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 10px; border: 1px solid #ddd;"</span><span class="p">&gt;</span>Level<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 10px; border: 1px solid #ddd;"</span><span class="p">&gt;</span>Python<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 10px; border: 1px solid #ddd;"</span><span class="p">&gt;</span>Beginner<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color: #f9f9f9;"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 10px; border: 1px solid #ddd;"</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">td</span> <span class="na">style</span><span class="o">=</span><span class="s">"padding: 10px; border: 1px solid #ddd;"</span><span class="p">&gt;</span>Beginner<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<hr />
+<h2 id="module-summary">Module Summary</h2>
+<h3 id="what-you-learned">What You Learned</h3>
+<p><strong>Python:</strong><br />
+- Variables and data types (str, int, float, bool)<br />
+- Input and output (input, print, f-strings)<br />
+- Math operations (+, -, *, /, //, %, **)<br />
+- Conditions (if/elif/else)<br />
+- Loops (for, while)<br />
+- Lists (creating, accessing, adding, removing)<br />
+- Building simple programs (calculator, grade checker, guessing game, to-do list)</p>
+<p><strong>HTML:</strong><br />
+- HTML page structure (DOCTYPE, html, head, body)<br />
+- Tags: headings, paragraphs, bold, italic, line breaks<br />
+- Links (<code>&lt;a&gt;</code>) and images (<code>&lt;img&gt;</code>)<br />
+- Lists (ordered, unordered)<br />
+- Tables<br />
+- Basic CSS inline styling (colors, fonts, alignment, borders)</p>
+<h3 id="what-comes-next">What Comes Next</h3>
+<p>This is just the beginning. With these foundations, you can go on to learn:<br />
+- <strong>More Python</strong>: Functions, file handling, libraries, web scraping, data analysis<br />
+- <strong>Web Development</strong>: CSS (full styling), JavaScript (interactivity), frameworks like React<br />
+- <strong>Cybersecurity</strong>: Python for security tools, web security testing (Module 12 introduces this)</p>
+<hr />
+<h2 id="next-module">Next Module</h2>
+<p>In Module 12, you will learn about Cybersecurity — how to protect yourself online and explore career paths in this exciting field.</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

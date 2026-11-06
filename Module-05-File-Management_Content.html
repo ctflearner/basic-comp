@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-05-File-Management — Content</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-5-file-management-external-devices">Module 5: File Management &amp; External Devices</h1>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Understand the file system hierarchy (drives, folders, subfolders, files)</li>
+<li>Copy, move, and delete files confidently using multiple methods</li>
+<li>Recognise common file extensions and know which program opens each type</li>
+<li>Use USB drives and external storage safely, including proper ejection</li>
+<li>Understand backup concepts and create a personal backup plan</li>
+<li>Search for files efficiently using Windows Search and File Explorer</li>
+</ul>
+<h2 id="duration">Duration</h2>
+<p>3 weeks (out of 12-month course)</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Modules 1-4 completed. You should be comfortable with File Explorer, keyboard shortcuts (Ctrl+C, Ctrl+V, Ctrl+X), and basic Windows navigation.</p>
+<hr />
+<h2 id="topic-1-the-file-system-hierarchy">Topic 1: The File System Hierarchy</h2>
+<h3 id="explanation">Explanation</h3>
+<p>Every file on your computer lives inside an organised structure, like a building with floors, rooms, and items inside those rooms.</p>
+<p><strong>The hierarchy from biggest to smallest:</strong></p>
+<div class="codehilite"><pre><span></span><code>Drive (C:, D:, E:)
+  Folder
+    Subfolder
+      File
+</code></pre></div>
+
+<p><strong>Analogy: A Building</strong></p>
+<table>
+<thead>
+<tr>
+<th>Building</th>
+<th>Computer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The entire building</td>
+<td>A drive (like C:)</td>
+</tr>
+<tr>
+<td>A floor</td>
+<td>A folder</td>
+</tr>
+<tr>
+<td>A room on that floor</td>
+<td>A subfolder</td>
+</tr>
+<tr>
+<td>An item in the room (a book, a chair)</td>
+<td>A file</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Drives:</strong><br />
+- <strong>C: drive</strong> -- your main hard drive where Windows and most programs are installed.<br />
+- <strong>D: drive</strong> -- some computers have a second drive for extra storage.<br />
+- <strong>E:, F:, etc.</strong> -- these usually appear when you plug in a USB drive or external hard disk.</p>
+<p><strong>The path</strong> is the address of a file. It tells you exactly where to find it.</p>
+<p>Example: <code>C:\Users\John\Documents\Work\Report.docx</code></p>
+<p>This means:<br />
+- <strong>C:</strong> -- the main drive<br />
+- <strong>Users</strong> -- a folder<br />
+- <strong>John</strong> -- a subfolder (your username)<br />
+- <strong>Documents</strong> -- a subfolder<br />
+- <strong>Work</strong> -- a subfolder<br />
+- <strong>Report.docx</strong> -- the actual file</p>
+<p>You can see the path in the <strong>address bar</strong> at the top of File Explorer.</p>
+<h3 id="step-by-step-guide-viewing-the-file-system">Step-by-Step Guide: Viewing the File System</h3>
+<ol>
+<li>Open <strong>File Explorer</strong> (Win+E).</li>
+<li>Click on <strong>"This PC"</strong> in the left sidebar.</li>
+<li>You see all your drives listed: Local Disk (C:), and any other drives.</li>
+<li>Double-click on <strong>Local Disk (C:)</strong> to open it.</li>
+<li>You see folders like "Users," "Windows," "Program Files." These are top-level folders.</li>
+<li>Double-click on <strong>"Users,"</strong> then on your <strong>username</strong>.</li>
+<li>You see your personal folders: Desktop, Documents, Downloads, Pictures, Music, Videos.</li>
+<li>Look at the <strong>address bar</strong> at the top. It shows the path to your current location.</li>
+<li>Click the <strong>Back arrow</strong> to go back one level at a time.</li>
+</ol>
+<h3 id="real-world-example">Real-World Example</h3>
+<p>When you save a report for work, it might go to:<br />
+<code>C:\Users\YourName\Documents\Work\Reports\Monthly Report - October.docx</code></p>
+<p>When someone asks you "Where is that file?", you can tell them the path. When you need to find a file, knowing the hierarchy helps you navigate directly to it instead of searching randomly.</p>
+<h3 id="key-points-to-remember">Key Points to Remember</h3>
+<ul>
+<li>The file system is like a building: Drive, Folder, Subfolder, File</li>
+<li>C: is your main drive</li>
+<li>The path is the full address of a file</li>
+<li>You can see the current path in the File Explorer address bar</li>
+<li>Never modify or delete files in the "Windows" or "Program Files" folders -- these are system files</li>
+</ul>
+<hr />
+<h2 id="topic-2-copying-files">Topic 2: Copying Files</h2>
+<h3 id="explanation_1">Explanation</h3>
+<p>Copying a file creates a duplicate. The original stays where it is, and a copy appears in the new location. You now have two identical copies.</p>
+<p>Think of it like photocopying a document: the original stays in your hand, and the copy goes somewhere else.</p>
+<h3 id="step-by-step-guide-copying-files">Step-by-Step Guide: Copying Files</h3>
+<p><strong>Method 1: Right-Click Menu</strong><br />
+1. Find the file you want to copy.<br />
+2. <strong>Right-click</strong> on it.<br />
+3. Click <strong>"Copy"</strong> (or look for the copy icon).<br />
+4. Navigate to the destination folder (where you want the copy to go).<br />
+5. <strong>Right-click</strong> on an empty space in the destination folder.<br />
+6. Click <strong>"Paste."</strong><br />
+7. The file appears in both the original and the new location.</p>
+<p><strong>Method 2: Keyboard Shortcuts (Faster)</strong><br />
+1. Click on the file to select it.<br />
+2. Press <strong>Ctrl+C</strong> (Copy).<br />
+3. Navigate to the destination folder.<br />
+4. Press <strong>Ctrl+V</strong> (Paste).</p>
+<p><strong>Method 3: Drag and Drop (Between Drives)</strong><br />
+When you drag a file from one drive to another (for example, from C: to a USB drive E:), Windows automatically <strong>copies</strong> it.<br />
+1. Open two File Explorer windows side by side (open File Explorer twice, or drag one window to the left edge and another to the right).<br />
+2. In one window, navigate to the file.<br />
+3. In the other window, navigate to the destination.<br />
+4. Click and drag the file from one window to the other.</p>
+<p><strong>Copying multiple files:</strong><br />
+- <strong>Select several specific files:</strong> Hold <strong>Ctrl</strong> and click each file you want.<br />
+- <strong>Select a range of files:</strong> Click the first file, hold <strong>Shift</strong>, click the last file. All files between them are selected.<br />
+- <strong>Select all files in a folder:</strong> Press <strong>Ctrl+A</strong>.<br />
+- Then use Ctrl+C and Ctrl+V to copy them all at once.</p>
+<h3 id="key-points-to-remember_1">Key Points to Remember</h3>
+<ul>
+<li>Copying creates a duplicate -- the original stays put</li>
+<li>Ctrl+C then Ctrl+V is the fastest method</li>
+<li>Hold Ctrl to select multiple individual files</li>
+<li>Hold Shift to select a range of files</li>
+<li>Ctrl+A selects all files in the current folder</li>
+</ul>
+<hr />
+<h2 id="topic-3-moving-files">Topic 3: Moving Files</h2>
+<h3 id="explanation_2">Explanation</h3>
+<p>Moving a file takes it from one location and puts it in another. The original is removed from where it was. Unlike copying, you end up with only one copy of the file, in the new location.</p>
+<p>Think of it like picking up a book from one shelf and putting it on a different shelf. The book is no longer on the first shelf.</p>
+<h3 id="step-by-step-guide-moving-files">Step-by-Step Guide: Moving Files</h3>
+<p><strong>Method 1: Cut and Paste</strong><br />
+1. Right-click on the file.<br />
+2. Click <strong>"Cut"</strong> (the file icon becomes slightly transparent/faded).<br />
+3. Navigate to the new location.<br />
+4. Right-click on empty space and click <strong>"Paste."</strong><br />
+5. The file disappears from the original location and appears in the new one.</p>
+<p><strong>Method 2: Keyboard Shortcuts (Faster)</strong><br />
+1. Click on the file to select it.<br />
+2. Press <strong>Ctrl+X</strong> (Cut).<br />
+3. Navigate to the new location.<br />
+4. Press <strong>Ctrl+V</strong> (Paste).</p>
+<p><strong>Method 3: Drag and Drop (Within the Same Drive)</strong><br />
+When you drag a file within the same drive (e.g., from one folder to another on C:), Windows automatically <strong>moves</strong> it.</p>
+<p><strong>Copy vs. Move -- quick comparison:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Shortcut</th>
+<th>What Happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copy</td>
+<td>Ctrl+C then Ctrl+V</td>
+<td>Original stays, copy appears in new location</td>
+</tr>
+<tr>
+<td>Move</td>
+<td>Ctrl+X then Ctrl+V</td>
+<td>Original removed, file appears only in new location</td>
+</tr>
+</tbody>
+</table>
+<h3 id="real-world-example_1">Real-World Example</h3>
+<p>You downloaded a photo to your Downloads folder, but you want it in your Pictures folder. You do not need two copies -- you just want it in the right place. So you <strong>move</strong> it: Ctrl+X in Downloads, then Ctrl+V in Pictures.</p>
+<h3 id="key-points-to-remember_2">Key Points to Remember</h3>
+<ul>
+<li>Moving removes the file from the original location</li>
+<li>Ctrl+X (cut) then Ctrl+V (paste) is the fastest method</li>
+<li>Dragging within the same drive moves; dragging between drives copies</li>
+<li>If you accidentally move a file, press Ctrl+Z immediately to undo</li>
+</ul>
+<hr />
+<h2 id="topic-4-deleting-files">Topic 4: Deleting Files</h2>
+<h3 id="explanation_3">Explanation</h3>
+<p>Deleting files removes them from the folder. But Windows gives you a safety net: deleted files go to the <strong>Recycle Bin</strong> first, where you can recover them if you change your mind.</p>
+<h3 id="step-by-step-guide-deleting-and-recovering-files">Step-by-Step Guide: Deleting and Recovering Files</h3>
+<p><strong>Deleting a file (to Recycle Bin):</strong><br />
+1. Click the file to select it.<br />
+2. Press the <strong>Delete</strong> key. Or right-click and select "Delete."<br />
+3. The file goes to the <strong>Recycle Bin</strong>. It is not truly gone yet.</p>
+<p><strong>Permanently deleting a file (bypasses Recycle Bin):</strong><br />
+1. Select the file.<br />
+2. Press <strong>Shift+Delete</strong>.<br />
+3. A confirmation dialog appears: "Are you sure you want to permanently delete this file?"<br />
+4. Click <strong>Yes</strong>.<br />
+5. The file is permanently gone. It cannot be recovered through normal means.</p>
+<p><strong>WARNING:</strong> Only use Shift+Delete when you are absolutely sure you will never need the file again. For everyday deleting, always use the regular Delete key so you have the Recycle Bin as a safety net.</p>
+<p><strong>Recovering a file from the Recycle Bin:</strong><br />
+1. Double-click the <strong>Recycle Bin</strong> icon on your desktop.<br />
+2. Find the file you want to recover.<br />
+3. Right-click on it and select <strong>"Restore."</strong><br />
+4. The file returns to its original location.</p>
+<p><strong>Emptying the Recycle Bin (to free up space):</strong><br />
+1. Right-click the <strong>Recycle Bin</strong> icon on your desktop.<br />
+2. Click <strong>"Empty Recycle Bin."</strong><br />
+3. Confirm by clicking <strong>"Yes."</strong><br />
+4. All files in the Recycle Bin are permanently deleted and the disk space is freed.</p>
+<h3 id="key-points-to-remember_3">Key Points to Remember</h3>
+<ul>
+<li>Delete key sends files to Recycle Bin (recoverable)</li>
+<li>Shift+Delete permanently removes files (not recoverable -- be careful)</li>
+<li>Right-click a file in the Recycle Bin and select "Restore" to get it back</li>
+<li>Empty the Recycle Bin periodically to free up disk space</li>
+</ul>
+<hr />
+<h2 id="topic-5-file-extensions">Topic 5: File Extensions</h2>
+<h3 id="explanation_4">Explanation</h3>
+<p>A <strong>file extension</strong> is the letters after the dot in a filename. It tells your computer what type of file it is and which program should open it.</p>
+<p>For example, in <strong>"Report.docx"</strong>:<br />
+- "Report" is the file name<br />
+- ".docx" is the file extension (a Word document)</p>
+<p><strong>Common file extensions you will encounter:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Extension</th>
+<th>Type</th>
+<th>Opens With</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.txt</td>
+<td>Plain text file</td>
+<td>Notepad</td>
+</tr>
+<tr>
+<td>.docx</td>
+<td>Word document</td>
+<td>Microsoft Word</td>
+</tr>
+<tr>
+<td>.xlsx</td>
+<td>Excel spreadsheet</td>
+<td>Microsoft Excel</td>
+</tr>
+<tr>
+<td>.pptx</td>
+<td>PowerPoint presentation</td>
+<td>Microsoft PowerPoint</td>
+</tr>
+<tr>
+<td>.pdf</td>
+<td>Portable Document Format</td>
+<td>Adobe Reader, Edge browser</td>
+</tr>
+<tr>
+<td>.jpg / .jpeg</td>
+<td>Photo/image</td>
+<td>Photos app, any image viewer</td>
+</tr>
+<tr>
+<td>.png</td>
+<td>Image (supports transparency)</td>
+<td>Photos app, any image viewer</td>
+</tr>
+<tr>
+<td>.gif</td>
+<td>Animated image</td>
+<td>Browser, image viewer</td>
+</tr>
+<tr>
+<td>.mp4</td>
+<td>Video</td>
+<td>Media player, VLC</td>
+</tr>
+<tr>
+<td>.avi</td>
+<td>Video (older format)</td>
+<td>Media player, VLC</td>
+</tr>
+<tr>
+<td>.mp3</td>
+<td>Audio/music</td>
+<td>Media player, Groove Music</td>
+</tr>
+<tr>
+<td>.wav</td>
+<td>Audio (high quality)</td>
+<td>Media player</td>
+</tr>
+<tr>
+<td>.zip</td>
+<td>Compressed folder</td>
+<td>File Explorer (Extract All)</td>
+</tr>
+<tr>
+<td>.rar</td>
+<td>Compressed folder</td>
+<td>WinRAR or 7-Zip</td>
+</tr>
+<tr>
+<td>.exe</td>
+<td>Program/installer</td>
+<td>Runs a program (be careful -- only open trusted .exe files)</td>
+</tr>
+<tr>
+<td>.html</td>
+<td>Web page</td>
+<td>Browser</td>
+</tr>
+</tbody>
+</table>
+<p><strong>WARNING about .exe files:</strong> An .exe file is a program that runs on your computer. Only open .exe files you downloaded from trusted sources. A malicious .exe file can install viruses or damage your computer.</p>
+<h3 id="step-by-step-guide-showing-file-extensions">Step-by-Step Guide: Showing File Extensions</h3>
+<p>By default, Windows may hide file extensions. This is dangerous because you cannot see the true type of a file. Here is how to show them:</p>
+<ol>
+<li>Open <strong>File Explorer</strong> (Win+E).</li>
+<li>Click the <strong>"View"</strong> menu at the top.</li>
+<li>Hover over <strong>"Show"</strong>.</li>
+<li>Click <strong>"File name extensions"</strong> to turn it on (a checkmark appears).</li>
+<li>Now every file shows its extension: "Report.docx" instead of just "Report."</li>
+</ol>
+<h3 id="step-by-step-guide-viewing-file-properties">Step-by-Step Guide: Viewing File Properties</h3>
+<ol>
+<li>Right-click on any file.</li>
+<li>Click <strong>"Properties."</strong></li>
+<li>A window shows:</li>
+<li><strong>Type of file:</strong> e.g., "Text Document (.txt)"</li>
+<li><strong>Opens with:</strong> Which program opens this file</li>
+<li><strong>Location:</strong> The folder path where this file is stored</li>
+<li><strong>Size:</strong> How much space it takes up</li>
+<li><strong>Created:</strong> When the file was first created</li>
+<li><strong>Modified:</strong> When it was last changed</li>
+<li>Click <strong>OK</strong> to close.</li>
+</ol>
+<h3 id="key-points-to-remember_4">Key Points to Remember</h3>
+<ul>
+<li>File extensions tell your computer how to open a file</li>
+<li>Always show file extensions (View, Show, File name extensions)</li>
+<li>Be careful with .exe files -- only open ones from trusted sources</li>
+<li>Right-click, Properties shows detailed information about any file</li>
+</ul>
+<hr />
+<h2 id="topic-6-usb-drives-and-external-storage">Topic 6: USB Drives and External Storage</h2>
+<h3 id="explanation_5">Explanation</h3>
+<p>A <strong>USB drive</strong> (also called a pendrive, flash drive, or thumb drive) is a small portable storage device that plugs into your computer's USB port. It lets you carry files between computers.</p>
+<p>An <strong>external hard disk</strong> is a larger portable storage device. It works the same way as a USB drive but holds much more data (500 GB to several terabytes).</p>
+<h3 id="step-by-step-guide-using-a-usb-drive">Step-by-Step Guide: Using a USB Drive</h3>
+<p><strong>Plugging in:</strong><br />
+1. Find a USB-A port on your computer (rectangular slot on the side).<br />
+2. Insert the USB drive gently. If it does not fit, flip it and try the other way.<br />
+3. Wait a moment. You may hear a sound or see a notification.</p>
+<p><strong>Accessing the USB drive:</strong><br />
+1. Open <strong>File Explorer</strong> (Win+E).<br />
+2. Click on <strong>"This PC"</strong> in the left sidebar.<br />
+3. Under "Devices and drives," you will see your USB drive listed (e.g., "USB Drive (E:)" or the brand name).<br />
+4. Double-click on it to see its contents.<br />
+5. You can now copy files to and from the USB drive, just like moving files between folders.</p>
+<p><strong>Safely removing the USB drive (CRITICAL):</strong></p>
+<p>You must ALWAYS safely eject a USB drive before pulling it out. If you just yank it out while files are being written, you can:<br />
+- Corrupt files on the USB drive (making them unreadable)<br />
+- Lose data<br />
+- In rare cases, damage the USB drive permanently</p>
+<p><strong>How to safely eject:</strong></p>
+<p><strong>Method 1: System tray</strong><br />
+1. Look at the bottom-right corner of the taskbar (system tray).<br />
+2. Click the small <strong>up arrow</strong> to show hidden icons.<br />
+3. Find the <strong>USB icon</strong> (it looks like a USB plug with a checkmark).<br />
+4. Click on it.<br />
+5. Click <strong>"Eject [name of your USB drive]."</strong><br />
+6. Wait for the message: <strong>"Safe to remove hardware."</strong><br />
+7. Now pull out the USB drive.</p>
+<p><strong>Method 2: File Explorer</strong><br />
+1. Open File Explorer (Win+E).<br />
+2. Click on <strong>"This PC."</strong><br />
+3. Right-click on your USB drive.<br />
+4. Click <strong>"Eject."</strong><br />
+5. Wait for the safe-to-remove message.<br />
+6. Pull out the USB drive.</p>
+<h3 id="key-points-to-remember_5">Key Points to Remember</h3>
+<ul>
+<li>USB drives are portable storage -- carry files between computers</li>
+<li>Always safely eject before removing (system tray, USB icon, Eject)</li>
+<li>Never pull out a USB drive while files are being copied</li>
+<li>External hard disks work the same way but hold more data</li>
+</ul>
+<hr />
+<h2 id="topic-7-connecting-your-phone-as-storage">Topic 7: Connecting Your Phone as Storage</h2>
+<h3 id="explanation_6">Explanation</h3>
+<p>You can connect your smartphone to your computer with a USB cable to transfer files -- photos, videos, music, documents.</p>
+<h3 id="step-by-step-guide-connecting-an-android-phone">Step-by-Step Guide: Connecting an Android Phone</h3>
+<ol>
+<li>Connect your phone to the computer using a <strong>USB cable</strong> (the same one you use for charging).</li>
+<li>Your phone's screen will show a notification: <strong>"USB connected"</strong> or <strong>"Charging this device via USB."</strong></li>
+<li>Tap the notification on your phone.</li>
+<li>Select <strong>"File Transfer"</strong> or <strong>"MTP"</strong> (Media Transfer Protocol). This allows your computer to see your phone's files.</li>
+<li>On your computer, open <strong>File Explorer</strong> (Win+E).</li>
+<li>Under "This PC," your phone appears as a device (e.g., "Samsung Galaxy" or "Pixel").</li>
+<li>Double-click on your phone's name.</li>
+<li>You will see the phone's storage. Common folders:</li>
+<li><strong>DCIM</strong> -- your photos and videos taken with the camera</li>
+<li><strong>Downloads</strong> -- files downloaded on your phone</li>
+<li><strong>Pictures</strong> -- screenshots and saved images</li>
+<li><strong>Music</strong> -- music files</li>
+<li>Navigate to the folder you want and copy files to your computer (Ctrl+C on the phone file, Ctrl+V in a computer folder).</li>
+</ol>
+<h3 id="step-by-step-guide-connecting-an-iphone">Step-by-Step Guide: Connecting an iPhone</h3>
+<p>iPhones work slightly differently:<br />
+1. Connect your iPhone to the computer with a USB cable.<br />
+2. If prompted on the iPhone, tap <strong>"Trust this Computer"</strong> and enter your passcode.<br />
+3. Open File Explorer on your computer.<br />
+4. Your iPhone appears under "This PC" as "Apple iPhone."<br />
+5. Double-click on it, then go to <strong>Internal Storage</strong> then <strong>DCIM</strong>.<br />
+6. You can copy photos and videos from here to your computer.</p>
+<p><strong>Note:</strong> iPhone file access from a PC is more limited than Android. For full file management, Apple recommends using iCloud or iTunes.</p>
+<h3 id="key-points-to-remember_6">Key Points to Remember</h3>
+<ul>
+<li>Connect your phone with a USB cable</li>
+<li>On Android: select "File Transfer" mode from the notification</li>
+<li>On iPhone: tap "Trust this Computer"</li>
+<li>DCIM folder contains your camera photos and videos</li>
+<li>Always copy important photos to your computer as a backup</li>
+</ul>
+<hr />
+<h2 id="topic-8-backup-concepts">Topic 8: Backup Concepts</h2>
+<h3 id="explanation_7">Explanation</h3>
+<p>A <strong>backup</strong> is a copy of your important files stored in a separate location. If your computer breaks, gets stolen, or gets a virus, you can restore your files from the backup.</p>
+<p><strong>Why backups matter:</strong><br />
+- Hard drives can fail without warning<br />
+- Laptops can be stolen or dropped<br />
+- Viruses can encrypt or delete your files (ransomware)<br />
+- You might accidentally delete something important</p>
+<p><strong>The 3-2-1 Backup Rule:</strong><br />
+- <strong>3</strong> copies of your important files<br />
+- <strong>2</strong> different types of storage (e.g., computer hard drive + USB drive)<br />
+- <strong>1</strong> copy stored offsite (e.g., cloud storage like OneDrive or Google Drive)</p>
+<p><strong>Where to store backups:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB Drive</td>
+<td>Cheap, portable, no internet needed</td>
+<td>Can be lost or damaged, limited space</td>
+</tr>
+<tr>
+<td>External Hard Disk</td>
+<td>Large capacity, affordable</td>
+<td>Needs to be plugged in, can be damaged</td>
+</tr>
+<tr>
+<td>Cloud Storage (OneDrive, Google Drive)</td>
+<td>Accessible from anywhere, safe from physical damage</td>
+<td>Needs internet, limited free space</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-by-step-guide-creating-a-basic-backup-to-usb-drive">Step-by-Step Guide: Creating a Basic Backup to USB Drive</h3>
+<ol>
+<li>Plug in a USB drive.</li>
+<li>Open File Explorer (Win+E).</li>
+<li>Navigate to the folder you want to back up (e.g., Documents).</li>
+<li>Press <strong>Ctrl+A</strong> to select all files.</li>
+<li>Press <strong>Ctrl+C</strong> to copy.</li>
+<li>Navigate to the USB drive (This PC, then click on the USB drive).</li>
+<li>Create a folder on the USB drive called <strong>"Backup - [today's date]"</strong>.</li>
+<li>Open that folder.</li>
+<li>Press <strong>Ctrl+V</strong> to paste all files.</li>
+<li>Wait for the copy to complete.</li>
+<li><strong>Safely eject</strong> the USB drive.</li>
+</ol>
+<h3 id="step-by-step-guide-using-onedrive-cloud-backup">Step-by-Step Guide: Using OneDrive (Cloud Backup)</h3>
+<p>OneDrive is Microsoft's cloud storage. If you have a Microsoft account, you get 5 GB of free storage.</p>
+<ol>
+<li>Click the <strong>Start button</strong> and type <strong>"OneDrive."</strong> Open it.</li>
+<li>Sign in with your Microsoft account (or create one if you do not have one).</li>
+<li>OneDrive creates a folder on your computer (usually in your user folder).</li>
+<li>Any file you put in the OneDrive folder automatically uploads to the cloud.</li>
+<li>Open File Explorer. You will see <strong>"OneDrive"</strong> in the left sidebar.</li>
+<li>Copy or move important files into the OneDrive folder.</li>
+<li>These files are now backed up to the cloud. You can access them from any computer or phone by logging into onedrive.com.</li>
+</ol>
+<h3 id="real-world-example_2">Real-World Example</h3>
+<p>Imagine your laptop is stolen from your bag. Without a backup, all your documents, photos, and work files are gone forever. With a backup on a USB drive at home and copies on OneDrive, you lose only the laptop -- all your files are safe and accessible from another computer.</p>
+<h3 id="key-points-to-remember_7">Key Points to Remember</h3>
+<ul>
+<li>A backup is a copy of your important files in a separate location</li>
+<li>Follow the 3-2-1 rule: 3 copies, 2 media types, 1 offsite</li>
+<li>Back up regularly (at least once a month, weekly is better)</li>
+<li>OneDrive gives you 5 GB free cloud storage with a Microsoft account</li>
+<li>Losing files is stressful and often irreversible -- backups prevent this</li>
+</ul>
+<hr />
+<h2 id="topic-9-the-recycle-bin">Topic 9: The Recycle Bin</h2>
+<h3 id="explanation_8">Explanation</h3>
+<p>The Recycle Bin is a special folder where deleted files go before they are permanently removed. It is your safety net.</p>
+<p><strong>How the Recycle Bin works:</strong><br />
+1. You delete a file (Delete key or right-click, Delete).<br />
+2. The file moves to the Recycle Bin. It still takes up space on your drive.<br />
+3. You can restore it at any time (right-click, Restore) -- it goes back to its original location.<br />
+4. When you empty the Recycle Bin, the files are permanently deleted and the space is freed.</p>
+<p><strong>Recycle Bin settings:</strong><br />
+1. Right-click the <strong>Recycle Bin</strong> icon on the desktop.<br />
+2. Click <strong>"Properties."</strong><br />
+3. You can set the maximum size of the Recycle Bin. When it fills up, the oldest files are automatically deleted.<br />
+4. You can also change the setting to permanently delete files immediately (not recommended for beginners).</p>
+<h3 id="key-points-to-remember_8">Key Points to Remember</h3>
+<ul>
+<li>Deleted files go to the Recycle Bin (not permanently gone)</li>
+<li>Restore: right-click the file in Recycle Bin, click Restore</li>
+<li>Empty the Recycle Bin to free disk space</li>
+<li>Shift+Delete bypasses the Recycle Bin (permanent deletion)</li>
+</ul>
+<hr />
+<h2 id="topic-10-searching-for-files">Topic 10: Searching for Files</h2>
+<h3 id="explanation_9">Explanation</h3>
+<p>As you use your computer more, you will accumulate hundreds or thousands of files. Knowing how to search quickly is essential.</p>
+<p><strong>Method 1: Windows Search (Taskbar)</strong><br />
+1. Click the <strong>Search icon</strong> on the taskbar (magnifying glass) or press <strong>Win+S</strong>.<br />
+2. Type the name (or part of the name) of the file you are looking for.<br />
+3. Windows searches everywhere -- files, folders, apps, settings.<br />
+4. Click the result to open it, or click "Open file location" to see where it lives.</p>
+<p><strong>Method 2: File Explorer Search (Within a Folder)</strong><br />
+1. Open File Explorer (Win+E).<br />
+2. Navigate to the folder you want to search in (e.g., Documents).<br />
+3. Click the <strong>search box</strong> in the top-right corner (or press Ctrl+F).<br />
+4. Type your search term.<br />
+5. Results appear as you type. Only files within this folder (and subfolders) are shown.</p>
+<p><strong>Searching by file type:</strong></p>
+<p>You can search for all files of a specific type using wildcards:<br />
+- <code>*.pdf</code> -- finds all PDF files<br />
+- <code>*.jpg</code> -- finds all JPG images<br />
+- <code>*.docx</code> -- finds all Word documents<br />
+- <code>*.mp4</code> -- finds all MP4 videos</p>
+<p>Type these in the File Explorer search box.</p>
+<h3 id="step-by-step-guide-finding-all-pdfs-on-your-computer">Step-by-Step Guide: Finding All PDFs on Your Computer</h3>
+<ol>
+<li>Open File Explorer (Win+E).</li>
+<li>Click on <strong>"This PC"</strong> (so you search the entire computer).</li>
+<li>Click the search box in the top-right corner.</li>
+<li>Type: <strong><code>*.pdf</code></strong></li>
+<li>Press Enter and wait. Windows searches all drives.</li>
+<li>A list of every PDF file on your computer appears.</li>
+<li>You can sort the results by name, date, or size by clicking the column headers.</li>
+</ol>
+<h3 id="key-points-to-remember_9">Key Points to Remember</h3>
+<ul>
+<li>Win+S or the search icon searches everything on your computer</li>
+<li>File Explorer search box searches within the current folder</li>
+<li>Use *.extension to find all files of a specific type (e.g., *.pdf)</li>
+<li>Searching is faster than manually browsing through folders</li>
+</ul>
+<hr />
+<h2 id="quick-reference-cheat-sheet">Quick Reference / Cheat Sheet</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>How to Do It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copy a file</td>
+<td>Select file, Ctrl+C, go to destination, Ctrl+V</td>
+</tr>
+<tr>
+<td>Move a file</td>
+<td>Select file, Ctrl+X, go to destination, Ctrl+V</td>
+</tr>
+<tr>
+<td>Delete a file</td>
+<td>Select file, press Delete</td>
+</tr>
+<tr>
+<td>Permanently delete</td>
+<td>Select file, press Shift+Delete</td>
+</tr>
+<tr>
+<td>Restore from Recycle Bin</td>
+<td>Open Recycle Bin, right-click file, Restore</td>
+</tr>
+<tr>
+<td>Select multiple files</td>
+<td>Hold Ctrl and click each file</td>
+</tr>
+<tr>
+<td>Select a range of files</td>
+<td>Click first, hold Shift, click last</td>
+</tr>
+<tr>
+<td>Select all files</td>
+<td>Ctrl+A</td>
+</tr>
+<tr>
+<td>Show file extensions</td>
+<td>File Explorer, View, Show, File name extensions</td>
+</tr>
+<tr>
+<td>View file properties</td>
+<td>Right-click file, Properties</td>
+</tr>
+<tr>
+<td>Safely eject USB drive</td>
+<td>System tray, USB icon, Eject</td>
+</tr>
+<tr>
+<td>Search for files</td>
+<td>Win+S or search box in File Explorer</td>
+</tr>
+<tr>
+<td>Search by file type</td>
+<td>Type *.pdf or *.jpg in the search box</td>
+</tr>
+<tr>
+<td>Connect phone</td>
+<td>USB cable, select File Transfer on phone</td>
+</tr>
+<tr>
+<td>Backup to USB</td>
+<td>Copy files to USB drive, safely eject</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Common File Types:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Extension</th>
+<th>Type</th>
+<th>Program</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.txt</td>
+<td>Text</td>
+<td>Notepad</td>
+</tr>
+<tr>
+<td>.docx</td>
+<td>Document</td>
+<td>Word</td>
+</tr>
+<tr>
+<td>.xlsx</td>
+<td>Spreadsheet</td>
+<td>Excel</td>
+</tr>
+<tr>
+<td>.pdf</td>
+<td>Document</td>
+<td>Adobe Reader / Edge</td>
+</tr>
+<tr>
+<td>.jpg / .png</td>
+<td>Image</td>
+<td>Photos</td>
+</tr>
+<tr>
+<td>.mp4</td>
+<td>Video</td>
+<td>Media Player</td>
+</tr>
+<tr>
+<td>.mp3</td>
+<td>Audio</td>
+<td>Media Player</td>
+</tr>
+<tr>
+<td>.zip</td>
+<td>Compressed</td>
+<td>File Explorer</td>
+</tr>
+<tr>
+<td>.exe</td>
+<td>Program</td>
+<td>(Runs directly -- be careful)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<ol>
+<li><strong>Confusing Copy and Move.</strong> Copy (Ctrl+C) leaves the original in place. Move (Ctrl+X) removes it. If unsure, use Copy -- you can always delete the original later.</li>
+<li><strong>Pulling out a USB drive without ejecting.</strong> Always safely eject first. Pulling it out can corrupt files.</li>
+<li><strong>Not showing file extensions.</strong> Without extensions visible, you cannot tell if a file is "Report.pdf" or "Report.exe" (which could be a virus disguised as a document). Always show extensions.</li>
+<li><strong>Never backing up files.</strong> Hard drives fail. Laptops get stolen. Viruses delete files. Back up regularly.</li>
+<li><strong>Searching the entire computer when you know the general area.</strong> Navigate to the right folder first, then search. It is much faster.</li>
+<li><strong>Opening .exe files from untrusted sources.</strong> Only run .exe files you downloaded from official websites or the Microsoft Store.</li>
+<li><strong>Forgetting Shift+Delete is permanent.</strong> There is no recovering a file after Shift+Delete. Use the regular Delete key for safety.</li>
+</ol>
+<hr />
+<h2 id="whats-next">What's Next</h2>
+<p>In <strong>Module 6: Internet &amp; Web Browsing</strong>, you will learn how to use the internet safely and effectively -- how web browsers work, how to search the internet, how to evaluate websites for trustworthiness, and how to stay safe online.</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

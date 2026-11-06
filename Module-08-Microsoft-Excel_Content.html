@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-08-Microsoft-Excel — Content</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-8-mastering-microsoft-excel">Module 8: Mastering Microsoft Excel</h1>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this module, you will be able to:</p>
+<ol>
+<li>Understand what Excel is and why it is essential in any career</li>
+<li>Navigate the Excel interface (workbooks, worksheets, cells, rows, columns)</li>
+<li>Enter, edit, and format data in cells</li>
+<li>Use Auto-fill to save time with repetitive data</li>
+<li>Write basic formulas: SUM, AVERAGE, MAX, MIN, COUNT, IF</li>
+<li>Understand relative vs absolute cell references</li>
+<li>Create and format tables with sorting and filtering</li>
+<li>Create charts (bar, pie, line) from your data</li>
+<li>Print spreadsheets properly</li>
+</ol>
+<h2 id="duration">Duration</h2>
+<p>5 hours (2.5 hours lecture + 2.5 hours hands-on practice)</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Completed Module 7 (or basic Microsoft Word skills)</li>
+<li>A computer with Microsoft Excel installed (MS Office 2019 or Microsoft 365)</li>
+<li>Alternatively: free access at office.com (Microsoft 365 online)</li>
+</ul>
+<hr />
+<h2 id="topic-1-what-is-microsoft-excel">Topic 1: What Is Microsoft Excel?</h2>
+<h3 id="explanation">Explanation</h3>
+<p>Microsoft Excel is a <strong>spreadsheet</strong> program -- think of it as a giant, intelligent grid of boxes where you can store numbers, text, and dates, and then perform calculations on them automatically.</p>
+<p>Imagine a notebook with graph paper. Each small square on the paper is a <strong>cell</strong> where you can write a number or a word. Now imagine that this notebook is magical -- you can tell it "add up all the numbers in this column" and it does it instantly. You can also tell it "if this number goes above 1000, turn the cell red" and it does that too. That is Excel.</p>
+<p><strong>Why Excel matters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Who Uses It</th>
+<th>How They Use It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Students</strong></td>
+<td>Track grades, manage study schedules, organize research data</td>
+</tr>
+<tr>
+<td><strong>Employees</strong></td>
+<td>Track expenses, manage budgets, create reports</td>
+</tr>
+<tr>
+<td><strong>Business Owners</strong></td>
+<td>Inventory management, sales tracking, payroll, invoices</td>
+</tr>
+<tr>
+<td><strong>Accountants</strong></td>
+<td>Financial statements, tax calculations, auditing</td>
+</tr>
+<tr>
+<td><strong>Anyone</strong></td>
+<td>Personal budget, household expenses, event planning</td>
+</tr>
+</tbody>
+</table>
+<p>Excel is often the single most requested skill in job postings. Being comfortable with basic Excel formulas can set you apart from other candidates.</p>
+<h3 id="real-world-example">Real-World Example</h3>
+<p>A shop owner tracks daily sales in an Excel spreadsheet. Each row is one day, columns track items sold and amounts. At the bottom, Excel automatically calculates: total sales for the month, average daily sales, the busiest day (highest sales), and the slowest day (lowest sales). The shop owner makes better business decisions because the data is organized and the calculations are instant.</p>
+<h3 id="key-points">Key Points</h3>
+<ul>
+<li>Excel is for organizing data and performing calculations</li>
+<li>It is the most requested software skill in job postings</li>
+<li>A spreadsheet is like an intelligent grid that calculates for you</li>
+</ul>
+<hr />
+<h2 id="topic-2-the-excel-interface">Topic 2: The Excel Interface</h2>
+<h3 id="explanation_1">Explanation</h3>
+<p>When you open Excel and create a new blank workbook, you will see a grid of cells. Let us understand each part.</p>
+<h3 id="step-by-step-guide-understanding-the-interface">Step-by-Step Guide: Understanding the Interface</h3>
+<p><strong>Workbook and Worksheets:</strong><br />
+- A <strong>workbook</strong> is the entire Excel file (like a notebook)<br />
+- A <strong>worksheet</strong> (or <strong>sheet</strong>) is one page within the workbook (like a page in the notebook)<br />
+- You can see sheet tabs at the bottom of the screen: Sheet1, Sheet2, etc.<br />
+- Right-click a tab to rename it (e.g., "January," "February," "Sales")<br />
+- Click the <strong>+</strong> button next to the tabs to add a new sheet</p>
+<p><strong>Cells, Rows, and Columns:</strong><br />
+- <strong>Columns</strong> run vertically (up and down) and are labeled with letters: A, B, C... Z, AA, AB...<br />
+- <strong>Rows</strong> run horizontally (left and right) and are labeled with numbers: 1, 2, 3, 4...<br />
+- A <strong>cell</strong> is one box in the grid -- the intersection of a column and a row<br />
+- Every cell has a unique <strong>cell reference</strong> made of its column letter and row number<br />
+  - The cell at column A, row 1 is <strong>A1</strong><br />
+  - The cell at column C, row 5 is <strong>C5</strong><br />
+  - The cell at column D, row 10 is <strong>D10</strong></p>
+<p><strong>Important Areas:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Location</th>
+<th>What It Shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name Box</strong></td>
+<td>Top-left (shows "A1")</td>
+<td>The reference of the currently selected cell</td>
+</tr>
+<tr>
+<td><strong>Formula Bar</strong></td>
+<td>Top (long bar next to Name Box)</td>
+<td>The contents or formula of the selected cell</td>
+</tr>
+<tr>
+<td><strong>Column Headers</strong></td>
+<td>Top of the grid (A, B, C...)</td>
+<td>Click to select an entire column</td>
+</tr>
+<tr>
+<td><strong>Row Headers</strong></td>
+<td>Left of the grid (1, 2, 3...)</td>
+<td>Click to select an entire row</td>
+</tr>
+<tr>
+<td><strong>Sheet Tabs</strong></td>
+<td>Bottom of the screen</td>
+<td>Switch between worksheets</td>
+</tr>
+<tr>
+<td><strong>Status Bar</strong></td>
+<td>Very bottom</td>
+<td>Shows SUM, AVERAGE, COUNT of selected cells</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The Ribbon</strong> is the same concept as in Word -- tabs at the top (Home, Insert, Page Layout, Formulas, Data, Review, View) with groups of tools.</p>
+<h3 id="key-points_1">Key Points</h3>
+<ul>
+<li>A workbook is the file, a worksheet is one page/tab within it</li>
+<li>Cells are identified by column letter + row number (A1, B5, C10)</li>
+<li>The Name Box shows which cell is selected</li>
+<li>The Formula Bar shows what is inside the selected cell</li>
+</ul>
+<hr />
+<h2 id="topic-3-navigating-and-entering-data">Topic 3: Navigating and Entering Data</h2>
+<h3 id="explanation_2">Explanation</h3>
+<p>Moving around an Excel spreadsheet and entering data are the most fundamental skills. Let us master them.</p>
+<h3 id="step-by-step-guide">Step-by-Step Guide</h3>
+<p><strong>Selecting a Cell:</strong><br />
+- Click on any cell to select it<br />
+- The cell gets a blue/green border, and its reference appears in the Name Box</p>
+<p><strong>Typing Data:</strong><br />
+1. Click on a cell (e.g., A1)<br />
+2. Type your data (e.g., "Name")<br />
+3. Press <strong>Enter</strong> -- the cursor moves DOWN to the next row (A2)<br />
+4. Or press <strong>Tab</strong> -- the cursor moves RIGHT to the next column (B1)</p>
+<p><strong>Types of Data:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Example</th>
+<th>How Excel Treats It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Text</strong></td>
+<td>Name, Address, "Hello"</td>
+<td>Aligns to the left by default</td>
+</tr>
+<tr>
+<td><strong>Number</strong></td>
+<td>100, 45.50, -20</td>
+<td>Aligns to the right by default</td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td>06/11/2026, 6-Nov-2026</td>
+<td>Recognized as a date (can be calculated)</td>
+</tr>
+<tr>
+<td><strong>Formula</strong></td>
+<td>=A1+B1</td>
+<td>Starts with = sign, shows the result</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Navigation Shortcuts:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Arrow keys</strong></td>
+<td>Move one cell in that direction</td>
+</tr>
+<tr>
+<td><strong>Tab</strong></td>
+<td>Move one cell to the right</td>
+</tr>
+<tr>
+<td><strong>Enter</strong></td>
+<td>Move one cell down (and confirm entry)</td>
+</tr>
+<tr>
+<td><strong>Ctrl+Home</strong></td>
+<td>Go to cell A1 (the very beginning)</td>
+</tr>
+<tr>
+<td><strong>Ctrl+End</strong></td>
+<td>Go to the last used cell in the sheet</td>
+</tr>
+<tr>
+<td><strong>Ctrl+Arrow</strong></td>
+<td>Jump to the edge of the data in that direction</td>
+</tr>
+<tr>
+<td><strong>Ctrl+G</strong> or <strong>F5</strong></td>
+<td>Go to a specific cell (type the reference)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Auto-Fill (A Huge Time Saver):</strong></p>
+<p>Auto-fill lets you quickly fill a series of data.</p>
+<ol>
+<li>Type <strong>Monday</strong> in cell A1</li>
+<li>Click on A1 to select it</li>
+<li>Look at the bottom-right corner of the cell -- you will see a small <strong>green square</strong> (called the fill handle)</li>
+<li>Click and drag this square downward through cells A2 to A7</li>
+<li>Excel automatically fills in: Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday</li>
+</ol>
+<p>Auto-fill works with:<br />
+- Days of the week (Monday, Tuesday...)<br />
+- Months (January, February...)<br />
+- Number sequences (type 1 in A1 and 2 in A2, select both, then drag -- Excel continues: 3, 4, 5...)<br />
+- Dates (type a date, drag to fill consecutive dates)</p>
+<h3 id="real-world-example_1">Real-World Example</h3>
+<p>You are creating an attendance sheet. You type "Student 1" in A2, then use Auto-fill by dragging down to A30. Excel fills in "Student 2," "Student 3," all the way to "Student 29." You saved typing 28 entries by hand.</p>
+<h3 id="key-points_2">Key Points</h3>
+<ul>
+<li>Click a cell and type to enter data</li>
+<li>Enter moves down, Tab moves right</li>
+<li>Ctrl+Home goes to A1, Ctrl+End goes to the last used cell</li>
+<li>Auto-fill (drag the green square) fills series automatically -- days, months, numbers</li>
+</ul>
+<hr />
+<h2 id="topic-4-editing-and-basic-formatting">Topic 4: Editing and Basic Formatting</h2>
+<h3 id="explanation_3">Explanation</h3>
+<p>After entering data, you will need to edit cells and format them to look clean and professional.</p>
+<h3 id="step-by-step-guide_1">Step-by-Step Guide</h3>
+<p><strong>Editing a Cell:</strong><br />
+- <strong>Double-click</strong> a cell to enter edit mode (cursor appears inside the cell)<br />
+- Make your changes<br />
+- Press <strong>Enter</strong> to confirm, or <strong>Escape</strong> to cancel<br />
+- To <strong>clear</strong> a cell: select it and press the <strong>Delete</strong> key</p>
+<p><strong>Undo and Redo:</strong><br />
+- <strong>Ctrl+Z</strong> -- Undo (go back one step). You can press it multiple times.<br />
+- <strong>Ctrl+Y</strong> -- Redo (redo what you undid)</p>
+<p><strong>Column Width:</strong><br />
+- If text is too long for a cell, it overflows into the next cell (or gets cut off)<br />
+- To auto-fit column width: <strong>double-click the right border</strong> of the column header letter<br />
+- To manually resize: drag the right border of the column header</p>
+<p><strong>Row Height:</strong><br />
+- Same concept: drag the bottom border of the row number, or double-click to auto-fit</p>
+<p><strong>Formatting Cells:</strong></p>
+<p>Select the cells you want to format, then use the Home tab:</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>How</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bold</strong></td>
+<td>Ctrl+B</td>
+<td>Makes text bold</td>
+</tr>
+<tr>
+<td><strong>Font Size</strong></td>
+<td>Font size dropdown</td>
+<td>Changes text size</td>
+</tr>
+<tr>
+<td><strong>Cell Color (Fill)</strong></td>
+<td>Paint bucket icon</td>
+<td>Changes the cell background color</td>
+</tr>
+<tr>
+<td><strong>Font Color</strong></td>
+<td>"A" with color bar icon</td>
+<td>Changes the text color</td>
+</tr>
+<tr>
+<td><strong>Borders</strong></td>
+<td>Borders icon (grid square)</td>
+<td>Adds lines around cells</td>
+</tr>
+<tr>
+<td><strong>Merge Cells</strong></td>
+<td>Merge &amp; Center button</td>
+<td>Combines multiple cells into one (use sparingly)</td>
+</tr>
+<tr>
+<td><strong>Text Alignment</strong></td>
+<td>Alignment buttons</td>
+<td>Left, center, right, top, middle, bottom</td>
+</tr>
+<tr>
+<td><strong>Wrap Text</strong></td>
+<td>Wrap Text button</td>
+<td>Makes text wrap within the cell instead of overflowing</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Number Formatting:</strong></p>
+<p>To change how numbers appear:<br />
+1. Select the cells with numbers<br />
+2. On the Home tab, find the <strong>Number</strong> section<br />
+3. Click the dropdown (shows "General" by default) and choose:</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Example</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Number</strong></td>
+<td>1,234.56</td>
+<td>General numbers</td>
+</tr>
+<tr>
+<td><strong>Currency</strong></td>
+<td>$1,234.56 or Rs 1,234.56</td>
+<td>Money values</td>
+</tr>
+<tr>
+<td><strong>Percentage</strong></td>
+<td>45%</td>
+<td>Percentages (0.45 becomes 45%)</td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td>06-Nov-2026</td>
+<td>Dates</td>
+</tr>
+<tr>
+<td><strong>Text</strong></td>
+<td>001234</td>
+<td>When you need leading zeros (like phone numbers)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Selecting Multiple Cells:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select a range</td>
+<td>Click and drag from first cell to last cell</td>
+</tr>
+<tr>
+<td>Select non-adjacent cells</td>
+<td>Hold <strong>Ctrl</strong> and click each cell</td>
+</tr>
+<tr>
+<td>Select a range with keyboard</td>
+<td>Hold <strong>Shift</strong> and use arrow keys</td>
+</tr>
+<tr>
+<td>Select entire row</td>
+<td>Click the <strong>row number</strong> on the left</td>
+</tr>
+<tr>
+<td>Select entire column</td>
+<td>Click the <strong>column letter</strong> at the top</td>
+</tr>
+<tr>
+<td>Select all cells</td>
+<td>Press <strong>Ctrl+A</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-points_3">Key Points</h3>
+<ul>
+<li>Double-click a cell to edit it, Delete key to clear it</li>
+<li>Double-click a column border to auto-fit width</li>
+<li>Use number formatting to display money, percentages, and dates correctly</li>
+<li>Wrap Text prevents long text from overflowing</li>
+<li>Use Merge Cells sparingly -- it can cause problems with formulas later</li>
+</ul>
+<hr />
+<h2 id="topic-5-basic-formulas-the-most-important-part">Topic 5: Basic Formulas -- The Most Important Part</h2>
+<h3 id="explanation_4">Explanation</h3>
+<p>Formulas are what make Excel powerful. A formula is an instruction that tells Excel to perform a calculation. Every formula starts with the <strong>equals sign (=)</strong>.</p>
+<p>Think of it this way: when you type <strong>=2+3</strong> in a cell, you are telling Excel "calculate 2 plus 3 and show me the answer." Excel displays <strong>5</strong> in the cell. But the real power comes when you use cell references instead of fixed numbers -- because then, if you change a number in one cell, every formula that uses it updates automatically.</p>
+<h3 id="step-by-step-guide_2">Step-by-Step Guide</h3>
+<p><strong>Basic Arithmetic:</strong></p>
+<p>Type these in any cell to try them:</p>
+<table>
+<thead>
+<tr>
+<th>Formula</th>
+<th>What It Does</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=5+3</td>
+<td>Addition</td>
+<td>8</td>
+</tr>
+<tr>
+<td>=10-4</td>
+<td>Subtraction</td>
+<td>6</td>
+</tr>
+<tr>
+<td>=6*7</td>
+<td>Multiplication</td>
+<td>42</td>
+</tr>
+<tr>
+<td>=20/4</td>
+<td>Division</td>
+<td>5</td>
+</tr>
+<tr>
+<td>=2^3</td>
+<td>Power (2 to the power of 3)</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Using Cell References:</strong></p>
+<p>Instead of typing numbers directly, you refer to cells:</p>
+<ol>
+<li>Type <strong>100</strong> in cell A1</li>
+<li>Type <strong>50</strong> in cell B1</li>
+<li>In cell C1, type: <strong>=A1+B1</strong></li>
+<li>Press Enter</li>
+<li>Cell C1 shows <strong>150</strong></li>
+<li>Now change A1 to <strong>200</strong> -- C1 automatically updates to <strong>250</strong></li>
+</ol>
+<p>This is the core power of Excel: change one number, and everything connected to it recalculates.</p>
+<p><strong>Essential Functions:</strong></p>
+<p>Functions are pre-built formulas. They save you from writing long calculations by hand.</p>
+<p><strong>SUM -- Add Up Values:</strong></p>
+<div class="codehilite"><pre><span></span><code>=SUM(A1:A10)
+</code></pre></div>
+
+<p>This adds all values from cell A1 through A10. The colon (:) means "from A1 to A10."</p>
+<p><strong>AVERAGE -- Calculate the Average:</strong></p>
+<div class="codehilite"><pre><span></span><code>=AVERAGE(A1:A10)
+</code></pre></div>
+
+<p>Adds all values from A1 to A10 and divides by the count.</p>
+<p><strong>MAX -- Find the Highest Value:</strong></p>
+<div class="codehilite"><pre><span></span><code>=MAX(A1:A10)
+</code></pre></div>
+
+<p>Returns the largest number in the range.</p>
+<p><strong>MIN -- Find the Lowest Value:</strong></p>
+<div class="codehilite"><pre><span></span><code>=MIN(A1:A10)
+</code></pre></div>
+
+<p>Returns the smallest number in the range.</p>
+<p><strong>COUNT -- Count Cells with Numbers:</strong></p>
+<div class="codehilite"><pre><span></span><code>=COUNT(A1:A10)
+</code></pre></div>
+
+<p>Counts how many cells in the range contain numbers (ignores empty cells and text).</p>
+<p><strong>COUNTA -- Count Non-Empty Cells:</strong></p>
+<div class="codehilite"><pre><span></span><code>=COUNTA(A1:A10)
+</code></pre></div>
+
+<p>Counts how many cells are not empty (counts text and numbers).</p>
+<p><strong>IF -- Make a Decision:</strong></p>
+<div class="codehilite"><pre><span></span><code>=IF(A1&gt;100, "Over Budget", "OK")
+</code></pre></div>
+
+<p>This checks: Is A1 greater than 100?<br />
+- If YES: displays "Over Budget"<br />
+- If NO: displays "OK"</p>
+<p>The structure is: =IF(condition, value_if_true, value_if_false)</p>
+<p>More IF examples:</p>
+<div class="codehilite"><pre><span></span><code>=IF(B1&gt;=35, "Pass", "Fail")          Checks if marks &gt;= 35
+=IF(C1&gt;50000, "High", "Low")         Categorize salary
+=IF(D1="Yes", "Approved", "Pending") Check text values
+</code></pre></div>
+
+<p><strong>Percentage Calculation:</strong></p>
+<div class="codehilite"><pre><span></span><code>=A1*0.18
+</code></pre></div>
+
+<p>Calculates 18% of the value in A1. For GST, tax, discounts.</p>
+<p>If cell E1 contains the tax rate (0.18), use: *<em>=A1<em>E1</em></em></p>
+<p><strong>CONCATENATE / Join Text:</strong></p>
+<div class="codehilite"><pre><span></span><code>=CONCATENATE(A1, " ", B1)
+</code></pre></div>
+
+<p>Or the shorter version:</p>
+<div class="codehilite"><pre><span></span><code>=A1&amp;" "&amp;B1
+</code></pre></div>
+
+<p>If A1 contains "Priya" and B1 contains "Sharma," the result is "Priya Sharma."</p>
+<p><strong>TODAY -- Current Date:</strong></p>
+<div class="codehilite"><pre><span></span><code>=TODAY()
+</code></pre></div>
+
+<p>Displays today's date. Updates automatically every day.</p>
+<p><strong>LEN -- Count Characters:</strong></p>
+<div class="codehilite"><pre><span></span><code>=LEN(A1)
+</code></pre></div>
+
+<p>Counts the number of characters in cell A1. Useful for checking if text is too long.</p>
+<h3 id="real-world-example_2">Real-World Example</h3>
+<p>You have a list of 10 students and their marks in 5 subjects (cells B2 to F11). For each student, you calculate:<br />
+- <strong>Total:</strong> =SUM(B2:F2)<br />
+- <strong>Average:</strong> =AVERAGE(B2:F2)<br />
+- <strong>Result:</strong> =IF(AVERAGE(B2:F2)&gt;=35, "Pass", "Fail")</p>
+<p>Then at the bottom:<br />
+- <strong>Class highest in Math:</strong> =MAX(B2:B11)<br />
+- <strong>Class lowest in Math:</strong> =MIN(B2:B11)<br />
+- <strong>Class average in Math:</strong> =AVERAGE(B2:B11)</p>
+<p>Change any student's marks, and everything recalculates instantly.</p>
+<h3 id="key-points_4">Key Points</h3>
+<ul>
+<li>Every formula starts with = (equals sign)</li>
+<li>SUM adds, AVERAGE averages, MAX/MIN find highest/lowest, COUNT counts</li>
+<li>IF lets you make decisions based on conditions</li>
+<li>Use cell references (A1, B5) instead of typing numbers directly</li>
+<li>When you change a cell, all formulas connected to it update automatically</li>
+</ul>
+<hr />
+<h2 id="topic-6-cell-references-relative-vs-absolute">Topic 6: Cell References -- Relative vs Absolute</h2>
+<h3 id="explanation_5">Explanation</h3>
+<p>Understanding cell references is crucial when you copy formulas from one cell to another. This is one of the most commonly confusing topics for beginners, so let us break it down carefully.</p>
+<p><strong>Relative Reference (default):</strong> When you copy a formula, the references change relative to where you paste it.</p>
+<p>Example:<br />
+- Cell C1 contains: <strong>=A1+B1</strong><br />
+- You copy C1 and paste it into C2<br />
+- C2 automatically becomes: <strong>=A2+B2</strong> (the row numbers adjusted)</p>
+<p>This is usually what you want -- if each row has its own data, the formula should refer to that row's cells.</p>
+<p><strong>Absolute Reference ($ sign):</strong> When you copy a formula, the reference does NOT change.</p>
+<p>Example:<br />
+- Cell E1 contains the GST rate: <strong>0.18</strong><br />
+- Cell C2 contains: *<em>=B2<em>$E$1</em></em> (the $ signs lock E1)<br />
+- You copy C2 and paste into C3, C4, C5...<br />
+- Every formula still refers to <strong>$E$1</strong> -- the GST rate cell</p>
+<p>The <strong>$ sign</strong> locks the reference:<br />
+- <strong>$A$1</strong> -- Both column and row are locked (fully absolute)<br />
+- <strong>$A1</strong> -- Only column is locked, row can change<br />
+- <strong>A$1</strong> -- Only row is locked, column can change</p>
+<h3 id="step-by-step-guide_3">Step-by-Step Guide</h3>
+<p><strong>When to use absolute references:</strong></p>
+<p>Use the $ sign when ONE cell contains a value that applies to ALL rows -- like a tax rate, discount percentage, exchange rate, or bonus multiplier.</p>
+<p><strong>How to add $ signs quickly:</strong><br />
+1. Click on the cell with your formula<br />
+2. Click on the cell reference in the formula bar (e.g., click on "E1")<br />
+3. Press <strong>F4</strong> on your keyboard<br />
+4. Each press of F4 cycles through: E1 then $E$1 then E$1 then $E1 then back to E1</p>
+<h3 id="real-world-example_3">Real-World Example</h3>
+<p>You have a price list. Column A has item names, Column B has prices. Cell E1 has the GST rate (18% = 0.18).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C (GST Amount)</th>
+<th>D (Total)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Item</td>
+<td>Price</td>
+<td>GST Rate: 0.18</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Pen</td>
+<td>20</td>
+<td>=B2*$E$1</td>
+<td>=B2+C2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Notebook</td>
+<td>50</td>
+<td>=B3*$E$1</td>
+<td>=B3+C3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Bag</td>
+<td>500</td>
+<td>=B4*$E$1</td>
+<td>=B4+C4</td>
+</tr>
+</tbody>
+</table>
+<p>When you copy the formula in C2 down to C3 and C4, B2 changes to B3 and B4 (relative), but $E$1 stays as $E$1 (absolute). If the GST rate changes to 12%, you only update cell E1 -- all rows recalculate.</p>
+<h3 id="key-points_5">Key Points</h3>
+<ul>
+<li>Relative references (A1) change when you copy a formula -- rows and columns shift</li>
+<li>Absolute references ($A$1) stay fixed when you copy a formula</li>
+<li>Use absolute references for fixed values like tax rates, conversion factors, or percentages</li>
+<li>Press F4 to quickly add or remove $ signs</li>
+</ul>
+<hr />
+<h2 id="topic-7-creating-tables-and-sortingfiltering">Topic 7: Creating Tables and Sorting/Filtering</h2>
+<h3 id="explanation_6">Explanation</h3>
+<p>An Excel <strong>table</strong> is a structured range of data with headers. Converting your data into a table gives you automatic filtering, formatting, and sorting -- making data much easier to work with.</p>
+<h3 id="step-by-step-guide_4">Step-by-Step Guide</h3>
+<p><strong>Step 1: Enter Your Data with Headers</strong></p>
+<p>First, organize your data with column headers in the first row:</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Department</td>
+<td>Salary</td>
+<td>City</td>
+</tr>
+<tr>
+<td>Priya</td>
+<td>Engineering</td>
+<td>60000</td>
+<td>Delhi</td>
+</tr>
+<tr>
+<td>Rahul</td>
+<td>Marketing</td>
+<td>45000</td>
+<td>Mumbai</td>
+</tr>
+<tr>
+<td>Anita</td>
+<td>Engineering</td>
+<td>75000</td>
+<td>Delhi</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 2: Convert to a Table</strong><br />
+1. Click any cell within your data<br />
+2. Go to <strong>Insert</strong> tab<br />
+3. Click <strong>Table</strong><br />
+4. Excel automatically detects the range of your data<br />
+5. Make sure "My table has headers" is checked<br />
+6. Click <strong>OK</strong></p>
+<p>Your data now has:<br />
+- Banded row colors (alternating light/dark rows for readability)<br />
+- <strong>Dropdown arrows</strong> in each header cell (for filtering)<br />
+- A <strong>Table Design</strong> tab on the Ribbon for formatting</p>
+<p><strong>Step 3: Sorting</strong></p>
+<p>Sorting rearranges your rows based on the values in a column.</p>
+<ol>
+<li>Click the <strong>dropdown arrow</strong> on the column header you want to sort by</li>
+<li>Choose:</li>
+<li><strong>Sort A to Z</strong> (ascending -- smallest to largest, A before Z)</li>
+<li><strong>Sort Z to A</strong> (descending -- largest to smallest, Z before A)</li>
+<li>The entire table rearranges -- all data in each row stays together</li>
+</ol>
+<p>You can also: go to <strong>Data</strong> tab, click <strong>Sort</strong>, and sort by multiple columns (e.g., sort by Department first, then by Salary within each department).</p>
+<p><strong>Step 4: Filtering</strong></p>
+<p>Filtering shows only the rows that match your criteria -- the rest are hidden (not deleted).</p>
+<ol>
+<li>Click the <strong>dropdown arrow</strong> on a column header (e.g., "Department")</li>
+<li>Uncheck <strong>Select All</strong></li>
+<li>Check only the values you want to see (e.g., check only "Engineering")</li>
+<li>Click <strong>OK</strong></li>
+<li>Only Engineering department rows are now visible</li>
+</ol>
+<p><strong>Filter by condition:</strong><br />
+1. Click the dropdown arrow<br />
+2. Choose <strong>Number Filters</strong> (or Text Filters)<br />
+3. Select a condition:<br />
+   - <strong>Greater Than</strong> (e.g., Salary &gt; 50000)<br />
+   - <strong>Between</strong> (e.g., Salary between 40000 and 70000)<br />
+   - <strong>Contains</strong> (e.g., Name contains "a")<br />
+4. Enter the value and click OK</p>
+<p><strong>To clear a filter:</strong> Click the dropdown arrow and select <strong>Clear Filter from [Column Name]</strong>.</p>
+<p><strong>To remove all filters at once:</strong> Go to <strong>Data</strong> tab and click <strong>Clear</strong> in the Sort &amp; Filter group.</p>
+<h3 id="key-points_6">Key Points</h3>
+<ul>
+<li>Tables add automatic filtering, formatting, and sorting to your data</li>
+<li>Sorting rearranges rows by a column's values (ascending or descending)</li>
+<li>Filtering shows only rows that match your criteria (hides the rest)</li>
+<li>Filtered rows are hidden, not deleted -- clear the filter to see all data again</li>
+</ul>
+<hr />
+<h2 id="topic-8-creating-charts">Topic 8: Creating Charts</h2>
+<h3 id="explanation_7">Explanation</h3>
+<p>Charts turn numbers into pictures. A column of numbers is hard to interpret at a glance, but a chart immediately shows patterns, trends, and comparisons. Choosing the right chart type is important.</p>
+<h3 id="step-by-step-guide_5">Step-by-Step Guide</h3>
+<p><strong>Step 1: Select Your Data</strong><br />
+- Select the data you want to chart, INCLUDING the headers<br />
+- For example: select the "Month" column and the "Sales" column</p>
+<p><strong>Step 2: Insert a Chart</strong><br />
+1. Go to <strong>Insert</strong> tab<br />
+2. In the <strong>Charts</strong> section, click the chart type you want</p>
+<p><strong>Choosing the Right Chart:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Chart Type</th>
+<th>Best For</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Column/Bar</strong></td>
+<td>Comparing values across categories</td>
+<td>Sales by product, marks by subject</td>
+</tr>
+<tr>
+<td><strong>Line</strong></td>
+<td>Showing trends over time</td>
+<td>Monthly revenue, temperature over a week</td>
+</tr>
+<tr>
+<td><strong>Pie</strong></td>
+<td>Showing proportions of a whole (percentages)</td>
+<td>Expense breakdown, market share</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 3: Customize Your Chart</strong></p>
+<p>After inserting the chart, click on it to see the <strong>Chart Design</strong> and <strong>Format</strong> tabs.</p>
+<p><strong>Add a Chart Title:</strong><br />
+1. Click on the chart<br />
+2. Click on the default "Chart Title" text at the top<br />
+3. Type your title (e.g., "Monthly Sales for 2026")</p>
+<p><strong>Add Data Labels:</strong><br />
+1. Click on the chart<br />
+2. Click the <strong>+</strong> button (Chart Elements) that appears next to the chart<br />
+3. Check <strong>Data Labels</strong><br />
+4. Numbers appear on each bar/slice/point</p>
+<p><strong>Add Axis Labels:</strong><br />
+1. Click the <strong>+</strong> button<br />
+2. Check <strong>Axis Titles</strong><br />
+3. Click on each axis title to type a name (e.g., "Month" for the horizontal axis, "Sales (Rs)" for the vertical axis)</p>
+<p><strong>Add a Legend:</strong><br />
+- The legend shows which color represents which data series<br />
+- Click the <strong>+</strong> button and check <strong>Legend</strong><br />
+- Position it at the top, bottom, left, or right</p>
+<p><strong>Resize the Chart:</strong><br />
+- Click on the chart to select it<br />
+- Drag the corner handles to resize</p>
+<p><strong>Move the Chart:</strong><br />
+- Click on the chart border and drag it to a new position on the sheet<br />
+- Or right-click the chart and select <strong>Move Chart</strong> to put it on a separate sheet</p>
+<h3 id="real-world-example_4">Real-World Example</h3>
+<p>You tracked your daily expenses for a month. You create:<br />
+1. A <strong>pie chart</strong> showing what percentage goes to Food, Transport, Bills, Shopping, and Entertainment -- you immediately see Food is 40% of your spending<br />
+2. A <strong>line chart</strong> showing daily spending over the month -- you see spending spikes on weekends<br />
+3. A <strong>column chart</strong> comparing this month's category totals to last month's -- you see Entertainment went up by 30%</p>
+<h3 id="key-points_7">Key Points</h3>
+<ul>
+<li>Select data including headers before inserting a chart</li>
+<li>Column/Bar for comparisons, Line for trends over time, Pie for proportions</li>
+<li>Always add a chart title and axis labels</li>
+<li>Use the + button next to the chart to add/remove elements (title, labels, legend)</li>
+</ul>
+<hr />
+<h2 id="topic-9-printing-spreadsheets">Topic 9: Printing Spreadsheets</h2>
+<h3 id="explanation_8">Explanation</h3>
+<p>Printing spreadsheets requires more attention than printing Word documents because spreadsheets can be very wide and very long. You need to control what gets printed and how it fits on the page.</p>
+<h3 id="step-by-step-guide_6">Step-by-Step Guide</h3>
+<p><strong>Step 1: Preview Before Printing</strong><br />
+- Press <strong>Ctrl+P</strong> to open Print Preview<br />
+- Check: Does your data fit on the page? Are columns cut off?</p>
+<p><strong>Step 2: Set the Print Area (Optional)</strong></p>
+<p>If you only want to print a specific part of the spreadsheet:<br />
+1. Select the cells you want to print<br />
+2. Go to <strong>Page Layout</strong> tab<br />
+3. Click <strong>Print Area</strong> then <strong>Set Print Area</strong><br />
+4. Now only the selected area will print</p>
+<p><strong>Step 3: Adjust Page Settings</strong></p>
+<p>Go to <strong>Page Layout</strong> tab:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Where</th>
+<th>Tip</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Orientation</strong></td>
+<td>Page Layout tab, Orientation</td>
+<td>Use Landscape for wide tables</td>
+</tr>
+<tr>
+<td><strong>Size</strong></td>
+<td>Page Layout tab, Size</td>
+<td>Match your paper (A4 or Letter)</td>
+</tr>
+<tr>
+<td><strong>Margins</strong></td>
+<td>Page Layout tab, Margins</td>
+<td>Use Narrow to fit more columns</td>
+</tr>
+<tr>
+<td><strong>Scaling</strong></td>
+<td>Page Layout tab, Scale to Fit group</td>
+<td>Set Width to "1 page" to squeeze all columns onto one page</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 4: Print Titles (Repeat Headers on Every Page)</strong></p>
+<p>For long spreadsheets that span multiple printed pages:<br />
+1. Go to <strong>Page Layout</strong> tab<br />
+2. Click <strong>Print Titles</strong><br />
+3. In "Rows to repeat at top," click the row selection button and select your header row (e.g., Row 1)<br />
+4. Click <strong>OK</strong><br />
+5. Now your column headers print at the top of every page</p>
+<p><strong>Step 5: Print</strong><br />
+- Press <strong>Ctrl+P</strong><br />
+- Verify in the preview<br />
+- Select your printer (or "Microsoft Print to PDF" for a PDF)<br />
+- Click <strong>Print</strong></p>
+<h3 id="key-points_8">Key Points</h3>
+<ul>
+<li>Always preview before printing (Ctrl+P)</li>
+<li>Use Landscape orientation for wide spreadsheets</li>
+<li>Set a Print Area to print only what you need</li>
+<li>Use Print Titles to repeat header rows on every printed page</li>
+<li>Scale to Fit ensures all columns fit on one page width</li>
+</ul>
+<hr />
+<h2 id="module-summary">Module Summary</h2>
+<p>In this module, you learned:</p>
+<ol>
+<li><strong>Excel</strong> is a spreadsheet program for organizing data and performing calculations</li>
+<li><strong>Cells</strong> are identified by column letter + row number (A1, B5)</li>
+<li><strong>Auto-fill</strong> saves time by automatically completing series (days, months, numbers)</li>
+<li><strong>Formulas</strong> start with = and let Excel calculate for you</li>
+<li><strong>Essential functions:</strong> SUM, AVERAGE, MAX, MIN, COUNT, IF</li>
+<li><strong>Relative references</strong> (A1) change when copied; <strong>Absolute references</strong> ($A$1) stay fixed</li>
+<li><strong>Tables</strong> give you automatic formatting, sorting, and filtering</li>
+<li><strong>Charts</strong> visualize data -- Column for comparisons, Line for trends, Pie for proportions</li>
+<li><strong>Printing</strong> requires setting orientation, print area, and print titles</li>
+</ol>
+<p><strong>Next Module:</strong> Module 9 -- Mastering Microsoft PowerPoint</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

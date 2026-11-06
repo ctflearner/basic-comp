@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-10-Google-Tools-Cloud — Tasks</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-10-google-tools-cloud-platforms-tasks-assignments">Module 10: Google Tools &amp; Cloud Platforms — Tasks &amp; Assignments</h1>
+<h2 id="task-overview">Task Overview</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Topic</th>
+<th>Duration</th>
+<th>Difficulty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Task 1</td>
+<td>Google Drive — File Management</td>
+<td>30 min</td>
+<td>Beginner</td>
+</tr>
+<tr>
+<td>Task 2</td>
+<td>Google Docs — Collaboration</td>
+<td>40 min</td>
+<td>Beginner</td>
+</tr>
+<tr>
+<td>Task 3</td>
+<td>Google Sheets — Budget with Formulas</td>
+<td>45 min</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>Task 4</td>
+<td>Google Forms — Event Survey</td>
+<td>40 min</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>Task 5</td>
+<td>Blogger — Real-Life Project</td>
+<td>90 min</td>
+<td>Intermediate</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="task-1-google-drive-organize-and-share-files">Task 1: Google Drive — Organize and Share Files</h2>
+<h3 id="instructions">Instructions</h3>
+<ol>
+<li>Open Google Drive (drive.google.com)</li>
+<li><strong>Upload 5 files</strong> from your computer to Drive. These can be:</li>
+<li>A photo</li>
+<li>A PDF (any document you have)</li>
+<li>A Word document (from Module 7)</li>
+<li>An Excel file (from Module 8)</li>
+<li>A PowerPoint file (from Module 9)</li>
+<li><strong>Create 3 folders</strong> in Drive:</li>
+<li>"Course Documents"</li>
+<li>"Photos"</li>
+<li>"Shared Files"</li>
+<li><strong>Move the files</strong> into the appropriate folders:</li>
+<li>Word, Excel, and PowerPoint files into "Course Documents"</li>
+<li>Photo into "Photos"</li>
+<li>PDF into "Shared Files"</li>
+<li><strong>Share the "Shared Files" folder</strong> with a friend or classmate:</li>
+<li>Give them <strong>Viewer</strong> access</li>
+<li>Send them the invitation via email</li>
+</ol>
+<h3 id="expected-result">Expected Result</h3>
+<ul>
+<li>5 files uploaded to Google Drive</li>
+<li>3 folders created and organized</li>
+<li>1 folder shared with another person</li>
+<li>You can see the shared folder in your Drive with a "shared" icon</li>
+</ul>
+<h3 id="bonus-challenge">Bonus Challenge</h3>
+<ul>
+<li>Download the Google Drive desktop app (drive.google.com/download)</li>
+<li>Set up Google Drive on your phone (install Google Drive app from Play Store)</li>
+<li>Take a photo on your phone and verify it appears in Drive on your computer</li>
+</ul>
+<hr />
+<h2 id="task-2-google-docs-write-format-and-collaborate">Task 2: Google Docs — Write, Format, and Collaborate</h2>
+<h3 id="instructions_1">Instructions</h3>
+<ol>
+<li>Open Google Docs (docs.google.com)</li>
+<li>Create a new blank document</li>
+<li>Name it: "My First Google Doc"</li>
+<li>Write a <strong>200-word essay</strong> on one of these topics:</li>
+<li>"Why I Am Learning Digital Skills"</li>
+<li>"How Technology Changed My Life"</li>
+<li>"My Dream Career"</li>
+<li><strong>Format the document:</strong></li>
+<li>Add a title using <strong>Heading 1</strong> style</li>
+<li>Use <strong>bold</strong> for at least 3 important words</li>
+<li>Create a <strong>bullet list</strong> with at least 4 items</li>
+<li>Change the font to <strong>Arial</strong>, size <strong>12</strong></li>
+<li>Add a horizontal line after the title (Insert &gt; Horizontal line)</li>
+<li><strong>Share the document:</strong></li>
+<li>Click Share &gt; change "General access" to "Anyone with the link"</li>
+<li>Set permission to <strong>Commenter</strong></li>
+<li>Copy the link and send it to a friend or classmate</li>
+<li><strong>Ask your friend to add a comment</strong> on any sentence in the document</li>
+<li><strong>Reply to their comment</strong> from your side</li>
+</ol>
+<h3 id="expected-result_1">Expected Result</h3>
+<ul>
+<li>A formatted 200-word document in Google Docs</li>
+<li>Document shared as "Anyone with link — Commenter"</li>
+<li>At least 1 comment from another person</li>
+<li>Your reply to that comment</li>
+</ul>
+<h3 id="bonus-challenge_1">Bonus Challenge</h3>
+<ul>
+<li>Use <strong>Suggesting mode</strong> (click the pencil icon &gt; "Suggesting") to make a change to your own document, then accept the suggestion</li>
+<li>Check <strong>Version history</strong> (File &gt; Version history) and observe that Google tracked your edits</li>
+</ul>
+<hr />
+<h2 id="task-3-google-sheets-monthly-budget-with-formulas-and-chart">Task 3: Google Sheets — Monthly Budget with Formulas and Chart</h2>
+<h3 id="instructions_2">Instructions</h3>
+<ol>
+<li>Open Google Sheets (sheets.google.com)</li>
+<li>Create a new spreadsheet named: "My Monthly Budget"</li>
+<li><strong>Set up the following structure:</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Category</strong></td>
+<td><strong>Amount (Rs.)</strong></td>
+</tr>
+<tr>
+<td>Rent/Housing</td>
+<td>8000</td>
+</tr>
+<tr>
+<td>Food/Groceries</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>Transport</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>Phone/Internet</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>Clothing</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>Entertainment</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>Education</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>Savings</td>
+<td>3000</td>
+</tr>
+<tr>
+<td>Miscellaneous</td>
+<td>1500</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>(formula)</strong></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Use formulas:</strong></li>
+<li>In the Total cell, use <code>=SUM(B2:B10)</code> to calculate total expenses</li>
+<li>In a new row, type "Monthly Income" and enter 30000</li>
+<li>In the next row, use a formula to calculate "Remaining": <code>=B12-B11</code> (Income minus Total)</li>
+<li>In another cell, calculate the savings percentage: <code>=B9/B12*100</code></li>
+<li><strong>Create a Pie Chart:</strong></li>
+<li>Select cells A1:B10</li>
+<li>Insert &gt; Chart &gt; choose <strong>Pie chart</strong></li>
+<li>Add a chart title: "Monthly Budget Breakdown"</li>
+<li><strong>Format the sheet:</strong></li>
+<li>Bold the header row</li>
+<li>Format the Amount column as currency (Format &gt; Number &gt; Currency)</li>
+<li>Add a background color to the header row</li>
+<li><strong>Share the sheet:</strong></li>
+<li>Share as <strong>"Anyone with the link — Viewer"</strong></li>
+</ol>
+<h3 id="expected-result_2">Expected Result</h3>
+<ul>
+<li>A spreadsheet with monthly budget data</li>
+<li>Working SUM formula for total</li>
+<li>Working formula for remaining balance</li>
+<li>Working formula for savings percentage</li>
+<li>A pie chart showing budget breakdown</li>
+<li>Sheet shared as View Only</li>
+</ul>
+<h3 id="bonus-challenge_2">Bonus Challenge</h3>
+<ul>
+<li>Add <strong>conditional formatting</strong>: if the Remaining balance is negative, turn that cell red</li>
+<li>Add a second sheet (tab at bottom) called "Yearly Summary" and calculate <code>=B11*12</code> for annual expenses</li>
+</ul>
+<hr />
+<h2 id="task-4-google-forms-event-feedback-survey">Task 4: Google Forms — Event Feedback Survey</h2>
+<h3 id="instructions_3">Instructions</h3>
+<ol>
+<li>Open Google Forms (forms.google.com)</li>
+<li>Create a new blank form</li>
+<li><strong>Title</strong>: "Event Feedback Survey"</li>
+<li><strong>Description</strong>: "Thank you for attending! Please share your feedback to help us improve future events."</li>
+<li><strong>Create 8 questions</strong> using different question types:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Question</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>What is your name?</td>
+<td>Short answer</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Email address</td>
+<td>Short answer (with email validation)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Which event did you attend?</td>
+<td>Multiple choice (give 4 options)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>How would you rate the event overall?</td>
+<td>Linear scale (1 to 5)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>What did you like most about the event?</td>
+<td>Paragraph</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Which aspects need improvement?</td>
+<td>Checkboxes (give 5 options: Venue, Food, Speakers, Duration, Organization)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Would you attend again next year?</td>
+<td>Multiple choice (Yes, No, Maybe)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Any additional suggestions?</td>
+<td>Paragraph (not required)</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Make questions 1-7 <strong>Required</strong></li>
+<li><strong>Customize the form</strong>: Change the color theme using the palette icon</li>
+<li>Click <strong>"Send"</strong> and copy the form link</li>
+<li><strong>Fill out the form yourself</strong> (open the link in an incognito/private window)</li>
+<li>Go back to the form editor and click <strong>"Responses"</strong> tab to see your submission</li>
+<li>Click the <strong>green Sheets icon</strong> to view responses in Google Sheets</li>
+</ol>
+<h3 id="expected-result_3">Expected Result</h3>
+<ul>
+<li>A working Google Form with 8 questions of mixed types</li>
+<li>Form link generated and shareable</li>
+<li>At least 1 response submitted (your own)</li>
+<li>Responses visible in the Responses tab and in Google Sheets</li>
+</ul>
+<h3 id="bonus-challenge_3">Bonus Challenge</h3>
+<ul>
+<li>Share the form link with 5 friends/classmates and collect their responses</li>
+<li>In the Google Sheet with responses, create a chart showing the rating distribution</li>
+<li>Turn the form into a <strong>Quiz</strong> (Settings gear &gt; Quizzes &gt; "Make this a quiz") and assign point values</li>
+</ul>
+<hr />
+<h2 id="task-5-real-life-project-create-a-blog-on-blogger">Task 5: Real-Life Project — Create a Blog on Blogger</h2>
+<h3 id="instructions_4">Instructions</h3>
+<p>This is your major project for Module 10. You will create a real blog that you can share with anyone and add to your resume.</p>
+<p><strong>Step 1: Set Up Your Blog (15 min)</strong><br />
+1. Go to <strong>blogger.com</strong> and sign in<br />
+2. Click "Create New Blog"<br />
+3. Choose a topic you are passionate about. Ideas:<br />
+   - Your learning journey (what you learn in this course)<br />
+   - Tech tips for beginners<br />
+   - Book or movie reviews<br />
+   - Cooking recipes<br />
+   - Travel experiences<br />
+   - Career advice for students<br />
+4. Choose a blog title (make it catchy but clear)<br />
+5. Choose a URL (yourname-topic.blogspot.com)<br />
+6. Select a theme/template</p>
+<p><strong>Step 2: Customize Your Blog (15 min)</strong><br />
+1. Go to Theme &gt; Customize<br />
+2. Change the background color or image<br />
+3. Adjust fonts if needed<br />
+4. Add a short "About Me" description in the sidebar (Layout &gt; Add a Gadget &gt; About Me)</p>
+<p><strong>Step 3: Write 3 Blog Posts (45 min — 15 min each)</strong></p>
+<p>Each post MUST have:<br />
+- A clear, interesting title<br />
+- At least 200 words of content<br />
+- At least 1 image (use free images from unsplash.com or pexels.com)<br />
+- Proper formatting: headings, paragraphs, bold text where appropriate<br />
+- A closing line that invites readers to comment</p>
+<p>Post suggestions based on your chosen topic:<br />
+- <strong>Post 1</strong>: Introduction — what the blog is about, why you started it<br />
+- <strong>Post 2</strong>: A helpful article related to your topic<br />
+- <strong>Post 3</strong>: A personal experience or opinion piece</p>
+<p><strong>Step 4: Review and Share (15 min)</strong><br />
+1. Preview each post before publishing (Preview button)<br />
+2. Check that images load correctly<br />
+3. Check that text is readable (not too small, good contrast)<br />
+4. Publish all 3 posts<br />
+5. Copy your blog URL<br />
+6. Share it with at least 3 friends or family members via WhatsApp or email</p>
+<h3 id="expected-result_4">Expected Result</h3>
+<ul>
+<li>A live blog on Blogger with a custom theme</li>
+<li>3 published blog posts (200+ words each, with images)</li>
+<li>Blog URL shared with friends/family</li>
+<li>At least 1 friend confirms they can see and read your blog</li>
+</ul>
+<h3 id="bonus-challenge_4">Bonus Challenge</h3>
+<ul>
+<li>Add a <strong>page</strong> (not post) called "About Me" with your bio (Pages &gt; New page)</li>
+<li>Add a <strong>link list</strong> widget to your sidebar with links to your social media profiles</li>
+<li>Write a 4th post about something you learned in this course</li>
+</ul>
+<hr />
+<h2 id="module-assessment">Module Assessment</h2>
+<h3 id="knowledge-check-answer-these-questions">Knowledge Check (Answer these questions)</h3>
+<ol>
+<li>What is cloud computing? Explain in your own words with an example.</li>
+<li>How much free storage does Google Drive provide?</li>
+<li>Name 3 differences between Google Docs and Microsoft Word.</li>
+<li>What are the three permission levels when sharing a Google file?</li>
+<li>What is the difference between "Restricted" and "Anyone with the link"?</li>
+<li>How do you view version history in Google Docs?</li>
+<li>Name 4 question types available in Google Forms.</li>
+<li>How do you create a chart in Google Sheets?</li>
+<li>What is Blogger and what can you use it for?</li>
+<li>Why should you be careful about giving someone "Editor" access to your files?</li>
+</ol>
+<h3 id="practical-assessment">Practical Assessment</h3>
+<p>Your instructor will ask you to:<br />
+1. Create a Google Doc, share it with the instructor as "Commenter," and add a specific piece of content<br />
+2. Create a simple Google Sheet with at least 3 formulas<br />
+3. Show your blog with 3 posts</p>
+<hr />
+<h2 id="real-life-mini-project">Real-Life Mini Project</h2>
+<h3 id="group-study-organizer">"Group Study Organizer"</h3>
+<p>Work with 2-3 classmates to create:</p>
+<ol>
+<li>A <strong>shared Google Drive folder</strong> called "Study Group" — everyone has Editor access</li>
+<li>A <strong>Google Doc</strong> with shared study notes for any subject — everyone contributes at least 1 section</li>
+<li>A <strong>Google Sheet</strong> tracking study hours (who studied what, for how long, on which day)</li>
+<li>A <strong>Google Form</strong> for daily check-in: "What did you study today?" (3 questions)</li>
+<li>A <strong>Google Calendar event</strong> for your next group study session with a Google Meet link</li>
+</ol>
+<p><strong>Deliverables:</strong><br />
+- Links to all 5 items (Drive folder, Doc, Sheet, Form, Calendar event)<br />
+- Screenshot showing multiple people editing the Doc simultaneously<br />
+- Screenshot of the Form responses in Sheets</p>
+<p>This project simulates how real teams work together using Google tools.</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

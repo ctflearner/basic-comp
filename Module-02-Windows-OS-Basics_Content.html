@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-02-Windows-OS-Basics — Content</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-2-getting-started-with-windows-os">Module 2: Getting Started with Windows OS</h1>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Understand what an operating system is and why Windows is important</li>
+<li>Navigate the Windows 11 desktop, taskbar, Start Menu, and system tray confidently</li>
+<li>Use File Explorer to browse folders and find files</li>
+<li>Create, rename, and delete files and folders</li>
+<li>Open, close, and switch between applications</li>
+<li>Connect to WiFi and understand Sleep, Restart, and Shut Down</li>
+</ul>
+<h2 id="duration">Duration</h2>
+<p>3 weeks (out of 12-month course)</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Module 1: Introduction to Computers &amp; Devices. You should be able to turn your computer on and off, use a mouse or touchpad, and type on a keyboard.</p>
+<hr />
+<h2 id="topic-1-what-is-an-operating-system">Topic 1: What is an Operating System?</h2>
+<h3 id="explanation">Explanation</h3>
+<p>An <strong>operating system</strong> (OS) is the most important software on your computer. Without it, your computer is just a collection of metal and plastic that does nothing.</p>
+<p>Think of it this way:</p>
+<p><strong>Analogy: The Restaurant Manager</strong><br />
+Imagine a restaurant. The kitchen has ovens, pans, and ingredients (this is your hardware). The recipes are like your programs (software). But without a <strong>manager</strong> to coordinate everything -- take your order, tell the kitchen what to cook, make sure your food arrives at your table -- nothing would work.</p>
+<p>The operating system IS that manager. It:<br />
+- Talks to the hardware (tells the screen what to show, tells the speakers what to play)<br />
+- Runs your programs (opens Word, Chrome, WhatsApp)<br />
+- Manages your files (keeps your documents, photos, and music organised)<br />
+- Handles security (blocks viruses, requires passwords)</p>
+<p><strong>Windows 11</strong> is the operating system we will learn. It is made by Microsoft and is the most widely used OS on desktop and laptop computers worldwide.</p>
+<p>Other operating systems exist:<br />
+- <strong>macOS</strong> -- used on Apple Mac computers<br />
+- <strong>Linux</strong> -- used by advanced users and servers<br />
+- <strong>Android</strong> -- used on most smartphones<br />
+- <strong>iOS</strong> -- used on iPhones and iPads</p>
+<p>For this course, we focus entirely on <strong>Windows 11</strong>.</p>
+<h3 id="real-world-example">Real-World Example</h3>
+<p>When you double-click on a Word document, Windows does all of this:<br />
+1. Finds the file on your hard drive<br />
+2. Tells the CPU to start Microsoft Word<br />
+3. Loads the file into RAM<br />
+4. Shows the document on your screen<br />
+5. Waits for your keyboard input</p>
+<p>All of this happens in seconds, and the operating system manages every step.</p>
+<h3 id="key-points-to-remember">Key Points to Remember</h3>
+<ul>
+<li>The operating system manages everything on your computer</li>
+<li>Windows 11 is the OS we use in this course</li>
+<li>Without an OS, hardware cannot do anything useful</li>
+<li>The OS runs programs, manages files, and handles security</li>
+</ul>
+<hr />
+<h2 id="topic-2-the-windows-11-desktop">Topic 2: The Windows 11 Desktop</h2>
+<h3 id="explanation_1">Explanation</h3>
+<p>When your computer finishes starting up, the first thing you see is the <strong>desktop</strong>. This is your main workspace -- like the top of a physical desk.</p>
+<p><strong>What you see on the desktop:</strong></p>
+<ol>
+<li>
+<p><strong>Wallpaper (Background):</strong> The picture that covers your screen. This is purely decorative -- you can change it to any picture you like.</p>
+</li>
+<li>
+<p><strong>Icons:</strong> Small pictures on the desktop that represent files, folders, or shortcuts to programs. Double-click an icon to open it.</p>
+</li>
+<li>
+<p><strong>Taskbar:</strong> The bar at the very bottom of the screen. This is the most important part of your desktop. It is always visible and contains:</p>
+</li>
+<li><strong>Start button</strong> (Windows logo, centre) -- opens the Start Menu</li>
+<li><strong>Search icon</strong> (magnifying glass) -- search for anything</li>
+<li><strong>Pinned apps</strong> -- apps you use often, always available with one click</li>
+<li><strong>Running apps</strong> -- apps currently open (shown with a line underneath)</li>
+<li>
+<p><strong>System tray</strong> (far right) -- clock, WiFi, battery, volume, notifications</p>
+</li>
+<li>
+<p><strong>System Tray (Notification Area):</strong> The right side of the taskbar. Shows:</p>
+</li>
+<li>Current time and date</li>
+<li>WiFi/network status</li>
+<li>Battery level (on laptops)</li>
+<li>Volume control</li>
+<li>Small icons for background programs (antivirus, etc.)</li>
+</ol>
+<h3 id="step-by-step-guide-exploring-the-desktop">Step-by-Step Guide: Exploring the Desktop</h3>
+<ol>
+<li>Look at the bottom of your screen. The horizontal bar is the <strong>taskbar</strong>.</li>
+<li>Find the <strong>Windows logo</strong> in the centre of the taskbar. This is the <strong>Start button</strong>.</li>
+<li>Look at the far right of the taskbar. You should see the <strong>time</strong>, a <strong>WiFi icon</strong>, a <strong>speaker icon</strong>, and a <strong>battery icon</strong> (if on a laptop).</li>
+<li>Look at the main screen area above the taskbar. This is the <strong>desktop</strong>. Any icons you see here are shortcuts.</li>
+<li>Try moving your mouse cursor (the arrow) around the screen. Notice how it moves as you move the mouse or your finger on the touchpad.</li>
+</ol>
+<h3 id="key-points-to-remember_1">Key Points to Remember</h3>
+<ul>
+<li>The desktop is your main workspace</li>
+<li>The taskbar is at the bottom and always visible</li>
+<li>The Start button is in the centre of the taskbar</li>
+<li>The system tray (right side) shows time, WiFi, battery, and volume</li>
+</ul>
+<hr />
+<h2 id="topic-3-the-taskbar">Topic 3: The Taskbar</h2>
+<h3 id="explanation_2">Explanation</h3>
+<p>The taskbar is the bar at the bottom of your screen. It is one of the most useful features of Windows because it gives you quick access to everything.</p>
+<p><strong>Parts of the taskbar from left to right:</strong><br />
+- <strong>Start button</strong> -- opens the Start Menu (where you find all programs)<br />
+- <strong>Search</strong> -- type the name of anything to find it instantly<br />
+- <strong>Pinned apps</strong> -- apps you have pinned for quick access (like a shortcut)<br />
+- <strong>Running apps</strong> -- apps that are currently open (small line underneath the icon)<br />
+- <strong>System tray</strong> -- clock, WiFi, volume, battery, notifications</p>
+<p><strong>How to Pin an App to the Taskbar:</strong><br />
+1. Click the <strong>Start button</strong>.<br />
+2. Find the app you want (search for it or look in "All apps").<br />
+3. Right-click on the app.<br />
+4. Click <strong>"Pin to taskbar."</strong><br />
+5. The app now appears on your taskbar permanently.</p>
+<p><strong>How to Unpin an App from the Taskbar:</strong><br />
+1. Find the app on the taskbar.<br />
+2. Right-click on it.<br />
+3. Click <strong>"Unpin from taskbar."</strong><br />
+4. The app disappears from the taskbar (but it is not deleted -- you can still find it in the Start Menu).</p>
+<h3 id="real-world-example_1">Real-World Example</h3>
+<p>Think of the taskbar like the top of your physical desk. You keep your most-used items within arm's reach -- your pen, phone, and notebook. The taskbar does the same: your most-used apps are always one click away.</p>
+<h3 id="key-points-to-remember_2">Key Points to Remember</h3>
+<ul>
+<li>Right-click an app to pin or unpin it from the taskbar</li>
+<li>Pinning does not install or delete anything -- it just creates a shortcut</li>
+<li>A running app shows a small line under its icon</li>
+<li>You can rearrange pinned apps by dragging them left or right</li>
+</ul>
+<hr />
+<h2 id="topic-4-the-start-menu">Topic 4: The Start Menu</h2>
+<h3 id="explanation_3">Explanation</h3>
+<p>The Start Menu is the gateway to everything on your computer. Click the <strong>Windows icon</strong> in the centre of the taskbar (or press the <strong>Windows key</strong> on your keyboard) to open it.</p>
+<p><strong>What you see in the Start Menu:</strong></p>
+<ol>
+<li>
+<p><strong>Search bar</strong> at the top -- type any app name, file name, or setting to find it instantly. This is the fastest way to find anything.</p>
+</li>
+<li>
+<p><strong>Pinned apps</strong> -- a grid of apps you use often. You can add or remove apps here.</p>
+</li>
+<li>
+<p><strong>Recommended</strong> -- recently opened files and newly installed apps. Windows shows these to help you quickly get back to what you were doing.</p>
+</li>
+<li>
+<p><strong>All apps</strong> button -- click this to see every program installed on your computer, listed alphabetically.</p>
+</li>
+<li>
+<p><strong>Your account</strong> and <strong>Power button</strong> at the bottom.</p>
+</li>
+</ol>
+<h3 id="step-by-step-guide-using-the-start-menu">Step-by-Step Guide: Using the Start Menu</h3>
+<ol>
+<li>Click the <strong>Start button</strong> (Windows icon in the taskbar) or press the <strong>Windows key</strong> on your keyboard.</li>
+<li>The Start Menu opens. You see pinned apps at the top and recommended files below.</li>
+<li>To <strong>search for an app:</strong> Just start typing. For example, type "calculator" and it appears in the search results. Click on it to open.</li>
+<li>To <strong>see all apps:</strong> Click <strong>"All apps"</strong> in the top-right area of the Start Menu. Scroll down through the alphabetical list.</li>
+<li>To <strong>pin an app to Start Menu:</strong> In the All Apps list, right-click an app and select <strong>"Pin to Start."</strong></li>
+<li>To <strong>unpin from Start Menu:</strong> Right-click a pinned app and select <strong>"Unpin from Start."</strong></li>
+<li>To close the Start Menu: click anywhere outside it, or press the Windows key again.</li>
+</ol>
+<h3 id="key-points-to-remember_3">Key Points to Remember</h3>
+<ul>
+<li>Press the Windows key or click the Start button to open the Start Menu</li>
+<li>The fastest way to find anything is to type its name in the search bar</li>
+<li>"All apps" shows every program on your computer</li>
+<li>You can pin your favourite apps and unpin ones you do not use</li>
+</ul>
+<hr />
+<h2 id="topic-5-file-explorer-navigating-your-files">Topic 5: File Explorer -- Navigating Your Files</h2>
+<h3 id="explanation_4">Explanation</h3>
+<p><strong>File Explorer</strong> is the app you use to find, open, and manage all files and folders on your computer. Think of it as the filing cabinet of your computer.</p>
+<p><strong>How to open File Explorer:</strong><br />
+- Click the <strong>folder icon</strong> on the taskbar, OR<br />
+- Press <strong>Win+E</strong> on your keyboard (Windows key + E)</p>
+<p><strong>What you see when File Explorer opens:</strong></p>
+<ul>
+<li><strong>Navigation pane (left side):</strong> Shows main locations:</li>
+<li><strong>Quick access / Home:</strong> Your most-used folders</li>
+<li><strong>Desktop:</strong> Files and folders on your desktop</li>
+<li><strong>Downloads:</strong> Files you downloaded from the internet</li>
+<li><strong>Documents:</strong> Your personal documents</li>
+<li><strong>Pictures:</strong> Your photos and images</li>
+<li>
+<p><strong>This PC:</strong> Shows all drives (C:, D:, USB drives)</p>
+</li>
+<li>
+<p><strong>Address bar (top):</strong> Shows where you currently are. Example: "This PC &gt; Documents &gt; My Work"</p>
+</li>
+<li>
+<p><strong>Main area (centre/right):</strong> Shows the files and folders in your current location.</p>
+</li>
+<li>
+<p><strong>Back and Forward buttons (top-left):</strong> Go back to the previous folder or forward again.</p>
+</li>
+<li>
+<p><strong>Search box (top-right):</strong> Search for files within the current folder.</p>
+</li>
+</ul>
+<h3 id="step-by-step-guide-navigating-to-key-folders">Step-by-Step Guide: Navigating to Key Folders</h3>
+<ol>
+<li>Press <strong>Win+E</strong> to open File Explorer.</li>
+<li>In the left sidebar, click <strong>"Desktop."</strong> You will see files that are on your desktop.</li>
+<li>Click the <strong>Back arrow</strong> (top-left) to go back.</li>
+<li>Click <strong>"Documents"</strong> in the left sidebar. This is where you should save most of your work.</li>
+<li>Click <strong>"Downloads."</strong> This is where files from the internet are saved.</li>
+<li>Click <strong>"Pictures."</strong> This is for photos and images.</li>
+<li>Click <strong>"This PC."</strong> Here you can see your hard drive (usually "Local Disk C:") and any USB drives.</li>
+</ol>
+<h3 id="real-world-example_2">Real-World Example</h3>
+<p>When you download a job application form from the internet, it goes to the <strong>Downloads</strong> folder. You can then move it to your <strong>Documents</strong> folder to keep things organised. If someone emails you photos, they go to <strong>Downloads</strong> too, and you can move them to <strong>Pictures</strong>.</p>
+<h3 id="key-points-to-remember_4">Key Points to Remember</h3>
+<ul>
+<li>Open File Explorer with Win+E or the folder icon on the taskbar</li>
+<li>Key folders: Desktop, Documents, Downloads, Pictures</li>
+<li>The left sidebar lets you jump to any location quickly</li>
+<li>The address bar at the top shows where you are</li>
+</ul>
+<hr />
+<h2 id="topic-6-creating-folders-and-files">Topic 6: Creating Folders and Files</h2>
+<h3 id="explanation_5">Explanation</h3>
+<p>Keeping your files organised is one of the most important computer skills. Folders are like physical folders in a filing cabinet -- they hold related files together.</p>
+<h3 id="step-by-step-guide-creating-a-new-folder">Step-by-Step Guide: Creating a New Folder</h3>
+<ol>
+<li>Open <strong>File Explorer</strong> (Win+E).</li>
+<li>Navigate to where you want the new folder (for example, click <strong>"Documents"</strong>).</li>
+<li><strong>Right-click</strong> on an empty space in the main area (not on an existing file).</li>
+<li>A menu appears. Hover over <strong>"New"</strong> at the top.</li>
+<li>Click <strong>"Folder."</strong></li>
+<li>A new folder appears with its name highlighted in blue, ready to be typed.</li>
+<li>Type the name you want (for example, "My Schoolwork") and press <strong>Enter</strong>.</li>
+<li>Your folder is created. Double-click it to go inside.</li>
+</ol>
+<p><strong>Naming rules for folders:</strong><br />
+- Use clear, descriptive names (good: "2024 Invoices," bad: "Stuff")<br />
+- Do not use these special characters: \ / : * ? " &lt; &gt; |<br />
+- Keep names reasonably short</p>
+<h3 id="step-by-step-guide-creating-a-new-text-file">Step-by-Step Guide: Creating a New Text File</h3>
+<ol>
+<li>Open File Explorer and navigate to the folder where you want the file.</li>
+<li>Right-click on an empty space.</li>
+<li>Hover over <strong>"New."</strong></li>
+<li>Click <strong>"Text Document."</strong></li>
+<li>Type a name for the file (for example, "My Notes") and press <strong>Enter</strong>.</li>
+<li>Double-click the file to open it. It opens in Notepad.</li>
+<li>Type some text inside.</li>
+<li>Press <strong>Ctrl+S</strong> to save.</li>
+<li>Close Notepad by clicking the <strong>X</strong> in the top-right corner.</li>
+</ol>
+<h3 id="step-by-step-guide-renaming-files-and-folders">Step-by-Step Guide: Renaming Files and Folders</h3>
+<p><strong>Method 1: Right-click</strong><br />
+1. Right-click on the file or folder.<br />
+2. Click <strong>"Rename"</strong> (or look for the rename icon).<br />
+3. The name becomes editable. Type the new name.<br />
+4. Press <strong>Enter</strong>.</p>
+<p><strong>Method 2: Keyboard shortcut</strong><br />
+1. Click on the file or folder once to select it (it becomes highlighted).<br />
+2. Press the <strong>F2</strong> key on your keyboard.<br />
+3. The name becomes editable. Type the new name.<br />
+4. Press <strong>Enter</strong>.</p>
+<h3 id="step-by-step-guide-deleting-files-and-folders">Step-by-Step Guide: Deleting Files and Folders</h3>
+<ol>
+<li>Click on the file or folder to select it.</li>
+<li>Press the <strong>Delete</strong> key on your keyboard, OR right-click and select <strong>"Delete."</strong></li>
+<li>The file moves to the <strong>Recycle Bin</strong> (it is not gone yet -- you can recover it).</li>
+<li>To permanently delete: open the Recycle Bin on the desktop, right-click the file, and select <strong>"Delete"</strong> (or click "Empty Recycle Bin" to delete everything in it).</li>
+</ol>
+<h3 id="key-points-to-remember_5">Key Points to Remember</h3>
+<ul>
+<li>Right-click on empty space to create new folders and files</li>
+<li>Give folders clear, descriptive names</li>
+<li>F2 is the quick way to rename</li>
+<li>Deleted files go to the Recycle Bin first -- you can recover them</li>
+<li>Ctrl+S saves your work -- use it constantly</li>
+</ul>
+<hr />
+<h2 id="topic-7-opening-and-closing-applications">Topic 7: Opening and Closing Applications</h2>
+<h3 id="explanation_6">Explanation</h3>
+<p>An <strong>application</strong> (also called a program or app) is software that lets you do a specific task. Here is how to open and close them.</p>
+<h3 id="step-by-step-guide-opening-applications">Step-by-Step Guide: Opening Applications</h3>
+<p><strong>Method 1: Start Menu Search (Fastest)</strong><br />
+1. Press the <strong>Windows key</strong> on your keyboard.<br />
+2. Start typing the name of the app (e.g., "Notepad").<br />
+3. Click the app when it appears in the search results.</p>
+<p><strong>Method 2: Taskbar</strong><br />
+1. If the app is pinned to your taskbar, click its icon once.</p>
+<p><strong>Method 3: Desktop Shortcut</strong><br />
+1. If the app has an icon on your desktop, double-click it.</p>
+<p><strong>Method 4: Start Menu All Apps</strong><br />
+1. Click the Start button.<br />
+2. Click "All apps."<br />
+3. Scroll to find the app alphabetically and click it.</p>
+<h3 id="step-by-step-guide-closing-applications">Step-by-Step Guide: Closing Applications</h3>
+<p><strong>Method 1: X Button</strong><br />
+1. Look at the top-right corner of the app window.<br />
+2. Click the <strong>X</strong> button (it turns red when you hover over it).</p>
+<p><strong>Method 2: Keyboard Shortcut</strong><br />
+1. Make sure the app is the active window (click on it if needed).<br />
+2. Press <strong>Alt+F4</strong>. The app closes.</p>
+<p><strong>Important:</strong> If you have unsaved work, the app will ask "Do you want to save?" Click <strong>"Save"</strong> to keep your work, or <strong>"Don't Save"</strong> to discard changes.</p>
+<h3 id="key-points-to-remember_6">Key Points to Remember</h3>
+<ul>
+<li>The fastest way to open an app is to press the Windows key and type its name</li>
+<li>Close apps with the X button or Alt+F4</li>
+<li>Always save your work before closing (Ctrl+S)</li>
+<li>If an app asks to save, click "Save" unless you want to discard your changes</li>
+</ul>
+<hr />
+<h2 id="topic-8-sleep-restart-and-shut-down">Topic 8: Sleep, Restart, and Shut Down</h2>
+<h3 id="explanation_7">Explanation</h3>
+<p>There are three ways to stop using your computer. Each one does something different.</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>What Happens</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sleep</strong></td>
+<td>The screen turns off and the computer uses very little power, but everything stays in memory. When you open the lid or press a key, it wakes up in seconds with everything exactly as you left it.</td>
+<td>Taking a short break (lunch, overnight).</td>
+</tr>
+<tr>
+<td><strong>Restart</strong></td>
+<td>The computer shuts down completely and turns back on automatically. All programs close, RAM is cleared, and Windows starts fresh.</td>
+<td>When something is not working right, or after installing updates.</td>
+</tr>
+<tr>
+<td><strong>Shut Down</strong></td>
+<td>The computer turns off completely. Everything closes and power is cut. Next time you press the power button, it starts from scratch.</td>
+<td>When you will not use the computer for a long time, or when travelling.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-by-step-guide-using-sleep-restart-and-shut-down">Step-by-Step Guide: Using Sleep, Restart, and Shut Down</h3>
+<ol>
+<li>Click the <strong>Start button</strong> (Windows icon in the taskbar).</li>
+<li>Click the <strong>Power icon</strong> (bottom-right of the Start Menu).</li>
+<li>Choose one:</li>
+<li><strong>Sleep</strong> -- screen goes dark, wakes up quickly later</li>
+<li><strong>Restart</strong> -- shuts down and turns on again automatically</li>
+<li><strong>Shut down</strong> -- turns off completely</li>
+</ol>
+<p><strong>Quick Sleep:</strong> On most laptops, simply closing the lid puts it to sleep.</p>
+<h3 id="real-world-example_3">Real-World Example</h3>
+<ul>
+<li><strong>Sleep:</strong> You are going to lunch. Close the laptop lid. When you come back, open it, and everything is exactly as you left it.</li>
+<li><strong>Restart:</strong> Your WiFi is not working properly. Restart the computer -- this often fixes temporary problems.</li>
+<li><strong>Shut Down:</strong> You are done for the day and putting the laptop in your bag.</li>
+</ul>
+<h3 id="key-points-to-remember_7">Key Points to Remember</h3>
+<ul>
+<li>Sleep = quick nap (everything stays in memory, resumes fast)</li>
+<li>Restart = fixes problems (clears everything and starts fresh)</li>
+<li>Shut Down = fully off (for when you are done or travelling)</li>
+<li>Closing the laptop lid usually puts it to sleep</li>
+</ul>
+<hr />
+<h2 id="topic-9-connecting-to-wifi">Topic 9: Connecting to WiFi</h2>
+<h3 id="explanation_8">Explanation</h3>
+<p>WiFi is wireless internet. To browse the internet, check email, or use online apps, you need to be connected to a WiFi network.</p>
+<h3 id="step-by-step-guide-connecting-to-wifi">Step-by-Step Guide: Connecting to WiFi</h3>
+<ol>
+<li>Look at the bottom-right corner of the taskbar. Find the <strong>WiFi icon</strong> (it looks like a fan or signal bars). If you see a small globe icon instead, you are not connected.</li>
+<li>Click the <strong>WiFi icon</strong> (or the globe). A panel opens showing available networks.</li>
+<li>If WiFi is off, click the <strong>WiFi button</strong> to turn it on.</li>
+<li>You will see a list of available networks. Find yours (this is usually the name of your router or the network name given to you by your internet provider).</li>
+<li>Click on your network name.</li>
+<li>Check the box that says <strong>"Connect automatically"</strong> (so you do not have to do this every time).</li>
+<li>Click <strong>"Connect."</strong></li>
+<li>If the network is password-protected (most are), type the <strong>WiFi password</strong> and click <strong>"Next."</strong></li>
+<li>Wait a few seconds. The WiFi icon should now show signal bars, meaning you are connected.</li>
+</ol>
+<p><strong>Where to find your WiFi password:</strong><br />
+- On the bottom or back of your WiFi router (small box from your internet provider)<br />
+- On the paperwork from your internet provider<br />
+- Ask whoever set up the internet in your home or office</p>
+<h3 id="key-points-to-remember_8">Key Points to Remember</h3>
+<ul>
+<li>Click the WiFi icon in the bottom-right to see available networks</li>
+<li>Select your network, enter the password, and click Connect</li>
+<li>Tick "Connect automatically" so you do not have to repeat this</li>
+<li>No WiFi icon? Your WiFi might be off -- look for a WiFi toggle button</li>
+</ul>
+<hr />
+<h2 id="topic-10-windows-updates">Topic 10: Windows Updates</h2>
+<h3 id="explanation_9">Explanation</h3>
+<p>Windows Updates are improvements and security fixes that Microsoft releases regularly. They fix problems, add new features, and protect your computer from viruses and hackers.</p>
+<p><strong>Why updates matter:</strong><br />
+- <strong>Security:</strong> Updates fix weaknesses that hackers could exploit<br />
+- <strong>Stability:</strong> Updates fix bugs that cause crashes or slow performance<br />
+- <strong>Features:</strong> Updates sometimes add new useful features</p>
+<h3 id="step-by-step-guide-checking-for-updates">Step-by-Step Guide: Checking for Updates</h3>
+<ol>
+<li>Click the <strong>Start button</strong>.</li>
+<li>Type <strong>"Windows Update"</strong> and click on <strong>"Windows Update settings."</strong></li>
+<li>Click <strong>"Check for updates."</strong></li>
+<li>If updates are available, click <strong>"Download &amp; install."</strong></li>
+<li>Some updates require a restart. If prompted, save your work and click <strong>"Restart now."</strong></li>
+</ol>
+<h3 id="key-points-to-remember_9">Key Points to Remember</h3>
+<ul>
+<li>Keep Windows updated for security and performance</li>
+<li>Check for updates at least once a week</li>
+<li>Some updates require restarting your computer</li>
+<li>Never ignore security updates</li>
+</ul>
+<hr />
+<h2 id="quick-reference-cheat-sheet">Quick Reference / Cheat Sheet</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>How to Do It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open Start Menu</td>
+<td>Click Windows icon on taskbar OR press Windows key</td>
+</tr>
+<tr>
+<td>Search for anything</td>
+<td>Press Windows key and start typing</td>
+</tr>
+<tr>
+<td>Open File Explorer</td>
+<td>Click folder icon on taskbar OR press Win+E</td>
+</tr>
+<tr>
+<td>Create a new folder</td>
+<td>Right-click empty space, then New, then Folder</td>
+</tr>
+<tr>
+<td>Create a new text file</td>
+<td>Right-click empty space, then New, then Text Document</td>
+</tr>
+<tr>
+<td>Rename a file/folder</td>
+<td>Select it, press F2, type new name, press Enter</td>
+</tr>
+<tr>
+<td>Delete a file/folder</td>
+<td>Select it, press Delete key</td>
+</tr>
+<tr>
+<td>Open an app</td>
+<td>Press Windows key, type app name, click it</td>
+</tr>
+<tr>
+<td>Close an app</td>
+<td>Click X in top-right corner OR press Alt+F4</td>
+</tr>
+<tr>
+<td>Pin app to taskbar</td>
+<td>Right-click app, then "Pin to taskbar"</td>
+</tr>
+<tr>
+<td>Connect to WiFi</td>
+<td>Click WiFi icon in bottom-right, select network</td>
+</tr>
+<tr>
+<td>Sleep</td>
+<td>Start, Power, Sleep (or close laptop lid)</td>
+</tr>
+<tr>
+<td>Restart</td>
+<td>Start, Power, Restart</td>
+</tr>
+<tr>
+<td>Shut Down</td>
+<td>Start, Power, Shut down</td>
+</tr>
+<tr>
+<td>Check for updates</td>
+<td>Start, type "Windows Update," Check for updates</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<ol>
+<li><strong>Not using the Search function.</strong> Beginners often scroll through menus looking for apps. Just press the Windows key and type the name -- it is much faster.</li>
+<li><strong>Saving files to random locations.</strong> Always save to Documents, Desktop, or a folder you created. If you save files without paying attention to the location, you will lose them.</li>
+<li><strong>Never renaming downloaded files.</strong> Files you download often have confusing names like "document(1)(2).pdf." Rename them immediately to something clear.</li>
+<li><strong>Forgetting to save.</strong> Press Ctrl+S constantly. Every few minutes when working on a document.</li>
+<li><strong>Thinking delete means gone forever.</strong> Files go to the Recycle Bin first. You can get them back (until you empty the Recycle Bin).</li>
+<li><strong>Ignoring Windows Updates.</strong> Updates keep you safe. Install them weekly.</li>
+<li><strong>Confusing Sleep and Shut Down.</strong> Sleep is fine for short breaks. Shut Down when travelling or not using the computer for days.</li>
+</ol>
+<hr />
+<h2 id="whats-next">What's Next</h2>
+<p>In <strong>Module 3: Windows Features, Settings &amp; Management</strong>, you will learn how to manage your computer like a pro -- user accounts, installing and removing apps, Task Manager for troubleshooting, personalisation, and keeping your computer running smoothly.</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

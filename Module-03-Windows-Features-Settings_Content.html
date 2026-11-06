@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-03-Windows-Features-Settings — Content</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-3-windows-features-settings-management">Module 3: Windows Features, Settings &amp; Management</h1>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Understand user accounts and the difference between local and Microsoft accounts</li>
+<li>Use Task Manager to check performance and close frozen apps</li>
+<li>Personalise your desktop (wallpaper, theme, dark mode)</li>
+<li>Install and uninstall applications safely</li>
+<li>Manage storage space and keep your computer running smoothly</li>
+<li>Understand basic privacy and security settings</li>
+</ul>
+<h2 id="duration">Duration</h2>
+<p>3 weeks (out of 12-month course)</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Module 2: Getting Started with Windows OS. You should be able to navigate File Explorer, open and close apps, and use the Start Menu.</p>
+<hr />
+<h2 id="topic-1-user-accounts">Topic 1: User Accounts</h2>
+<h3 id="explanation">Explanation</h3>
+<p>A <strong>user account</strong> is your personal identity on the computer. It keeps your files, settings, and desktop separate from other people who use the same computer.</p>
+<p>Think of it like this: in a shared house, everyone has their own room with a lock. A user account is your room -- your files, your wallpaper, your apps, your settings, all private to you.</p>
+<p><strong>Two types of accounts:</strong></p>
+<p><strong>1. Local Account</strong><br />
+- Lives only on this computer.<br />
+- Works without internet.<br />
+- You choose a username and password.<br />
+- Your files and settings stay on this machine only.</p>
+<p><strong>2. Microsoft Account</strong><br />
+- An account linked to an email address (usually ending in @outlook.com, @hotmail.com, or @live.com).<br />
+- Works across devices -- your settings, wallpaper, and some files can sync between your laptop, tablet, and phone.<br />
+- Gives access to OneDrive (cloud storage), Microsoft Store, and other Microsoft services.<br />
+- Requires internet to set up.</p>
+<p><strong>Which should you use?</strong><br />
+For most people, a Microsoft account is recommended because it lets you recover your password online if you forget it, and it backs up your settings to the cloud.</p>
+<p><strong>Admin vs Standard User:</strong><br />
+- <strong>Administrator:</strong> Can install programs, change settings, and manage other accounts. This is usually the first account created on a computer.<br />
+- <strong>Standard User:</strong> Can use the computer normally but cannot install programs or change important settings without the admin password. Good for children or shared computers.</p>
+<h3 id="step-by-step-guide-checking-your-account-type">Step-by-Step Guide: Checking Your Account Type</h3>
+<ol>
+<li>Click the <strong>Start button</strong>.</li>
+<li>Type <strong>"Your info"</strong> and click on <strong>"Your info"</strong> in the results.</li>
+<li>You will see your account name and whether it is a Local account or Microsoft account.</li>
+<li>To check if you are an Administrator: type <strong>"Other users"</strong> in Start and look at your account settings.</li>
+</ol>
+<h3 id="real-world-example">Real-World Example</h3>
+<p>At a workplace, each employee has their own user account on the shared office computer. When you log in, you see YOUR desktop, YOUR documents, and YOUR email -- not your colleague's. The IT department has the admin account and can install software for everyone.</p>
+<h3 id="key-points-to-remember">Key Points to Remember</h3>
+<ul>
+<li>Each user account keeps your files and settings separate from others</li>
+<li>Microsoft accounts sync across devices and allow password recovery online</li>
+<li>Admin accounts can install programs; standard accounts cannot</li>
+<li>Always protect your account with a strong password or PIN</li>
+</ul>
+<hr />
+<h2 id="topic-2-task-manager">Topic 2: Task Manager</h2>
+<h3 id="explanation_1">Explanation</h3>
+<p><strong>Task Manager</strong> is a built-in tool that shows you everything running on your computer. It is your go-to tool when something goes wrong -- when an app freezes, when the computer is slow, or when you want to know what is using your computer's resources.</p>
+<p>Think of Task Manager like the <strong>dashboard of a car</strong>. It shows you the engine speed (CPU), fuel usage (RAM), and tells you if something is overheating.</p>
+<h3 id="step-by-step-guide-opening-task-manager">Step-by-Step Guide: Opening Task Manager</h3>
+<p><strong>Method 1 (Keyboard shortcut -- fastest):</strong><br />
+Press <strong>Ctrl+Shift+Esc</strong> at the same time.</p>
+<p><strong>Method 2 (Right-click taskbar):</strong><br />
+Right-click on an empty area of the taskbar and select <strong>"Task Manager."</strong></p>
+<p><strong>Method 3 (Ctrl+Alt+Delete):</strong><br />
+Press <strong>Ctrl+Alt+Delete</strong> and click <strong>"Task Manager"</strong> from the screen that appears.</p>
+<h3 id="what-you-see-in-task-manager">What You See in Task Manager</h3>
+<p><strong>Processes tab (default view):</strong><br />
+Shows every app and background process currently running. You can see:<br />
+- App name<br />
+- CPU usage (how much brain power it is using)<br />
+- Memory/RAM usage (how much short-term memory it is using)<br />
+- Disk usage (how much it is reading/writing to storage)<br />
+- Network usage (how much internet it is using)</p>
+<p><strong>Performance tab:</strong><br />
+Shows live graphs of your computer's performance:<br />
+- CPU usage over time<br />
+- RAM usage over time<br />
+- Disk activity<br />
+- Network activity</p>
+<p>If your computer is slow, check here. If CPU or RAM is near 100%, something is using too many resources.</p>
+<h3 id="step-by-step-guide-closing-a-frozen-app">Step-by-Step Guide: Closing a Frozen App</h3>
+<p>Sometimes an app stops responding. It freezes -- you click on it but nothing happens. Here is how to force it to close:</p>
+<ol>
+<li>Press <strong>Ctrl+Shift+Esc</strong> to open Task Manager.</li>
+<li>In the <strong>Processes</strong> tab, find the frozen app. It may say "(Not Responding)" next to its name.</li>
+<li>Click on the frozen app to select it.</li>
+<li>Click the <strong>"End task"</strong> button at the top right (or right-click the app and select "End task").</li>
+<li>The app closes. Any unsaved work in that app is lost.</li>
+<li>Reopen the app normally.</li>
+</ol>
+<h3 id="real-world-example_1">Real-World Example</h3>
+<p>You are writing a report in Word, and suddenly the app freezes. Nothing happens when you click. Instead of restarting your entire computer (which closes everything), you open Task Manager and close just Word. You lose the unsaved changes in Word, but everything else stays open.</p>
+<p>This is why saving frequently with Ctrl+S is so important.</p>
+<h3 id="key-points-to-remember_1">Key Points to Remember</h3>
+<ul>
+<li>Ctrl+Shift+Esc opens Task Manager instantly</li>
+<li>Use it to close frozen apps (End Task)</li>
+<li>The Performance tab tells you if your computer is overloaded</li>
+<li>High CPU or RAM usage means something is hogging resources</li>
+</ul>
+<hr />
+<h2 id="topic-3-personalisation">Topic 3: Personalisation</h2>
+<h3 id="explanation_2">Explanation</h3>
+<p>You can customise how your computer looks. This is not just for fun -- a well-organised desktop helps you work better.</p>
+<h3 id="step-by-step-guide-changing-your-wallpaper">Step-by-Step Guide: Changing Your Wallpaper</h3>
+<ol>
+<li><strong>Right-click</strong> on an empty area of the desktop.</li>
+<li>Click <strong>"Personalise"</strong> (or go to Settings, then Personalisation, then Background).</li>
+<li>Under <strong>"Personalise your background,"</strong> you see options:</li>
+<li><strong>Picture:</strong> Choose a photo from your computer.</li>
+<li><strong>Solid colour:</strong> A single plain colour.</li>
+<li><strong>Slideshow:</strong> Rotates through multiple pictures.</li>
+<li>To use your own photo, click <strong>"Browse photos"</strong> and navigate to the image you want.</li>
+<li>Click the image and it becomes your wallpaper immediately.</li>
+</ol>
+<h3 id="step-by-step-guide-changing-theme-colours">Step-by-Step Guide: Changing Theme Colours</h3>
+<ol>
+<li>Go to <strong>Settings</strong> (press Win+I) then <strong>Personalisation</strong> then <strong>Colours</strong>.</li>
+<li><strong>Accent colour:</strong> Choose a colour that appears on buttons, icons, and window borders.</li>
+<li>Click on any colour square to select it, or click <strong>"Custom colour"</strong> for more options.</li>
+</ol>
+<h3 id="step-by-step-guide-enabling-dark-mode">Step-by-Step Guide: Enabling Dark Mode</h3>
+<p>Dark mode makes the background of windows and menus dark instead of white. It is easier on the eyes, especially at night.</p>
+<ol>
+<li>Go to <strong>Settings</strong> (Win+I) then <strong>Personalisation</strong> then <strong>Colours</strong>.</li>
+<li>Under <strong>"Choose your mode,"</strong> select <strong>"Dark."</strong></li>
+<li>The change applies immediately. All windows, menus, and some apps switch to dark backgrounds.</li>
+<li>If you want some things dark and some light, choose <strong>"Custom"</strong> and set each separately.</li>
+</ol>
+<h3 id="step-by-step-guide-customising-the-lock-screen">Step-by-Step Guide: Customising the Lock Screen</h3>
+<p>The lock screen is what you see before you log in.</p>
+<ol>
+<li>Go to <strong>Settings</strong> then <strong>Personalisation</strong> then <strong>Lock screen</strong>.</li>
+<li>Choose <strong>"Picture"</strong> or <strong>"Slideshow"</strong> for the background.</li>
+<li>Click <strong>"Browse photos"</strong> to select your own image.</li>
+</ol>
+<h3 id="key-points-to-remember_2">Key Points to Remember</h3>
+<ul>
+<li>Right-click on the desktop and select "Personalise" for quick access</li>
+<li>Dark mode reduces eye strain at night</li>
+<li>These changes are personal -- they only affect your user account</li>
+<li>Personalisation does not affect how the computer works, only how it looks</li>
+</ul>
+<hr />
+<h2 id="topic-4-installing-and-uninstalling-applications">Topic 4: Installing and Uninstalling Applications</h2>
+<h3 id="explanation_3">Explanation</h3>
+<p>To do new things on your computer, you need to install new applications. There are two main ways to get apps.</p>
+<p><strong>Method 1: Microsoft Store (Safer)</strong></p>
+<p>The Microsoft Store is a built-in app shop. Apps here are verified by Microsoft, which means they are safe.</p>
+<h3 id="step-by-step-guide-installing-from-microsoft-store">Step-by-Step Guide: Installing from Microsoft Store</h3>
+<ol>
+<li>Click the <strong>Start button</strong> and type <strong>"Microsoft Store."</strong> Click to open it.</li>
+<li>Use the <strong>search bar</strong> at the top to find the app you want (for example, "Adobe Acrobat Reader").</li>
+<li>Click on the app in the results.</li>
+<li>Click the <strong>"Get"</strong> or <strong>"Install"</strong> button.</li>
+<li>Wait for the download and installation to complete.</li>
+<li>The app appears in your Start Menu. You can now open it.</li>
+</ol>
+<p><strong>Method 2: Downloading from Websites (Be Careful)</strong></p>
+<p>Some apps are not in the Microsoft Store. You download them from the developer's official website.</p>
+<h3 id="step-by-step-guide-installing-from-a-website">Step-by-Step Guide: Installing from a Website</h3>
+<ol>
+<li>Open your web browser (Edge or Chrome).</li>
+<li>Go to the <strong>official website</strong> of the app. For example, for Google Chrome, go to google.com/chrome.</li>
+<li>Click the <strong>"Download"</strong> button.</li>
+<li>The file downloads to your <strong>Downloads</strong> folder. It is usually a file ending in <strong>.exe</strong> (executable).</li>
+<li>Open your Downloads folder and <strong>double-click</strong> the .exe file.</li>
+<li>A setup wizard appears. Follow the on-screen instructions (usually clicking "Next," "I agree," and "Install").</li>
+<li>When finished, the app is installed and ready to use.</li>
+</ol>
+<p><strong>Warning signs of unsafe downloads:</strong><br />
+- The website has many pop-up ads<br />
+- There are multiple "Download" buttons (fake ones are ads -- look for the real one)<br />
+- The website address looks wrong (for example, "chr0me-download.com" instead of "google.com/chrome")<br />
+- Your browser or antivirus gives a warning</p>
+<h3 id="step-by-step-guide-uninstalling-an-application">Step-by-Step Guide: Uninstalling an Application</h3>
+<ol>
+<li>Click the <strong>Start button</strong>.</li>
+<li>Type <strong>"Installed apps"</strong> and click on <strong>"Installed apps"</strong> in the results.</li>
+<li>You see a list of all installed apps.</li>
+<li>Find the app you want to remove. Use the search bar if the list is long.</li>
+<li>Click the <strong>three dots (...)</strong> next to the app name.</li>
+<li>Click <strong>"Uninstall."</strong></li>
+<li>Confirm by clicking <strong>"Uninstall"</strong> again.</li>
+<li>The app is removed from your computer.</li>
+</ol>
+<p><strong>Important:</strong> Do not try to uninstall an app by just deleting its shortcut or icon from the desktop. That only removes the shortcut -- the app is still installed and taking up space. Always use the proper uninstall method above.</p>
+<h3 id="key-points-to-remember_3">Key Points to Remember</h3>
+<ul>
+<li>Microsoft Store is the safest way to install apps</li>
+<li>Only download from official websites</li>
+<li>Watch out for fake download buttons and suspicious websites</li>
+<li>To uninstall: Settings, Installed apps, Uninstall -- never just delete the icon</li>
+</ul>
+<hr />
+<h2 id="topic-5-working-with-zip-files">Topic 5: Working with ZIP Files</h2>
+<h3 id="explanation_4">Explanation</h3>
+<p>A <strong>ZIP file</strong> is a compressed folder. Think of it like packing a suitcase -- you take many items, press them down, and fit them into a smaller space. A ZIP file does the same with computer files: it takes multiple files and squishes them into one smaller file.</p>
+<p>You will encounter ZIP files when:<br />
+- Someone emails you multiple files (they ZIP them together for convenience)<br />
+- You download software or documents from the internet<br />
+- You need to send multiple files to someone</p>
+<p>ZIP files have a <strong>zipper icon</strong> and end in <strong>.zip</strong>.</p>
+<h3 id="step-by-step-guide-extracting-unzipping-a-zip-file">Step-by-Step Guide: Extracting (Unzipping) a ZIP File</h3>
+<ol>
+<li>Find the ZIP file (usually in your <strong>Downloads</strong> folder).</li>
+<li><strong>Right-click</strong> on the ZIP file.</li>
+<li>Click <strong>"Extract All..."</strong> from the menu.</li>
+<li>A window appears asking where to extract the files. The default location is usually fine (same folder as the ZIP file).</li>
+<li>Click <strong>"Extract."</strong></li>
+<li>A new folder appears with the same name as the ZIP file. The files inside are now accessible.</li>
+<li>Double-click the new folder to see the extracted files.</li>
+</ol>
+<h3 id="key-points-to-remember_4">Key Points to Remember</h3>
+<ul>
+<li>ZIP files are compressed folders that contain multiple files</li>
+<li>Right-click and "Extract All" to access the files inside</li>
+<li>You cannot edit files inside a ZIP without extracting first</li>
+<li>After extracting, you can delete the original ZIP file to save space</li>
+</ul>
+<hr />
+<h2 id="topic-6-system-settings-overview">Topic 6: System Settings Overview</h2>
+<h3 id="explanation_5">Explanation</h3>
+<p>Windows Settings is where you control how your computer behaves. Open it by pressing <strong>Win+I</strong> or clicking Start and then the gear icon.</p>
+<p><strong>Key settings you should know:</strong></p>
+<p><strong>Display</strong><br />
+- Settings then System then Display<br />
+- <strong>Brightness:</strong> Slide to make the screen brighter or dimmer. Dim the screen in a dark room to reduce eye strain.<br />
+- <strong>Resolution:</strong> How sharp the screen looks. Higher resolution = sharper but smaller text. The recommended setting is usually best.<br />
+- <strong>Scale:</strong> Makes text and icons bigger or smaller. If you struggle to read small text, increase the scale to 125% or 150%.</p>
+<p><strong>Sound</strong><br />
+- Settings then System then Sound<br />
+- <strong>Volume:</strong> Master volume slider. Also accessible by clicking the speaker icon in the system tray.<br />
+- <strong>Output device:</strong> Choose where sound plays (speakers, headphones, Bluetooth device).<br />
+- <strong>Input device:</strong> Choose your microphone.</p>
+<p><strong>Network</strong><br />
+- Settings then Network &amp; Internet<br />
+- Shows your WiFi or Ethernet connection status.<br />
+- Connect to WiFi, check data usage, manage VPN.</p>
+<p><strong>Bluetooth</strong><br />
+- Settings then Bluetooth &amp; devices<br />
+- Turn Bluetooth on/off.<br />
+- Pair wireless devices (headphones, mouse, keyboard, speakers).</p>
+<h3 id="key-points-to-remember_5">Key Points to Remember</h3>
+<ul>
+<li>Win+I opens Settings</li>
+<li>Display settings control brightness, resolution, and text size</li>
+<li>Sound settings control volume and audio devices</li>
+<li>Increase scale if text is too small to read comfortably</li>
+</ul>
+<hr />
+<h2 id="topic-7-privacy-and-security-settings">Topic 7: Privacy and Security Settings</h2>
+<h3 id="explanation_6">Explanation</h3>
+<p>Your computer has built-in protection. You should know how to check and manage these settings.</p>
+<p><strong>App Permissions</strong></p>
+<p>Apps sometimes ask to use your camera, microphone, or location. You can control which apps have these permissions.</p>
+<h3 id="step-by-step-guide-managing-app-permissions">Step-by-Step Guide: Managing App Permissions</h3>
+<ol>
+<li>Go to <strong>Settings</strong> (Win+I) then <strong>Privacy &amp; security</strong>.</li>
+<li>Scroll down to <strong>"App permissions."</strong></li>
+<li>Click on <strong>Camera</strong> to see which apps can use your camera. Turn off any you do not trust.</li>
+<li>Click on <strong>Microphone</strong> to manage microphone access.</li>
+<li>Click on <strong>Location</strong> to control which apps know your physical location.</li>
+</ol>
+<p><strong>Windows Security (Antivirus)</strong></p>
+<p>Windows comes with a built-in antivirus called <strong>Microsoft Defender</strong>. It protects against viruses, malware, and other threats.</p>
+<h3 id="step-by-step-guide-checking-your-antivirus">Step-by-Step Guide: Checking Your Antivirus</h3>
+<ol>
+<li>Click the Start button and type <strong>"Windows Security."</strong></li>
+<li>Click on <strong>"Windows Security"</strong> in the results.</li>
+<li>You should see a dashboard with green checkmarks if everything is healthy.</li>
+<li>Click on <strong>"Virus &amp; threat protection."</strong></li>
+<li>Click <strong>"Quick scan"</strong> to scan your computer for threats right now.</li>
+</ol>
+<p><strong>Firewall</strong></p>
+<p>A firewall controls what network traffic can enter or leave your computer. Think of it as a security guard at a building entrance. Windows Firewall is on by default -- leave it on.</p>
+<h3 id="key-points-to-remember_6">Key Points to Remember</h3>
+<ul>
+<li>Check app permissions regularly -- turn off camera and microphone for apps that do not need them</li>
+<li>Windows Defender is your built-in antivirus -- make sure it is ON</li>
+<li>Run a quick scan occasionally to check for threats</li>
+<li>Do not turn off the firewall unless you have a specific technical reason</li>
+</ul>
+<hr />
+<h2 id="topic-8-storage-management">Topic 8: Storage Management</h2>
+<h3 id="explanation_7">Explanation</h3>
+<p>Over time, your computer fills up with files, temporary data, and old programs. Managing storage keeps your computer running smoothly.</p>
+<h3 id="step-by-step-guide-checking-disk-space">Step-by-Step Guide: Checking Disk Space</h3>
+<ol>
+<li>Go to <strong>Settings</strong> (Win+I) then <strong>System</strong> then <strong>Storage</strong>.</li>
+<li>You see a bar showing how much of your drive is used.</li>
+<li>Below, Windows breaks down what is using space: Apps, Temporary files, Documents, Pictures, etc.</li>
+</ol>
+<h3 id="step-by-step-guide-running-disk-cleanup">Step-by-Step Guide: Running Disk Cleanup</h3>
+<ol>
+<li>Click the <strong>Start button</strong> and type <strong>"Disk Cleanup."</strong> Click on it.</li>
+<li>Select the drive to clean (usually C:). Click <strong>OK</strong>.</li>
+<li>Wait for Windows to calculate how much space can be freed.</li>
+<li>Check the boxes next to items you want to delete:</li>
+<li><strong>Temporary Internet Files</strong> -- safe to delete</li>
+<li><strong>Thumbnails</strong> -- safe to delete</li>
+<li><strong>Temporary files</strong> -- safe to delete</li>
+<li><strong>Recycle Bin</strong> -- empties your Recycle Bin</li>
+<li>Click <strong>"OK"</strong> then <strong>"Delete Files."</strong></li>
+<li>This can free up hundreds of megabytes or even gigabytes of space.</li>
+</ol>
+<h3 id="step-by-step-guide-enabling-storage-sense">Step-by-Step Guide: Enabling Storage Sense</h3>
+<p>Storage Sense automatically deletes temporary files and empties the Recycle Bin when your computer runs low on space.</p>
+<ol>
+<li>Go to <strong>Settings</strong> then <strong>System</strong> then <strong>Storage</strong>.</li>
+<li>Turn on <strong>"Storage Sense."</strong></li>
+<li>Click on it to configure:</li>
+<li>How often it runs (recommended: every month)</li>
+<li>Whether to clean the Recycle Bin automatically</li>
+<li>Whether to delete files in Downloads that have not been opened recently</li>
+</ol>
+<h3 id="key-points-to-remember_7">Key Points to Remember</h3>
+<ul>
+<li>Check your storage at least once a month</li>
+<li>Disk Cleanup safely removes temporary files</li>
+<li>Turn on Storage Sense for automatic cleanup</li>
+<li>Low storage space makes your computer slow -- keep at least 10% of your drive free</li>
+</ul>
+<hr />
+<h2 id="quick-reference-cheat-sheet">Quick Reference / Cheat Sheet</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>How to Do It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open Task Manager</td>
+<td>Ctrl+Shift+Esc</td>
+</tr>
+<tr>
+<td>Close a frozen app</td>
+<td>Task Manager, select app, End Task</td>
+</tr>
+<tr>
+<td>Open Settings</td>
+<td>Win+I</td>
+</tr>
+<tr>
+<td>Change wallpaper</td>
+<td>Right-click desktop, Personalise, Background</td>
+</tr>
+<tr>
+<td>Enable Dark Mode</td>
+<td>Settings, Personalisation, Colours, Dark</td>
+</tr>
+<tr>
+<td>Install app (Store)</td>
+<td>Start, Microsoft Store, search, Get</td>
+</tr>
+<tr>
+<td>Uninstall app</td>
+<td>Settings, Installed apps, three dots, Uninstall</td>
+</tr>
+<tr>
+<td>Extract a ZIP file</td>
+<td>Right-click ZIP, Extract All</td>
+</tr>
+<tr>
+<td>Check antivirus</td>
+<td>Start, Windows Security, Virus &amp; threat protection</td>
+</tr>
+<tr>
+<td>Check storage</td>
+<td>Settings, System, Storage</td>
+</tr>
+<tr>
+<td>Run Disk Cleanup</td>
+<td>Start, type "Disk Cleanup," select drive, OK</td>
+</tr>
+<tr>
+<td>Check app permissions</td>
+<td>Settings, Privacy &amp; security, App permissions</td>
+</tr>
+<tr>
+<td>Adjust brightness</td>
+<td>Settings, System, Display, Brightness</td>
+</tr>
+<tr>
+<td>Change text size</td>
+<td>Settings, System, Display, Scale</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<ol>
+<li><strong>Downloading apps from random websites.</strong> Stick to the Microsoft Store or official websites only. Random sites can contain viruses.</li>
+<li><strong>Uninstalling apps by deleting the desktop shortcut.</strong> This does not remove the app -- use Settings to uninstall properly.</li>
+<li><strong>Ignoring low storage warnings.</strong> A full drive makes your computer extremely slow. Clean up regularly.</li>
+<li><strong>Disabling Windows Defender.</strong> Some people disable their antivirus because it "slows the computer." This is dangerous. Leave it on.</li>
+<li><strong>Granting camera and microphone access to every app.</strong> Only apps that genuinely need these features (video call apps, camera apps) should have permission.</li>
+<li><strong>Not knowing how to open Task Manager.</strong> Memorise Ctrl+Shift+Esc. It is one of the most useful shortcuts in Windows.</li>
+<li><strong>Trying to edit files inside a ZIP without extracting.</strong> Always extract first, then edit.</li>
+</ol>
+<hr />
+<h2 id="whats-next">What's Next</h2>
+<p>In <strong>Module 4: Keyboard, Typing &amp; Shortcuts</strong>, you will learn how to type faster and use keyboard shortcuts that save you time every day. You will learn every important key on the keyboard and start building your typing speed.</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

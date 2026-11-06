@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-05-File-Management — Tasks</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-5-tasks-assignments">Module 5: Tasks &amp; Assignments</h1>
+<h2 id="practice-task-1-copy-and-move-files">Practice Task 1: Copy and Move Files</h2>
+<p><strong>Objective:</strong> Practise creating, copying, and moving files to understand the difference between the two operations.<br />
+<strong>Difficulty:</strong> Beginner<br />
+<strong>Time:</strong> 20 minutes</p>
+<h3 id="instructions">Instructions</h3>
+<ol>
+<li>Open <strong>File Explorer</strong> (Win+E) and go to <strong>Documents</strong>.</li>
+<li>Create a folder called <strong>File Practice</strong>.</li>
+<li>Go inside "File Practice."</li>
+<li><strong>Create 10 text files</strong> of different names:<br />
+   a. Right-click, New, Text Document. Name it <strong>Note1.txt</strong>. Press Enter.<br />
+   b. Open Note1.txt, type "This is note number one," save (Ctrl+S), and close.<br />
+   c. Repeat for Note2.txt through Note10.txt, typing a different sentence in each.</li>
+<li>Create two subfolders inside "File Practice":<br />
+   a. <strong>Copied Files</strong><br />
+   b. <strong>Moved Files</strong></li>
+<li><strong>Copy 5 files:</strong><br />
+   a. Hold <strong>Ctrl</strong> and click on Note1.txt, Note2.txt, Note3.txt, Note4.txt, and Note5.txt (all five should be highlighted).<br />
+   b. Press <strong>Ctrl+C</strong> (Copy).<br />
+   c. Double-click the <strong>"Copied Files"</strong> folder to go inside.<br />
+   d. Press <strong>Ctrl+V</strong> (Paste).<br />
+   e. The 5 files appear here.<br />
+   f. Click the <strong>Back arrow</strong> to go back to "File Practice."<br />
+   g. <strong>Verify:</strong> Note1-5 are STILL HERE in "File Practice" (because you copied, not moved).</li>
+<li><strong>Move the other 5 files:</strong><br />
+   a. Hold <strong>Ctrl</strong> and click on Note6.txt, Note7.txt, Note8.txt, Note9.txt, and Note10.txt.<br />
+   b. Press <strong>Ctrl+X</strong> (Cut). Notice the file icons become slightly faded.<br />
+   c. Double-click the <strong>"Moved Files"</strong> folder.<br />
+   d. Press <strong>Ctrl+V</strong> (Paste).<br />
+   e. The 5 files appear here.<br />
+   f. Click the Back arrow.<br />
+   g. <strong>Verify:</strong> Note6-10 are GONE from "File Practice" (because you moved them).</li>
+</ol>
+<h3 id="expected-result">Expected Result</h3>
+<ul>
+<li>"File Practice" folder contains: Note1-5 (originals), plus the two subfolders.</li>
+<li>"Copied Files" folder contains: copies of Note1-5.</li>
+<li>"Moved Files" folder contains: Note6-10 (moved from the parent folder).</li>
+<li>You understand that Copy keeps the original, and Move removes it.</li>
+</ul>
+<h3 id="bonus-challenge">Bonus Challenge</h3>
+<p>Use <strong>Ctrl+Z</strong> (Undo) immediately after moving the files. What happens? The files return to their original location. Try it and observe.</p>
+<hr />
+<h2 id="practice-task-2-usb-drive-operations">Practice Task 2: USB Drive Operations</h2>
+<p><strong>Objective:</strong> Practise transferring files to and from a USB drive with proper safe ejection.<br />
+<strong>Difficulty:</strong> Beginner<br />
+<strong>Time:</strong> 15 minutes</p>
+<h3 id="instructions_1">Instructions</h3>
+<p>You will need a USB drive (pendrive/flash drive) for this task.</p>
+<ol>
+<li><strong>Plug in the USB drive</strong> to a USB port on your computer.</li>
+<li>Wait for it to be recognised (you may hear a sound or see a notification).</li>
+<li>Open <strong>File Explorer</strong> (Win+E).</li>
+<li>Click <strong>"This PC"</strong> in the left sidebar.</li>
+<li>Find your USB drive in the list of drives. Note its letter (e.g., E: or F:) and name.</li>
+<li>Double-click to open the USB drive.</li>
+<li><strong>Create a folder on the USB drive:</strong><br />
+   a. Right-click on empty space, New, Folder.<br />
+   b. Name it <strong>Backup Test</strong>.<br />
+   c. Go inside the folder.</li>
+<li><strong>Copy 3 files from your computer to the USB drive:</strong><br />
+   a. Open a second File Explorer window (press Win+E again).<br />
+   b. In the new window, navigate to Documents (or wherever you have files).<br />
+   c. Select 3 files (hold Ctrl and click each one).<br />
+   d. Press <strong>Ctrl+C</strong> (Copy).<br />
+   e. Switch to the first File Explorer window (the USB drive's "Backup Test" folder).<br />
+   f. Press <strong>Ctrl+V</strong> (Paste).<br />
+   g. Wait for the copy to complete.</li>
+<li><strong>Verify the files:</strong> Open each file on the USB drive to make sure they copied correctly.</li>
+<li><strong>Safely eject the USB drive:</strong><br />
+    a. Look at the bottom-right corner of your screen (system tray).<br />
+    b. Click the <strong>small up arrow</strong> to show hidden icons.<br />
+    c. Find and click the <strong>USB icon</strong> (looks like a plug or drive).<br />
+    d. Click <strong>"Eject [your USB drive name]."</strong><br />
+    e. Wait for the message: <strong>"Safe to Remove Hardware."</strong><br />
+    f. Now gently pull the USB drive out of the port.</li>
+<li>Plug the USB drive back in and verify your files are still there and undamaged.</li>
+</ol>
+<h3 id="expected-result_1">Expected Result</h3>
+<p>You have a "Backup Test" folder on your USB drive containing 3 files from your computer. You safely ejected and reconnected the drive, and all files are intact.</p>
+<h3 id="bonus-challenge_1">Bonus Challenge</h3>
+<p>Copy files FROM the USB drive back to a different folder on your computer. This is how you would restore files from a backup.</p>
+<hr />
+<h2 id="practice-task-3-file-extensions">Practice Task 3: File Extensions</h2>
+<p><strong>Objective:</strong> Enable file extensions and identify the types of files on your computer.<br />
+<strong>Difficulty:</strong> Beginner<br />
+<strong>Time:</strong> 15 minutes</p>
+<h3 id="instructions_2">Instructions</h3>
+<ol>
+<li>
+<p><strong>Turn on file extensions (if not already on):</strong><br />
+   a. Open <strong>File Explorer</strong> (Win+E).<br />
+   b. Click the <strong>"View"</strong> menu at the top.<br />
+   c. Hover over <strong>"Show."</strong><br />
+   d. Click <strong>"File name extensions"</strong> so a checkmark appears next to it.<br />
+   e. Now all files show their extensions (e.g., "Report.pdf" instead of just "Report").</p>
+</li>
+<li>
+<p><strong>Identify file types:</strong><br />
+   a. Navigate to your <strong>Downloads</strong> folder.<br />
+   b. Look at the files there. On paper or in Notepad, create a list of 10 different files and their extensions.<br />
+   c. For each file, write:</p>
+<ul>
+<li>File name (with extension)</li>
+<li>What type of file it is (image, document, video, program, etc.)</li>
+<li>What program would open it</li>
+</ul>
+</li>
+</ol>
+<p>Example:<br />
+<code>1. Report.pdf       - Document    - Adobe Reader or Edge
+   2. photo.jpg        - Image       - Photos app
+   3. setup.exe        - Program     - (Installer - be careful)</code></p>
+<ol>
+<li>
+<p>If Downloads does not have 10 files, also check Documents and Pictures.</p>
+</li>
+<li>
+<p><strong>Check file properties:</strong><br />
+   a. Right-click on any file.<br />
+   b. Click <strong>"Properties."</strong><br />
+   c. Write down the file's: size, type, creation date, and which program opens it.<br />
+   d. Click OK to close.</p>
+</li>
+</ol>
+<h3 id="expected-result_2">Expected Result</h3>
+<p>File extensions are visible on your computer. You have a written list of 10 files with their extensions, types, and associated programs. You can identify what kind of file something is by looking at its extension.</p>
+<h3 id="bonus-challenge_2">Bonus Challenge</h3>
+<p>Find out how much total storage your different file types are using. In File Explorer, search for <code>*.jpg</code> in This PC, then sort by size. Do the same for <code>*.pdf</code> and <code>*.mp4</code>. Which file type takes up the most space?</p>
+<hr />
+<h2 id="practice-task-4-search-for-files">Practice Task 4: Search for Files</h2>
+<p><strong>Objective:</strong> Use Windows Search and File Explorer search to find specific files quickly.<br />
+<strong>Difficulty:</strong> Beginner<br />
+<strong>Time:</strong> 15 minutes</p>
+<h3 id="instructions_3">Instructions</h3>
+<ol>
+<li>
+<p><strong>Windows Search (taskbar):</strong><br />
+   a. Click the <strong>Search icon</strong> on the taskbar (or press <strong>Win+S</strong>).<br />
+   b. Type the name of a file you know exists (for example, a file you created in earlier tasks).<br />
+   c. Look at the results. Click "Open file location" under the file to see where it is stored.<br />
+   d. Write down the file's full path.</p>
+</li>
+<li>
+<p><strong>File Explorer search (within a specific folder):</strong><br />
+   a. Open File Explorer (Win+E).<br />
+   b. Click on <strong>"This PC"</strong> (to search the entire computer).<br />
+   c. Click the <strong>search box</strong> in the top-right corner.<br />
+   d. Type <strong><code>*.pdf</code></strong> and press Enter.<br />
+   e. Wait for results. Count how many PDF files you have on your computer. Write down the number.</p>
+</li>
+<li>
+<p><strong>Search for images:</strong><br />
+   a. Clear the search box and type <strong><code>*.jpg</code></strong><br />
+   b. Count the number of JPG images on your computer. Write it down.</p>
+</li>
+<li>
+<p><strong>Search for large files:</strong><br />
+   a. Navigate to <strong>"This PC"</strong> again.<br />
+   b. In the search box, type <strong><code>size:large</code></strong> (this finds files larger than 128 MB).<br />
+   c. Look at the results. These large files might be videos, games, or programs.<br />
+   d. Write down the 3 largest files and their sizes.</p>
+</li>
+<li>
+<p><strong>Search within a specific folder:</strong><br />
+   a. Navigate to your <strong>Documents</strong> folder.<br />
+   b. In the search box, type the name of a file you created in an earlier module.<br />
+   c. The search only looks inside Documents and its subfolders.</p>
+</li>
+</ol>
+<h3 id="expected-result_3">Expected Result</h3>
+<p>You found files using both Windows Search and File Explorer search. You know how many PDFs and JPGs are on your computer, and you identified your 3 largest files. You can now quickly find any file on your computer.</p>
+<h3 id="bonus-challenge_3">Bonus Challenge</h3>
+<p>Try these advanced searches in File Explorer:<br />
+- <code>*.mp4</code> to find all videos<br />
+- <code>datemodified:this week</code> to find files you changed recently<br />
+- Combine them: <code>*.docx datemodified:this month</code> to find Word docs from this month</p>
+<hr />
+<h2 id="practice-task-5-backup-your-important-files">Practice Task 5: Backup Your Important Files</h2>
+<p><strong>Objective:</strong> Create a real backup of your most important files on a USB drive or cloud storage.<br />
+<strong>Difficulty:</strong> Intermediate<br />
+<strong>Time:</strong> 30 minutes</p>
+<h3 id="instructions_4">Instructions</h3>
+<ol>
+<li><strong>Identify your 10 most important files:</strong><br />
+   Open Notepad and create a list. Think about:</li>
+<li>Documents you cannot recreate (ID scans, certificates, contracts)</li>
+<li>Work files that took hours to create</li>
+<li>Irreplaceable photos</li>
+<li>Financial records</li>
+</ol>
+<p>Write down each file's name and location. Example:<br />
+<code>1. CV.docx - Documents/Work/CVs
+   2. ID Scan.pdf - Documents/Personal/ID Documents
+   3. Family Photo.jpg - Pictures/Family
+   ...</code></p>
+<ol>
+<li><strong>Choose your backup method:</strong></li>
+</ol>
+<p><strong>Option A: USB Drive Backup</strong><br />
+   a. Plug in a USB drive.<br />
+   b. Create a folder on the USB drive called <strong>"Backup - [today's date]"</strong>.<br />
+   c. Copy each of your 10 important files to this folder.<br />
+   d. Verify each file opens correctly from the USB drive.<br />
+   e. Safely eject the USB drive.<br />
+   f. Store the USB drive in a different physical location from your computer (e.g., a drawer in another room).</p>
+<p><strong>Option B: Cloud Backup (OneDrive or Google Drive)</strong><br />
+   a. Open your web browser.<br />
+   b. Go to <strong>drive.google.com</strong> (for Google Drive) or <strong>onedrive.com</strong> (for OneDrive).<br />
+   c. Sign in with your account (create one if needed).<br />
+   d. Click <strong>"New"</strong> or the upload button.<br />
+   e. Upload each of your 10 important files.<br />
+   f. Verify each file by clicking on it in the cloud to make sure it uploaded correctly.</p>
+<ol>
+<li><strong>Create a backup log:</strong><br />
+   Open Notepad and save this in Documents as <strong>"Backup Log.txt"</strong>:</li>
+</ol>
+<p>```<br />
+   BACKUP LOG<br />
+   ==========<br />
+   Date: [today's date]<br />
+   Backup location: [USB drive name / Google Drive / OneDrive]</p>
+<p>Files backed up:<br />
+   1. [filename] - OK<br />
+   2. [filename] - OK<br />
+   3. [filename] - OK<br />
+   ...</p>
+<p>Next backup date: [one month from now]<br />
+   ```</p>
+<ol>
+<li>Set a reminder on your phone to repeat this backup in one month.</li>
+</ol>
+<h3 id="expected-result_4">Expected Result</h3>
+<p>Your 10 most important files are backed up to either a USB drive or cloud storage. You have a backup log documenting what was backed up and when. You have a reminder to do this monthly.</p>
+<h3 id="bonus-challenge_4">Bonus Challenge</h3>
+<p>Do BOTH backup methods -- USB and cloud. This follows the 3-2-1 rule: your computer has the originals (1), the USB drive has a copy (2), and the cloud has another copy (3), stored offsite.</p>
+<hr />
+<h2 id="module-assessment">Module Assessment</h2>
+<p>Answer these questions on paper or in a text file.</p>
+<ol>
+<li>Explain the file system hierarchy using the building analogy (drive, folder, subfolder, file).</li>
+<li>What is the difference between copying and moving a file? Which keyboard shortcuts do you use for each?</li>
+<li>What happens when you press Delete on a file? What happens when you press Shift+Delete?</li>
+<li>What is a file extension? Give 5 examples with what each one means.</li>
+<li>Why should you always show file extensions on your computer?</li>
+<li>Describe the correct steps to safely remove a USB drive from your computer.</li>
+<li>What is the 3-2-1 backup rule?</li>
+<li>How do you search for all PDF files on your computer using File Explorer?</li>
+<li>What is the danger of opening an unknown .exe file?</li>
+<li>Name two places you can store backups and one advantage of each.</li>
+</ol>
+<p><strong>Scoring:</strong> Each question is worth 1 point. 8 or more correct = you are ready for Module 6. Below 8 = review the topics you missed.</p>
+<hr />
+<h2 id="real-life-mini-project-digital-life-organiser">Real-Life Mini Project: "Digital Life Organiser"</h2>
+<p><strong>Objective:</strong> Apply everything from this module to organise and protect your digital life.<br />
+<strong>Time:</strong> 45 minutes</p>
+<h3 id="instructions_5">Instructions</h3>
+<p>This project ties together everything you learned in Modules 1 through 5.</p>
+<p><strong>Part 1: Organise Your Files (15 minutes)</strong></p>
+<ol>
+<li>Open File Explorer and navigate to your <strong>Documents</strong> folder.</li>
+<li>Make sure you have a folder structure like this (create any folders that are missing):<br />
+<code>Documents/
+     Personal/
+     Work/
+     Education/
+       Digital Skills Course/</code></li>
+<li>Go through any files in the root of Documents and move them into the appropriate subfolder.</li>
+<li>Go to your <strong>Downloads</strong> folder. Sort and organise loose files into subfolders (Images, Documents, Videos, Software) or delete files you no longer need.</li>
+</ol>
+<p><strong>Part 2: Enable Security Settings (10 minutes)</strong></p>
+<ol>
+<li>Turn on file extensions (View, Show, File name extensions).</li>
+<li>Lock your computer (Win+L) and unlock it. Confirm it works.</li>
+<li>Open Windows Security and verify your antivirus is active.</li>
+</ol>
+<p><strong>Part 3: Create Your Backup (15 minutes)</strong></p>
+<ol>
+<li>Identify your 5 most important files.</li>
+<li>Back them up to a USB drive OR upload them to OneDrive/Google Drive.</li>
+<li>Verify the backup works by opening each file from the backup location.</li>
+</ol>
+<p><strong>Part 4: Document Everything (5 minutes)</strong></p>
+<ol>
+<li>Open Notepad and create a file called <strong>"My Digital Setup.txt"</strong> in Documents:</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>MY DIGITAL SETUP
+================
+Date: [today's date]
+
+Computer Specs:
+- Processor: [from Module 1 spec sheet]
+- RAM: ____
+- Storage: ____ total, ____ free
+
+Folder Structure:
+- Documents: Personal, Work, Education
+- Downloads: Organised into Images, Documents, Videos, Software
+- Pictures: Screenshots folder created
+
+Security:
+- File extensions: Visible
+- Antivirus: Active
+- Screen lock: Working (Win+L)
+
+Backup:
+- Location: [USB drive / Cloud]
+- Last backup: [today's date]
+- Files backed up: [list of 5 files]
+
+Next Actions:
+- Monthly backup reminder set: [Yes/No]
+- Monthly maintenance checklist: [In Documents / Not yet]
+</code></pre></div>
+
+<ol>
+<li>Save this file. It is your digital reference sheet.</li>
+</ol>
+<h3 id="expected-result_5">Expected Result</h3>
+<p>Your computer is organised, secure, and backed up. You have a reference document that records your setup. You can find any file quickly, back up important data, and use your computer confidently. You are now ready to learn about the internet in Module 6.</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

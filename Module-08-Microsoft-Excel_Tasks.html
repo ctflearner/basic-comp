@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-08-Microsoft-Excel — Tasks</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-8-tasks-assignments-mastering-microsoft-excel">Module 8: Tasks &amp; Assignments -- Mastering Microsoft Excel</h1>
+<h2 id="how-to-use-this-file">How to Use This File</h2>
+<p>Complete each task in order. Each task introduces new skills and builds on the previous ones. Save ALL your completed spreadsheets -- you may reference them in later modules. Every task works on any Windows 11 computer with Microsoft Excel (2019 or Microsoft 365).</p>
+<hr />
+<h2 id="task-1-personal-monthly-budget">Task 1: Personal Monthly Budget</h2>
+<p><strong>Difficulty:</strong> Beginner<br />
+<strong>Time:</strong> 25 minutes</p>
+<h3 id="instructions">Instructions</h3>
+<ol>
+<li>Open Microsoft Excel (Start Menu, type "Excel")</li>
+<li>Click <strong>Blank workbook</strong></li>
+<li>
+<p>Save immediately as "Monthly-Budget.xlsx" on your Desktop (Ctrl+S)</p>
+</li>
+<li>
+<p><strong>Set up the Income section (rows 1-6):</strong></p>
+</li>
+<li>Cell A1: Type <strong>"PERSONAL MONTHLY BUDGET"</strong> (bold, font size 16, merge cells A1 to D1)</li>
+<li>Cell A3: Type <strong>"INCOME"</strong> (bold, font size 14)</li>
+<li>Enter these income sources:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>Salary</td>
+<td>25000</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Freelance Work</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Other Income</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Total Income</strong></td>
+<td>=SUM(B4:B6)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>Make row 7 bold</p>
+</li>
+<li>
+<p><strong>Set up the Expenses section (rows 9-18):</strong></p>
+</li>
+<li>Cell A9: Type <strong>"EXPENSES"</strong> (bold, font size 14)</li>
+<li>Enter these expense categories:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>Rent</td>
+<td>8000</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Food &amp; Groceries</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Transport</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Electricity &amp; Water</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Phone &amp; Internet</td>
+<td>800</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Entertainment</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Clothing</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Medical</td>
+<td>500</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Miscellaneous</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>Total Expenses</strong></td>
+<td>=SUM(B10:B18)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>Make row 19 bold</p>
+</li>
+<li>
+<p><strong>Calculate Savings (row 21):</strong></p>
+</li>
+<li>Cell A21: <strong>"SAVINGS"</strong> (bold, font size 14)</li>
+<li>Cell B21: <strong>=B7-B19</strong> (Total Income minus Total Expenses)</li>
+<li>
+<p>Format B21 with green fill color if the number is positive</p>
+</li>
+<li>
+<p><strong>Format all money values:</strong></p>
+</li>
+<li>Select all number cells (B4:B21)</li>
+<li>
+<p>Format as <strong>Currency</strong> (Home tab, Number section, choose Currency or use the Rs symbol)</p>
+</li>
+<li>
+<p><strong>Add borders</strong> around all data cells (Home tab, Borders, All Borders)</p>
+</li>
+<li>
+<p>Save the file (Ctrl+S)</p>
+</li>
+</ul>
+<h3 id="expected-result">Expected Result</h3>
+<ul>
+<li>A clean budget spreadsheet with Income, Expenses, and Savings sections</li>
+<li>SUM formulas calculate Total Income (31,000) and Total Expenses (21,300)</li>
+<li>Savings shows 9,700 (Income minus Expenses)</li>
+<li>All amounts are formatted as currency with borders</li>
+</ul>
+<h3 id="bonus-challenge">Bonus Challenge</h3>
+<p>Add a "Percentage" column (Column C) that shows what percentage each expense is of the total expenses. Formula: =B10/$B$19 and format as Percentage. Use absolute reference for the total.</p>
+<hr />
+<h2 id="task-2-student-marks-sheet">Task 2: Student Marks Sheet</h2>
+<p><strong>Difficulty:</strong> Intermediate<br />
+<strong>Time:</strong> 30 minutes</p>
+<h3 id="instructions_1">Instructions</h3>
+<ol>
+<li>
+<p>Open Excel, create a new workbook, save as "Student-Marks.xlsx"</p>
+</li>
+<li>
+<p><strong>Set up headers in Row 1:</strong></p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+<th>G</th>
+<th>H</th>
+<th>I</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Student Name</td>
+<td>Math</td>
+<td>Science</td>
+<td>English</td>
+<td>Hindi</td>
+<td>Computer</td>
+<td>Total</td>
+<td>Average</td>
+<td>Result</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Make the header row <strong>bold</strong> with a <strong>light blue background</strong></li>
+<li>
+<p>Center-align all headers</p>
+</li>
+<li>
+<p><strong>Enter data for 10 students</strong> in rows 2-11. Use realistic names and marks (0 to 100). Here are a few to start -- fill in the rest yourself:</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Priya Sharma</td>
+<td>78</td>
+<td>85</td>
+<td>92</td>
+<td>88</td>
+<td>76</td>
+</tr>
+<tr>
+<td>Rahul Verma</td>
+<td>45</td>
+<td>32</td>
+<td>55</td>
+<td>40</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Anita Patel</td>
+<td>90</td>
+<td>88</td>
+<td>95</td>
+<td>91</td>
+<td>87</td>
+</tr>
+<tr>
+<td>(add 7 more students with varied marks)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Write formulas in Row 2 (Priya's row), then copy down:</strong></li>
+<li><strong>Column G (Total):</strong> =SUM(B2:F2)</li>
+<li><strong>Column H (Average):</strong> =AVERAGE(B2:F2)</li>
+<li><strong>Column I (Result):</strong> =IF(H2&gt;=35, "PASS", "FAIL")</li>
+<li>
+<p>Select G2:I2, copy, and paste into G3:I11 (the formulas adjust automatically for each row)</p>
+</li>
+<li>
+<p><strong>Add summary rows at the bottom (Row 13):</strong></p>
+</li>
+<li>A13: <strong>"Class Statistics"</strong> (bold)</li>
+<li>A14: "Highest" -- B14: =MAX(B2:B11), and copy across to F14</li>
+<li>A15: "Lowest" -- B15: =MIN(B2:B11), and copy across to F15</li>
+<li>A16: "Average" -- B16: =AVERAGE(B2:B11), and copy across to F16</li>
+<li>
+<p>A17: "No. of Students" -- B17: =COUNT(B2:B11)</p>
+</li>
+<li>
+<p><strong>Format:</strong></p>
+</li>
+<li>Average column: show 1 decimal place (select cells, right-click, Format Cells, Number, 1 decimal)</li>
+<li>Result column: make "FAIL" entries red text and "PASS" entries green text</li>
+<li>
+<p>Add borders around all data</p>
+</li>
+<li>
+<p>Save the file</p>
+</li>
+</ol>
+<h3 id="expected-result_1">Expected Result</h3>
+<ul>
+<li>A marks sheet with 10 students, 5 subjects, Total, Average, and Pass/Fail result</li>
+<li>Summary statistics (Highest, Lowest, Average, Count) at the bottom</li>
+<li>Students with average below 35 show "FAIL" in red</li>
+<li>Clean formatting with borders and colored headers</li>
+</ul>
+<h3 id="bonus-challenge_1">Bonus Challenge</h3>
+<p>Add a "Grade" column (Column J) using nested IF:</p>
+<div class="codehilite"><pre><span></span><code>=IF(H2&gt;=90,"A+",IF(H2&gt;=80,"A",IF(H2&gt;=70,"B",IF(H2&gt;=60,"C",IF(H2&gt;=50,"D",IF(H2&gt;=35,"E","F"))))))
+</code></pre></div>
+
+<p>This assigns letter grades based on the average.</p>
+<hr />
+<h2 id="task-3-product-price-list-with-gst">Task 3: Product Price List with GST</h2>
+<p><strong>Difficulty:</strong> Intermediate<br />
+<strong>Time:</strong> 25 minutes</p>
+<h3 id="instructions_2">Instructions</h3>
+<ol>
+<li>
+<p>Open Excel, create a new workbook, save as "Price-List-GST.xlsx"</p>
+</li>
+<li>
+<p><strong>Set up the GST rate cell:</strong></p>
+</li>
+<li>Cell F1: Type <strong>"GST Rate:"</strong></li>
+<li>Cell G1: Type <strong>0.18</strong> (18%)</li>
+<li>Format G1 as Percentage (it will show 18%)</li>
+<li>
+<p>Make F1:G1 bold with yellow background</p>
+</li>
+<li>
+<p><strong>Set up headers in Row 3:</strong></p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item Name</td>
+<td>Quantity</td>
+<td>Unit Price</td>
+<td>Subtotal</td>
+<td>GST Amount</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>Bold headers with light green background</p>
+</li>
+<li>
+<p><strong>Enter 20 products</strong> in rows 4-23. Examples:</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pen</td>
+<td>10</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Notebook</td>
+<td>5</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Eraser</td>
+<td>20</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Ruler</td>
+<td>8</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Pencil Box</td>
+<td>3</td>
+<td>150</td>
+</tr>
+<tr>
+<td>(add 15 more items)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Write formulas in Row 4, then copy down to Row 23:</strong></li>
+<li><strong>Column D (Subtotal):</strong> =B4*C4</li>
+<li><strong>Column E (GST Amount):</strong> =D4*$G$1 (absolute reference to the GST rate)</li>
+<li><strong>Column F (Grand Total):</strong> =D4+E4</li>
+</ol>
+<p><strong>Important:</strong> Use <strong>$G$1</strong> (with dollar signs) for the GST rate. This is an absolute reference -- when you copy the formula down, it always refers to the GST rate cell.</p>
+<ol>
+<li><strong>Add totals in Row 25:</strong></li>
+<li>D25: =SUM(D4:D23) (Total Subtotal)</li>
+<li>E25: =SUM(E4:E23) (Total GST)</li>
+<li>F25: =SUM(F4:F23) (Grand Total)</li>
+<li>
+<p>Make Row 25 bold</p>
+</li>
+<li>
+<p><strong>Format:</strong></p>
+</li>
+<li>All money columns (C, D, E, F): Currency format</li>
+<li>Add borders around all data</li>
+<li>
+<p>Auto-fit column widths (double-click each column border)</p>
+</li>
+<li>
+<p><strong>Test the absolute reference:</strong></p>
+</li>
+<li>Change G1 from 0.18 to 0.12 (12% GST)</li>
+<li>Watch ALL GST amounts recalculate instantly</li>
+<li>
+<p>Change it back to 0.18</p>
+</li>
+<li>
+<p>Save the file</p>
+</li>
+</ol>
+<h3 id="expected-result_2">Expected Result</h3>
+<ul>
+<li>A 20-item price list with Quantity, Unit Price, Subtotal, GST, and Grand Total</li>
+<li>GST rate is in one cell (G1) and all GST formulas reference it with $G$1</li>
+<li>Changing the GST rate updates all 20 rows instantly</li>
+<li>Proper currency formatting and borders</li>
+</ul>
+<h3 id="bonus-challenge_2">Bonus Challenge</h3>
+<p>Add a "Discount" column between Subtotal and GST. Put a discount rate (e.g., 10% = 0.10) in another fixed cell. Calculate: Discounted Price = Subtotal - (Subtotal * discount rate). Then calculate GST on the discounted price.</p>
+<hr />
+<h2 id="task-4-sort-and-filter-challenge">Task 4: Sort and Filter Challenge</h2>
+<p><strong>Difficulty:</strong> Intermediate<br />
+<strong>Time:</strong> 20 minutes</p>
+<h3 id="instructions_3">Instructions</h3>
+<ol>
+<li>
+<p>Open Excel, create a new workbook, save as "Employee-Data.xlsx"</p>
+</li>
+<li>
+<p><strong>Create an employee database with these headers and 15 rows of data:</strong></p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Department</th>
+<th>Salary</th>
+<th>City</th>
+<th>Join Date</th>
+<th>Experience (Years)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Departments to use:</strong> Engineering, Marketing, HR, Finance, Operations<br />
+<strong>Cities to use:</strong> Delhi, Mumbai, Bangalore, Chennai, Kolkata<br />
+<strong>Salary range:</strong> 25000 to 95000<br />
+<strong>Experience:</strong> 1 to 15 years</p>
+<p>Enter 15 rows of realistic employee data with varied values across all columns.</p>
+<ol>
+<li><strong>Convert to a Table:</strong></li>
+<li>Click any cell in the data</li>
+<li>Go to Insert tab, click Table</li>
+<li>Confirm the range, make sure "My table has headers" is checked</li>
+<li>
+<p>Click OK</p>
+</li>
+<li>
+<p><strong>Sorting Tasks:</strong></p>
+</li>
+<li>Sort by <strong>Salary</strong> (highest to lowest): Click the Salary column dropdown, choose "Sort Largest to Smallest"</li>
+<li>Write down: Who has the highest salary? _______________</li>
+<li>
+<p>Now sort by <strong>Name</strong> (A to Z): Click the Name column dropdown, choose "Sort A to Z"</p>
+</li>
+<li>
+<p><strong>Filtering Tasks:</strong></p>
+</li>
+<li>
+<p><strong>Filter 1:</strong> Show only "Engineering" department employees</p>
+<ul>
+<li>Click the Department dropdown, uncheck "Select All," check only "Engineering"</li>
+<li>Write down: How many Engineering employees are there? ___</li>
+<li>Clear the filter (click dropdown, select "Clear Filter")</li>
+</ul>
+</li>
+<li>
+<p><strong>Filter 2:</strong> Show employees with Salary greater than 50000</p>
+<ul>
+<li>Click the Salary dropdown, choose "Number Filters" then "Greater Than"</li>
+<li>Type 50000, click OK</li>
+<li>Write down: How many employees earn more than 50000? ___</li>
+<li>Clear the filter</li>
+</ul>
+</li>
+<li>
+<p><strong>Filter 3:</strong> Show employees in "Delhi" OR "Mumbai"</p>
+<ul>
+<li>Click the City dropdown, uncheck "Select All," check only "Delhi" and "Mumbai"</li>
+<li>Write down: How many employees are in Delhi or Mumbai? ___</li>
+<li>Clear the filter</li>
+</ul>
+</li>
+<li>
+<p><strong>Filter 4:</strong> Combined filter -- Engineering department AND Salary &gt; 50000</p>
+<ul>
+<li>First filter Department to "Engineering"</li>
+<li>Then filter Salary &gt; 50000 (both filters work together)</li>
+<li>Write down: How many Engineering employees earn &gt; 50000? ___</li>
+<li>Clear all filters</li>
+</ul>
+</li>
+<li>
+<p>Save the file</p>
+</li>
+</ol>
+<h3 id="expected-result_3">Expected Result</h3>
+<ul>
+<li>A properly formatted table with 15 employee records</li>
+<li>You successfully sorted by Salary and by Name</li>
+<li>You performed 4 different filter operations and recorded the results</li>
+<li>You understand that multiple filters work together (AND logic)</li>
+</ul>
+<h3 id="bonus-challenge_3">Bonus Challenge</h3>
+<p>Use the Data tab's Sort button to sort by TWO columns at once: first by Department (A to Z), then by Salary (Largest to Smallest) within each department. This groups employees by department and ranks them by salary within each group.</p>
+<hr />
+<h2 id="task-5-create-three-charts">Task 5: Create Three Charts</h2>
+<p><strong>Difficulty:</strong> Intermediate<br />
+<strong>Time:</strong> 25 minutes</p>
+<h3 id="instructions_4">Instructions</h3>
+<p>You will create three different chart types from three small datasets.</p>
+<ol>
+<li>
+<p>Open Excel, create a new workbook, save as "Charts-Practice.xlsx"</p>
+</li>
+<li>
+<p><strong>Chart 1: Column Chart -- Monthly Sales</strong></p>
+</li>
+</ol>
+<p>On Sheet1 (rename the tab to "Sales Chart"):</p>
+<p>Enter this data:<br />
+   | A | B |<br />
+   |---|---|<br />
+   | Month | Sales |<br />
+   | January | 45000 |<br />
+   | February | 52000 |<br />
+   | March | 48000 |<br />
+   | April | 61000 |<br />
+   | May | 55000 |<br />
+   | June | 72000 |</p>
+<ul>
+<li>Select A1:B7</li>
+<li>Go to Insert tab, click <strong>Column Chart</strong> (choose "Clustered Column")</li>
+<li>Add chart title: "Monthly Sales - First Half 2026"</li>
+<li>Add axis labels (click the + icon next to the chart)</li>
+<li>
+<p>Resize the chart to be clearly readable</p>
+</li>
+<li>
+<p><strong>Chart 2: Pie Chart -- Expense Categories</strong></p>
+</li>
+</ul>
+<p>Click the + button at the bottom to add a new sheet. Rename it "Expense Chart."</p>
+<p>Enter this data:<br />
+   | A | B |<br />
+   |---|---|<br />
+   | Category | Amount |<br />
+   | Food | 8000 |<br />
+   | Transport | 3000 |<br />
+   | Bills | 4500 |<br />
+   | Shopping | 2500 |<br />
+   | Entertainment | 2000 |</p>
+<ul>
+<li>Select A1:B6</li>
+<li>Go to Insert tab, click <strong>Pie Chart</strong> (choose the basic 2D pie)</li>
+<li>Add chart title: "Monthly Expense Breakdown"</li>
+<li>Click the + icon and check <strong>Data Labels</strong> -- choose "Percentage" so each slice shows its percentage</li>
+<li>
+<p>Optionally: click the + icon and uncheck "Legend," since the data labels include category names</p>
+</li>
+<li>
+<p><strong>Chart 3: Line Chart -- Weekly Temperature</strong></p>
+</li>
+</ul>
+<p>Add another new sheet. Rename it "Temperature Chart."</p>
+<p>Enter this data:<br />
+   | A | B |<br />
+   |---|---|<br />
+   | Day | Temperature (C) |<br />
+   | Monday | 28 |<br />
+   | Tuesday | 30 |<br />
+   | Wednesday | 32 |<br />
+   | Thursday | 29 |<br />
+   | Friday | 27 |<br />
+   | Saturday | 31 |<br />
+   | Sunday | 33 |</p>
+<ul>
+<li>Select A1:B8</li>
+<li>Go to Insert tab, click <strong>Line Chart</strong> (choose "Line with Markers")</li>
+<li>Add chart title: "Weekly Temperature"</li>
+<li>
+<p>Add axis labels: horizontal = "Day," vertical = "Temperature (Celsius)"</p>
+</li>
+<li>
+<p>Save the file</p>
+</li>
+</ul>
+<h3 id="expected-result_4">Expected Result</h3>
+<ul>
+<li>Three sheets, each with a different chart type</li>
+<li>Column chart showing monthly sales comparison</li>
+<li>Pie chart showing expense proportions with percentage labels</li>
+<li>Line chart showing temperature trends over a week</li>
+<li>All charts have titles and proper labels</li>
+</ul>
+<h3 id="bonus-challenge_4">Bonus Challenge</h3>
+<p>Go back to the Sales Chart sheet. Add a second data row for "Expenses" alongside Sales. Create a chart that shows both Sales and Expenses as grouped columns side by side for each month. This creates a comparison chart with two data series.</p>
+<hr />
+<h2 id="task-6-real-life-project-household-expense-tracker">Task 6: Real-Life Project -- Household Expense Tracker</h2>
+<p><strong>Difficulty:</strong> Intermediate to Advanced<br />
+<strong>Time:</strong> 40 minutes</p>
+<h3 id="instructions_5">Instructions</h3>
+<p>Create a comprehensive expense tracker that you could use in real life.</p>
+<p><strong>Step 1: Set Up the Workbook</strong><br />
+- Open Excel, create a new workbook, save as "Expense-Tracker.xlsx"<br />
+- Rename Sheet1 to <strong>"Daily Log"</strong></p>
+<p><strong>Step 2: Create the Daily Log Sheet</strong></p>
+<p>Set up headers in Row 1:<br />
+| A | B | C | D | E |<br />
+|---|---|---|---|---|<br />
+| Date | Item Description | Category | Amount | Payment Method |</p>
+<p>Enter at least <strong>25 expense entries</strong> for one month. Use realistic items:</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Item Description</th>
+<th>Category</th>
+<th>Amount</th>
+<th>Payment Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01-Nov-2026</td>
+<td>Rice 5kg</td>
+<td>Food</td>
+<td>350</td>
+<td>Cash</td>
+</tr>
+<tr>
+<td>01-Nov-2026</td>
+<td>Bus ticket</td>
+<td>Transport</td>
+<td>30</td>
+<td>Cash</td>
+</tr>
+<tr>
+<td>01-Nov-2026</td>
+<td>Mobile recharge</td>
+<td>Bills</td>
+<td>299</td>
+<td>UPI</td>
+</tr>
+<tr>
+<td>02-Nov-2026</td>
+<td>Vegetables</td>
+<td>Food</td>
+<td>120</td>
+<td>Cash</td>
+</tr>
+<tr>
+<td>02-Nov-2026</td>
+<td>Movie ticket</td>
+<td>Entertainment</td>
+<td>250</td>
+<td>UPI</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Categories to use:</strong> Food, Transport, Bills, Shopping, Entertainment, Others</p>
+<p>Fill at least 25 entries spread across different dates and categories.</p>
+<p><strong>Step 3: Create the Summary Sheet</strong></p>
+<p>Add a new sheet, rename it <strong>"Summary"</strong></p>
+<p>Create a Category Summary table:<br />
+| A | B |<br />
+|---|---|<br />
+| Category | Total |<br />
+| Food | =SUMIF('Daily Log'!C:C,"Food",'Daily Log'!D:D) |<br />
+| Transport | =SUMIF('Daily Log'!C:C,"Transport",'Daily Log'!D:D) |<br />
+| Bills | =SUMIF('Daily Log'!C:C,"Bills",'Daily Log'!D:D) |<br />
+| Shopping | =SUMIF('Daily Log'!C:C,"Shopping",'Daily Log'!D:D) |<br />
+| Entertainment | =SUMIF('Daily Log'!C:C,"Entertainment",'Daily Log'!D:D) |<br />
+| Others | =SUMIF('Daily Log'!C:C,"Others",'Daily Log'!D:D) |<br />
+| <strong>Grand Total</strong> | =SUM(B2:B7) |</p>
+<p>Note: SUMIF adds up values where a condition is met. The formula =SUMIF('Daily Log'!C:C,"Food",'Daily Log'!D:D) means "look at the Category column on the Daily Log sheet, find all rows where the category is Food, and add up the corresponding Amount values."</p>
+<p>Add additional statistics:<br />
+- Average Daily Spending: =AVERAGE('Daily Log'!D:D)<br />
+- Highest Single Expense: =MAX('Daily Log'!D:D)<br />
+- Number of Transactions: =COUNTA('Daily Log'!D2:D100)</p>
+<p><strong>Step 4: Create a Pie Chart</strong></p>
+<p>On the Summary sheet:<br />
+1. Select the Category names and Totals (A1:B7, not including Grand Total)<br />
+2. Insert a Pie Chart<br />
+3. Add title: "Expense Distribution - November 2026"<br />
+4. Add data labels showing both category names and percentages<br />
+5. Resize to fill a good portion of the sheet</p>
+<p><strong>Step 5: Format Everything</strong><br />
+- Daily Log: format Amount as Currency, Date as a proper date format<br />
+- Summary: format all totals as Currency<br />
+- Add borders, bold headers, colored header rows<br />
+- Auto-fit all columns</p>
+<p><strong>Step 6: Save</strong><br />
+- Save as .xlsx</p>
+<h3 id="expected-result_5">Expected Result</h3>
+<ul>
+<li>A "Daily Log" sheet with 25+ entries across 6 categories</li>
+<li>A "Summary" sheet with SUMIF totals per category, grand total, average, max, and count</li>
+<li>A pie chart showing the percentage breakdown of spending by category</li>
+<li>Professional formatting throughout</li>
+<li>This is a spreadsheet you could actually maintain in real life to track your spending</li>
+</ul>
+<h3 id="bonus-challenge_5">Bonus Challenge</h3>
+<p>Add a third sheet called "Payment Methods." Use SUMIF to calculate how much you spent via Cash, UPI, and Card separately. Create a bar chart comparing the three payment methods. Also add a COUNTIF formula to count how many transactions used each payment method.</p>
+<hr />
+<h2 id="module-assessment">Module Assessment</h2>
+<p>Answer these questions to test your understanding. Write your answers on paper or in a spreadsheet.</p>
+<ol>
+<li>What is the cell reference for the cell at Column D, Row 7?</li>
+<li>What does the formula =SUM(B2:B10) do?</li>
+<li>What is the difference between =AVERAGE and =COUNT?</li>
+<li>Write an IF formula that displays "Expensive" if the value in A1 is greater than 1000, otherwise "Affordable."</li>
+<li>What is the difference between a relative reference (A1) and an absolute reference ($A$1)?</li>
+<li>You have a tax rate in cell E1 that applies to all rows. How do you make sure the formula always refers to E1, even when copied down?</li>
+<li>What chart type would you use to show how your expenses are split across categories?</li>
+<li>What chart type would you use to show how your sales changed over 12 months?</li>
+<li>How do you auto-fill the days of the week starting from "Monday"?</li>
+<li>You have a table with 500 rows. How do you quickly see only the rows where the City column is "Mumbai"?</li>
+</ol>
+<hr />
+<h2 id="real-life-mini-project">Real-Life Mini Project</h2>
+<p><strong>Scenario:</strong> You are managing a small shop's inventory.</p>
+<p>Create a spreadsheet called "Shop-Inventory.xlsx" with:</p>
+<ol>
+<li>
+<p><strong>Product List sheet:</strong> Item Name, Category (Electronics, Stationery, Food), Stock Quantity, Purchase Price, Selling Price, Profit per Item (=Selling-Purchase), Stock Value (=Stock*Purchase Price)</p>
+</li>
+<li>
+<p>Enter at least 20 products with realistic data</p>
+</li>
+<li>
+<p><strong>Summary sheet</strong> with:</p>
+</li>
+<li>Total stock value (SUM of all Stock Values)</li>
+<li>Average profit margin per item</li>
+<li>Item with highest profit: use MAX</li>
+<li>Item with lowest stock: use MIN</li>
+<li>Count of items by category using COUNTIF</li>
+<li>
+<p>Total value by category using SUMIF</p>
+</li>
+<li>
+<p><strong>Charts:</strong></p>
+</li>
+<li>Bar chart comparing stock quantities across products</li>
+<li>Pie chart showing stock value by category</li>
+</ol>
+<p>This project tests: formulas (SUM, AVERAGE, MAX, MIN, IF, COUNTIF, SUMIF), absolute references, tables, sorting, filtering, charts, and multi-sheet workbooks.</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

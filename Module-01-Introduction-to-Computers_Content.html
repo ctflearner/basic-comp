@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-01-Introduction-to-Computers — Content</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-1-introduction-to-computers-devices">Module 1: Introduction to Computers &amp; Devices</h1>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Understand what a computer is and what it does in simple terms</li>
+<li>Identify different types of computing devices and when to use each one</li>
+<li>Recognise the basic physical parts of a computer and what each part does</li>
+<li>Understand the difference between hardware (physical parts) and software (programs)</li>
+<li>Know how to turn a computer on and off properly, and how to connect basic accessories</li>
+</ul>
+<h2 id="duration">Duration</h2>
+<p>3 weeks (out of 12-month course)</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>None. This is the very first module. You do not need any prior experience with computers.</p>
+<hr />
+<h2 id="topic-1-what-is-a-computer">Topic 1: What is a Computer?</h2>
+<h3 id="explanation">Explanation</h3>
+<p>A computer is a machine that follows instructions very quickly. Think of it like a <strong>very fast helper</strong> that can only do exactly what you tell it to do. It cannot think for itself, but it can do simple tasks millions of times per second.</p>
+<p>Here is a simple way to understand the main parts of a computer using your own body as a comparison:</p>
+<table>
+<thead>
+<tr>
+<th>Your Body</th>
+<th>Computer Part</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brain</td>
+<td>CPU (Processor)</td>
+<td>Thinks and makes decisions</td>
+</tr>
+<tr>
+<td>Short-term memory (what you are thinking about right now)</td>
+<td>RAM (Memory)</td>
+<td>Holds information the computer is working with right now</td>
+</tr>
+<tr>
+<td>Long-term memory (things you remember forever)</td>
+<td>Hard Drive / SSD (Storage)</td>
+<td>Stores files, photos, programs permanently</td>
+</tr>
+<tr>
+<td>Eyes, ears, sense of touch</td>
+<td>Input devices (keyboard, mouse, microphone)</td>
+<td>How the computer receives information from you</td>
+</tr>
+<tr>
+<td>Mouth, hands</td>
+<td>Output devices (screen, speakers, printer)</td>
+<td>How the computer gives information back to you</td>
+</tr>
+</tbody>
+</table>
+<p>A computer does four things, always in this order:</p>
+<ol>
+<li><strong>Input</strong> -- You give it information (typing, clicking, speaking)</li>
+<li><strong>Processing</strong> -- The CPU (brain) works on that information</li>
+<li><strong>Storage</strong> -- It saves the result if needed</li>
+<li><strong>Output</strong> -- It shows you the result (on screen, through speakers, on paper)</li>
+</ol>
+<p><strong>Example:</strong> You type a message (input). The computer processes the letters (processing). It saves your message (storage). It shows the message on screen (output).</p>
+<h3 id="real-world-example">Real-World Example</h3>
+<p>When you use an ATM (cash machine) at the bank:<br />
+- <strong>Input:</strong> You press buttons to enter your PIN and the amount you want<br />
+- <strong>Processing:</strong> The computer inside checks your account<br />
+- <strong>Storage:</strong> It records the transaction<br />
+- <strong>Output:</strong> It gives you cash and prints a receipt</p>
+<p>Computers are everywhere -- inside phones, TVs, cars, washing machines, and ATMs. Every time you use one of these, you are using a computer.</p>
+<h3 id="key-points-to-remember">Key Points to Remember</h3>
+<ul>
+<li>A computer is a machine that follows instructions very fast</li>
+<li>It cannot think for itself -- it only does what humans programme it to do</li>
+<li>Every computer has a brain (CPU), short-term memory (RAM), and long-term storage (hard drive)</li>
+<li>The computer cycle is always: Input, Processing, Storage, Output</li>
+</ul>
+<hr />
+<h2 id="topic-2-types-of-devices">Topic 2: Types of Devices</h2>
+<h3 id="explanation_1">Explanation</h3>
+<p>There are four main types of computing devices you will encounter in daily life. Each one is better suited for different situations.</p>
+<p><strong>1. Desktop Computer</strong><br />
+- A computer that stays on a desk. It does not move.<br />
+- It has separate parts: a monitor (screen), a keyboard, a mouse, and a tower (the box that contains the brain and storage).<br />
+- <strong>Best for:</strong> Office work, jobs that need a big screen, tasks that take many hours.<br />
+- <strong>Advantages:</strong> Powerful, big screen, comfortable to use for long periods, easy to upgrade.<br />
+- <strong>Disadvantages:</strong> Cannot carry it around. Needs a permanent desk and power outlet.</p>
+<p><strong>2. Laptop Computer</strong><br />
+- A portable computer that folds open and closed like a book.<br />
+- The screen, keyboard, and touchpad (mouse) are all built into one device.<br />
+- Has a battery, so it works without being plugged in (usually 4-10 hours).<br />
+- <strong>Best for:</strong> Students, people who work from different locations, travelling.<br />
+- <strong>Advantages:</strong> Portable, has its own battery, can use anywhere.<br />
+- <strong>Disadvantages:</strong> Smaller screen than desktop, can overheat on soft surfaces like beds.</p>
+<p><strong>3. Tablet</strong><br />
+- A flat, thin device with a touchscreen. No physical keyboard (though you can buy one separately).<br />
+- Larger than a phone but smaller than a laptop.<br />
+- <strong>Best for:</strong> Reading, watching videos, light browsing, children learning.<br />
+- <strong>Advantages:</strong> Very light, long battery life, easy to hold.<br />
+- <strong>Disadvantages:</strong> Harder to type long documents, less powerful than a laptop.</p>
+<p><strong>4. Smartphone</strong><br />
+- A small computer that fits in your pocket. It is also a phone.<br />
+- Touchscreen. Runs apps.<br />
+- <strong>Best for:</strong> Communication (calls, messages, WhatsApp), quick tasks on the go, taking photos.<br />
+- <strong>Advantages:</strong> Always with you, fits in pocket, has camera and phone built in.<br />
+- <strong>Disadvantages:</strong> Very small screen, hard to do serious work like writing long documents.</p>
+<h3 id="real-world-example_1">Real-World Example</h3>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Best Device</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Working at an office job 8 hours a day</td>
+<td>Desktop</td>
+<td>Big screen, comfortable keyboard, powerful</td>
+</tr>
+<tr>
+<td>University student going to lectures</td>
+<td>Laptop</td>
+<td>Portable, can take notes in class</td>
+</tr>
+<tr>
+<td>Reading recipes in the kitchen</td>
+<td>Tablet</td>
+<td>Can prop it up, easy to touch with messy hands</td>
+</tr>
+<tr>
+<td>Checking messages while walking</td>
+<td>Smartphone</td>
+<td>Fits in pocket, always available</td>
+</tr>
+<tr>
+<td>Editing a large spreadsheet for work</td>
+<td>Desktop or Laptop</td>
+<td>Need a proper keyboard and large screen</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-points-to-remember_1">Key Points to Remember</h3>
+<ul>
+<li>Desktop = powerful but stays in one place</li>
+<li>Laptop = portable, good for work and study</li>
+<li>Tablet = light, good for reading and media</li>
+<li>Smartphone = always in your pocket, good for quick tasks</li>
+<li>Choose the right device for the right task</li>
+</ul>
+<hr />
+<h2 id="topic-3-basic-parts-of-a-computer">Topic 3: Basic Parts of a Computer</h2>
+<h3 id="explanation_2">Explanation</h3>
+<p>Let us look at each part you can see and touch on a typical computer. We will use a laptop as our main example, since that is what most beginners use.</p>
+<p><strong>Monitor (Screen)</strong><br />
+- This is where the computer shows you information -- text, pictures, videos.<br />
+- On a laptop, the screen is built into the top half.<br />
+- On a desktop, the monitor is a separate device connected with a cable.</p>
+<p><strong>CPU (Central Processing Unit) -- The Brain</strong><br />
+- This is inside the computer. You cannot see it without opening the case.<br />
+- It does all the thinking and calculating.<br />
+- When your computer is slow, the CPU might be overworked (like your brain when you are tired).</p>
+<p><strong>RAM (Random Access Memory) -- Short-Term Memory</strong><br />
+- Also inside the computer. You cannot see it.<br />
+- It holds whatever the computer is working on right now.<br />
+- When you open a program, it loads into RAM. When you close it, RAM is freed.<br />
+- More RAM means you can have more programs open at the same time.</p>
+<p><strong>Hard Drive / SSD (Storage) -- Long-Term Memory</strong><br />
+- Where all your files, photos, music, and programs are saved permanently.<br />
+- Even when you turn off the computer, everything on the hard drive stays.<br />
+- SSD (Solid State Drive) is newer and faster than a traditional hard drive.</p>
+<p><strong>Keyboard</strong><br />
+- You press keys to type letters, numbers, and symbols.<br />
+- On a laptop, it is built in. On a desktop, it connects with a cable or wirelessly.</p>
+<p><strong>Mouse</strong><br />
+- A small device you move with your hand. It controls an arrow (called a cursor or pointer) on the screen.<br />
+- On a laptop, the built-in replacement is called a <strong>touchpad</strong> (the flat area below the keyboard).<br />
+- You slide your finger on the touchpad to move the cursor.</p>
+<p><strong>Printer</strong><br />
+- A separate device that prints what is on your screen onto paper.<br />
+- Connects to your computer with a cable or through WiFi.</p>
+<p><strong>Speakers</strong><br />
+- Output sound -- music, video sound, notification beeps.<br />
+- Laptops have small speakers built in. You can also connect external speakers for better sound.</p>
+<p><strong>Webcam</strong><br />
+- A small camera, usually at the top of a laptop screen.<br />
+- Used for video calls (Zoom, Teams, WhatsApp video).</p>
+<p><strong>Microphone</strong><br />
+- Captures your voice. Built into most laptops.<br />
+- Used for voice calls, voice messages, and voice commands.</p>
+<h3 id="step-by-step-guide-identifying-parts-on-your-laptop">Step-by-Step Guide: Identifying Parts on Your Laptop</h3>
+<ol>
+<li>Look at the screen (top half when opened). This is your <strong>monitor</strong>.</li>
+<li>Look at the bottom half. The keys you press are your <strong>keyboard</strong>.</li>
+<li>Below the keyboard, find a smooth flat rectangle. This is your <strong>touchpad</strong> (acts like a mouse).</li>
+<li>At the very top of the screen, look for a tiny circle. This is your <strong>webcam</strong>.</li>
+<li>On the sides of the laptop, look for small holes and slots. These are <strong>ports</strong> (we will cover these in Topic 7).</li>
+<li>On the bottom or sides, look for small grilles (lines or tiny holes). These are <strong>speaker</strong> openings.</li>
+<li>Near the webcam, there is usually a tiny hole -- this is the <strong>microphone</strong>.</li>
+<li>The CPU, RAM, and hard drive are all inside. You do not need to open the laptop.</li>
+</ol>
+<h3 id="key-points-to-remember_2">Key Points to Remember</h3>
+<ul>
+<li>The screen shows you information (output)</li>
+<li>The keyboard and mouse/touchpad let you give instructions (input)</li>
+<li>CPU, RAM, and storage are inside -- you do not need to touch them</li>
+<li>The webcam, microphone, and speakers handle video calls and sound</li>
+</ul>
+<hr />
+<h2 id="topic-4-hardware-vs-software">Topic 4: Hardware vs Software</h2>
+<h3 id="explanation_3">Explanation</h3>
+<p>This is one of the most important concepts in computing. Everything about a computer falls into two categories:</p>
+<p><strong>Hardware</strong> = Physical things you can touch.<br />
+If you can pick it up, plug it in, or feel it with your hands, it is hardware.</p>
+<p><strong>Software</strong> = Programs and apps that run on the computer.<br />
+You cannot touch software. It is instructions that tell the hardware what to do.</p>
+<p>Think of it this way:<br />
+- <strong>Hardware</strong> is like your <strong>body</strong> (arms, legs, eyes, brain)<br />
+- <strong>Software</strong> is like your <strong>skills and knowledge</strong> (how to cook, how to read, how to drive)</p>
+<p>Your body (hardware) is useless without skills (software). And skills (software) cannot exist without a body (hardware) to use them.</p>
+<p><strong>10 Examples of Hardware:</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Hardware</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Monitor / Screen</td>
+<td>Shows pictures and text</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Keyboard</td>
+<td>You type on it</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Mouse</td>
+<td>You point and click with it</td>
+</tr>
+<tr>
+<td>4</td>
+<td>CPU (Processor)</td>
+<td>The brain inside the computer</td>
+</tr>
+<tr>
+<td>5</td>
+<td>RAM</td>
+<td>Short-term memory</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Hard Drive / SSD</td>
+<td>Stores files permanently</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Printer</td>
+<td>Prints on paper</td>
+</tr>
+<tr>
+<td>8</td>
+<td>USB Flash Drive (pendrive)</td>
+<td>Portable storage you plug in</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Webcam</td>
+<td>Camera for video calls</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Headphones</td>
+<td>Listen to audio privately</td>
+</tr>
+</tbody>
+</table>
+<p><strong>10 Examples of Software:</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Software</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Windows 11</td>
+<td>Operating system -- manages the whole computer</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Microsoft Word</td>
+<td>Write documents and letters</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Google Chrome</td>
+<td>Browse the internet</td>
+</tr>
+<tr>
+<td>4</td>
+<td>WhatsApp</td>
+<td>Send messages and make calls</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Microsoft Excel</td>
+<td>Create spreadsheets with numbers</td>
+</tr>
+<tr>
+<td>6</td>
+<td>VLC Media Player</td>
+<td>Play videos and music</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Calculator app</td>
+<td>Do maths</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Zoom</td>
+<td>Video meetings</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Adobe Acrobat Reader</td>
+<td>Read PDF files</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Notepad</td>
+<td>Write simple text notes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="real-world-example_2">Real-World Example</h3>
+<p>When you write a letter for a job application:<br />
+- <strong>Hardware you use:</strong> Keyboard (to type), monitor (to see what you type), printer (to print the letter), mouse (to click buttons)<br />
+- <strong>Software you use:</strong> Microsoft Word (the program you type the letter in), your printer driver software (tells the printer how to print)</p>
+<p>You need BOTH hardware and software to get anything done on a computer.</p>
+<h3 id="key-points-to-remember_3">Key Points to Remember</h3>
+<ul>
+<li>Hardware = physical, you can touch it</li>
+<li>Software = programs/apps, you cannot touch them</li>
+<li>You need both to use a computer</li>
+<li>The operating system (like Windows) is the most important software -- it manages everything else</li>
+</ul>
+<hr />
+<h2 id="topic-5-input-devices-vs-output-devices">Topic 5: Input Devices vs Output Devices</h2>
+<h3 id="explanation_4">Explanation</h3>
+<p>Every device connected to a computer is either sending information IN or sending information OUT.</p>
+<p><strong>Input Devices</strong> -- send information INTO the computer (from you to the computer):</p>
+<table>
+<thead>
+<tr>
+<th>Input Device</th>
+<th>What It Sends</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Keyboard</td>
+<td>Letters, numbers, commands</td>
+</tr>
+<tr>
+<td>Mouse / Touchpad</td>
+<td>Movement and clicks (pointing)</td>
+</tr>
+<tr>
+<td>Microphone</td>
+<td>Your voice</td>
+</tr>
+<tr>
+<td>Scanner</td>
+<td>A picture of a paper document</td>
+</tr>
+<tr>
+<td>Webcam</td>
+<td>Video of your face</td>
+</tr>
+<tr>
+<td>Barcode scanner</td>
+<td>Product information</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Output Devices</strong> -- send information OUT of the computer (from the computer to you):</p>
+<table>
+<thead>
+<tr>
+<th>Output Device</th>
+<th>What It Sends</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monitor / Screen</td>
+<td>Pictures, text, video</td>
+</tr>
+<tr>
+<td>Printer</td>
+<td>Paper documents</td>
+</tr>
+<tr>
+<td>Speakers</td>
+<td>Sound and music</td>
+</tr>
+<tr>
+<td>Headphones</td>
+<td>Sound (privately)</td>
+</tr>
+<tr>
+<td>Projector</td>
+<td>Large image on wall or screen</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interactive Devices</strong> -- both input AND output:</p>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Touchscreen</td>
+<td>You tap and swipe (input)</td>
+<td>It shows images and text (output)</td>
+</tr>
+<tr>
+<td>Headset with microphone</td>
+<td>Microphone captures voice (input)</td>
+<td>Speakers play sound (output)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="real-world-example_3">Real-World Example</h3>
+<p>During a Zoom video call at work:<br />
+- <strong>Input:</strong> Your webcam sends your face (video in). Your microphone sends your voice (audio in). Your keyboard sends chat messages (text in).<br />
+- <strong>Output:</strong> Your monitor shows other people's faces (video out). Your speakers play their voices (audio out).</p>
+<h3 id="key-points-to-remember_4">Key Points to Remember</h3>
+<ul>
+<li>Input = information going INTO the computer (from you)</li>
+<li>Output = information coming OUT of the computer (to you)</li>
+<li>Some devices do both (touchscreen, headset with microphone)</li>
+</ul>
+<hr />
+<h2 id="topic-6-how-to-turn-a-computer-on-and-off-properly">Topic 6: How to Turn a Computer ON and OFF Properly</h2>
+<h3 id="explanation_5">Explanation</h3>
+<p>Turning a computer on is simple, but turning it off has a right way and a wrong way.</p>
+<h3 id="step-by-step-guide-turning-on">Step-by-Step Guide: Turning ON</h3>
+<ol>
+<li>If using a laptop, open the lid (the screen half).</li>
+<li>Find the <strong>power button</strong>. On a laptop, it is usually:</li>
+<li>On the top-right area above the keyboard, OR</li>
+<li>On the side of the laptop, OR</li>
+<li>Built into the keyboard (some newer laptops)</li>
+<li>Press the power button <strong>once</strong> and release it. Do not hold it down.</li>
+<li>Wait. The screen will light up and you will see a logo (like the Windows logo).</li>
+<li>After 30 seconds to 2 minutes, you will see the <strong>login screen</strong> or the <strong>desktop</strong>.</li>
+<li>If you see a login screen, type your password or PIN and press Enter.</li>
+<li>You are now on the <strong>desktop</strong> -- the main screen of your computer.</li>
+</ol>
+<p><strong>What happens when you press the power button:</strong><br />
+The computer loads the operating system (Windows) from the hard drive into RAM. This is called "booting up." It is like waking up in the morning -- your brain needs a moment to start working.</p>
+<h3 id="step-by-step-guide-turning-off-the-right-way">Step-by-Step Guide: Turning OFF (The Right Way)</h3>
+<ol>
+<li>Save any work you have open (press Ctrl+S in any document).</li>
+<li>Close any programs you have open (click the X button in the top-right corner of each window).</li>
+<li>Click the <strong>Start button</strong> (the Windows icon in the centre of the taskbar at the bottom of the screen).</li>
+<li>Click the <strong>Power icon</strong> (it looks like a circle with a line at the top).</li>
+<li>Click <strong>Shut down</strong>.</li>
+<li>Wait for the screen to go completely dark and all lights to turn off.</li>
+<li>Your computer is now safely turned off.</li>
+</ol>
+<h3 id="why-you-should-never-just-unplug-the-computer">Why You Should NEVER Just Unplug the Computer</h3>
+<p>Pulling the plug or holding the power button while the computer is working is like slamming a book shut while someone is writing in it. Here is what can go wrong:</p>
+<ul>
+<li><strong>Lost work:</strong> Any unsaved documents will be lost</li>
+<li><strong>Corrupted files:</strong> Files that were being saved can become damaged and unreadable</li>
+<li><strong>System damage:</strong> Windows itself can become damaged, and the computer might not start properly next time</li>
+<li><strong>Hard drive damage:</strong> On older computers, sudden power loss can physically damage the hard drive</li>
+</ul>
+<p><strong>The ONLY time you should force power off:</strong> If the computer is completely frozen (nothing responds for more than 2 minutes). In that case, hold the power button for 10 seconds until the computer turns off. This is a last resort.</p>
+<h3 id="key-points-to-remember_5">Key Points to Remember</h3>
+<ul>
+<li>Turn ON: Press the power button once, wait for the desktop</li>
+<li>Turn OFF: Start button, Power icon, Shut down</li>
+<li>NEVER unplug the computer or hold the power button unless it is completely frozen</li>
+<li>Always save your work before shutting down</li>
+</ul>
+<hr />
+<h2 id="topic-7-connecting-peripherals-accessories">Topic 7: Connecting Peripherals (Accessories)</h2>
+<h3 id="explanation_6">Explanation</h3>
+<p>Peripherals are extra devices you connect to your computer. Here are the most common connection types (called "ports"):</p>
+<p><strong>USB (Universal Serial Bus)</strong><br />
+- The most common port. Used for mice, keyboards, pendrives, phone charging cables, and more.<br />
+- <strong>USB-A:</strong> The rectangular one. Most pendrives and older devices use this. It only fits one way -- if it does not go in, flip it over.<br />
+- <strong>USB-C:</strong> The newer, smaller oval-shaped one. Modern laptops use this. It fits in either direction.<br />
+- Look on the sides of your laptop for these ports.</p>
+<p><strong>HDMI (High-Definition Multimedia Interface)</strong><br />
+- Used to connect an external monitor, projector, or TV.<br />
+- The port is wider than USB, with angled corners.<br />
+- If you want to show your laptop screen on a big TV, you use an HDMI cable.</p>
+<p><strong>Headphone Jack (3.5mm Audio Jack)</strong><br />
+- A small round hole for plugging in headphones or earphones.<br />
+- Some newer laptops do not have this -- you would use USB or Bluetooth headphones instead.</p>
+<p><strong>Charging Port</strong><br />
+- Where you plug in the power cable to charge your laptop.<br />
+- On older laptops, this is a special round port. On newer laptops, it is often USB-C.</p>
+<h3 id="step-by-step-guide-connecting-common-devices">Step-by-Step Guide: Connecting Common Devices</h3>
+<p><strong>Connecting a USB Pendrive:</strong><br />
+1. Look at the sides of your laptop for a rectangular USB-A port.<br />
+2. Hold the pendrive with the metal part facing the port.<br />
+3. Gently push it into the port. If it does not fit, flip the pendrive over and try again.<br />
+4. You will hear a small sound, and a notification may appear on screen.<br />
+5. Open File Explorer to find your pendrive (usually listed under "This PC").</p>
+<p><strong>Connecting Headphones:</strong><br />
+1. Find the headphone jack on your laptop (small round hole, often with a headphone icon next to it).<br />
+2. Push the headphone plug straight into the hole until it clicks in gently.<br />
+3. Sound will now come through your headphones instead of the laptop speakers.</p>
+<p><strong>Connecting a USB Mouse:</strong><br />
+1. Find a USB-A port on your laptop.<br />
+2. Plug in the mouse's USB cable (or the small wireless receiver if it is a wireless mouse).<br />
+3. The mouse should work immediately. Move it and watch the cursor on screen.</p>
+<h3 id="key-points-to-remember_6">Key Points to Remember</h3>
+<ul>
+<li>USB is the most common port -- used for many devices</li>
+<li>USB-A is rectangular; USB-C is small and oval</li>
+<li>HDMI connects to monitors, TVs, and projectors</li>
+<li>Always insert plugs gently -- never force them</li>
+<li>If a USB plug does not fit, flip it and try the other way</li>
+</ul>
+<hr />
+<h2 id="quick-reference-cheat-sheet">Quick Reference / Cheat Sheet</h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+<th>Easy Analogy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td>A machine that follows instructions very fast</td>
+<td>A very fast, obedient helper</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>The processor that does all the thinking</td>
+<td>The brain</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>Temporary memory for what the computer is doing now</td>
+<td>Your short-term memory</td>
+</tr>
+<tr>
+<td>Hard Drive / SSD</td>
+<td>Permanent storage for all files</td>
+<td>Your long-term memory</td>
+</tr>
+<tr>
+<td>Hardware</td>
+<td>Physical parts you can touch</td>
+<td>Your body</td>
+</tr>
+<tr>
+<td>Software</td>
+<td>Programs and apps</td>
+<td>Your skills and knowledge</td>
+</tr>
+<tr>
+<td>Input Device</td>
+<td>Sends information into the computer</td>
+<td>Your eyes and ears</td>
+</tr>
+<tr>
+<td>Output Device</td>
+<td>Sends information out from the computer</td>
+<td>Your mouth and hands</td>
+</tr>
+<tr>
+<td>USB</td>
+<td>A common port for connecting devices</td>
+<td>A universal plug</td>
+</tr>
+<tr>
+<td>HDMI</td>
+<td>Port for connecting a screen or projector</td>
+<td>A video cable</td>
+</tr>
+<tr>
+<td>Booting Up</td>
+<td>The computer starting and loading Windows</td>
+<td>Waking up in the morning</td>
+</tr>
+<tr>
+<td>Shutting Down</td>
+<td>Properly turning off the computer</td>
+<td>Going to sleep safely</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<ol>
+<li><strong>Forcing a USB plug in the wrong way.</strong> If it does not fit, flip it. Never force it.</li>
+<li><strong>Unplugging the computer instead of shutting down properly.</strong> This can damage files and Windows.</li>
+<li><strong>Thinking the computer is broken when it is just slow to start.</strong> Give it 1-2 minutes to boot up.</li>
+<li><strong>Confusing hardware and software.</strong> Remember: if you can touch it, it is hardware.</li>
+<li><strong>Covering the laptop vents (air holes on the bottom or sides).</strong> This causes overheating. Never use a laptop on a pillow or blanket.</li>
+<li><strong>Not saving work before shutting down.</strong> Always press Ctrl+S first.</li>
+<li><strong>Thinking all computers are the same.</strong> A smartphone is a computer too, just a small one.</li>
+</ol>
+<hr />
+<h2 id="whats-next">What's Next</h2>
+<p>In <strong>Module 2: Getting Started with Windows OS</strong>, you will learn how to use the Windows operating system -- the software that manages your entire computer. You will learn about the desktop, how to open and close programs, how to organise your files into folders, and how to connect to WiFi.</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

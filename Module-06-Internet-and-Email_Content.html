@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-06-Internet-and-Email — Content</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-6-introduction-to-internet-email">Module 6: Introduction to Internet &amp; Email</h1>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this module, you will be able to:</p>
+<ol>
+<li>Understand what the Internet is and how it works in simple terms</li>
+<li>Use a web browser to navigate websites confidently</li>
+<li>Search Google effectively using advanced techniques</li>
+<li>Identify online safety threats and protect yourself</li>
+<li>Create and use a Gmail account professionally</li>
+<li>Compose, reply, forward, and manage emails</li>
+<li>Handle email attachments safely</li>
+<li>Use Google Drive to share files via email</li>
+</ol>
+<h2 id="duration">Duration</h2>
+<p>4 hours (2 hours lecture + 2 hours hands-on practice)</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Completed Module 5 (or basic computer operating skills)</li>
+<li>A working computer with internet connection</li>
+<li>Google Chrome browser installed</li>
+</ul>
+<hr />
+<h2 id="topic-1-what-is-the-internet">Topic 1: What Is the Internet?</h2>
+<h3 id="explanation">Explanation</h3>
+<p>Think of the Internet as the world's largest library, post office, and marketplace -- all connected by invisible cables. Just like a library holds books on every topic, the Internet holds information on everything. Just like a post office lets you send and receive letters, the Internet lets you send and receive messages (email, chat). Just like a marketplace lets you buy and sell, the Internet lets you shop online.</p>
+<p><strong>How it works (simplified):</strong></p>
+<p>Your computer connects to a <strong>router</strong> (the small box with blinking lights in your home). The router connects to your <strong>ISP</strong> (Internet Service Provider -- the company you pay for internet, like Jio, Airtel, BSNL, or Comcast). The ISP connects you to the <strong>Internet</strong> -- the global network of billions of connected computers.</p>
+<div class="codehilite"><pre><span></span><code>Your Computer --&gt; Router --&gt; ISP --&gt; The Internet (billions of computers worldwide)
+</code></pre></div>
+
+<p>Every website you visit is stored on a computer somewhere in the world called a <strong>server</strong>. When you type a website address, your computer asks that server to send the webpage to you. This happens in less than a second.</p>
+<h3 id="real-world-example">Real-World Example</h3>
+<p>When you open YouTube to watch a video, your computer sends a request through your router, through your ISP, across the Internet to YouTube's servers (which are giant buildings full of computers owned by Google). Those servers send the video back to your computer through the same path. All of this happens in milliseconds.</p>
+<h3 id="key-points">Key Points</h3>
+<ul>
+<li>The Internet is a global network connecting billions of devices</li>
+<li>You need an ISP (Internet Service Provider) to access the Internet</li>
+<li>Websites live on special computers called servers</li>
+<li>Your path to the Internet: Computer --&gt; Router --&gt; ISP --&gt; Internet</li>
+<li>WiFi is just a wireless way to connect your device to the router -- WiFi is NOT the Internet itself</li>
+</ul>
+<hr />
+<h2 id="topic-2-web-browsers">Topic 2: Web Browsers</h2>
+<h3 id="explanation_1">Explanation</h3>
+<p>A <strong>web browser</strong> is your window to the Internet. Without a browser, you cannot view websites. It is a program (application) that reads website code and displays it as the pages you see.</p>
+<p><strong>Common browsers:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Browser</th>
+<th>Icon</th>
+<th>Made By</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Chrome</td>
+<td>Round circle with red, yellow, green, and blue</td>
+<td>Google</td>
+<td>Most popular, works well with Google services</td>
+</tr>
+<tr>
+<td>Microsoft Edge</td>
+<td>Blue wave shape</td>
+<td>Microsoft</td>
+<td>Comes pre-installed on Windows 11</td>
+</tr>
+<tr>
+<td>Mozilla Firefox</td>
+<td>Orange fox wrapping around a globe</td>
+<td>Mozilla</td>
+<td>Good for privacy</td>
+</tr>
+</tbody>
+</table>
+<p>All browsers do the same basic job. For this course, we will use <strong>Google Chrome</strong> because it is the most widely used.</p>
+<h3 id="step-by-step-guide-opening-and-using-chrome">Step-by-Step Guide: Opening and Using Chrome</h3>
+<p><strong>Step 1: Open Google Chrome</strong><br />
+- Click the <strong>Start</strong> button (bottom-left of screen)<br />
+- Type <strong>Chrome</strong> on your keyboard<br />
+- Click <strong>Google Chrome</strong> when it appears in the search results<br />
+- Chrome opens with a new tab</p>
+<p><strong>Step 2: Understand the Chrome Window</strong></p>
+<p>At the very top of Chrome, you will see:</p>
+<ul>
+<li><strong>Address Bar (URL bar):</strong> The long box at the top where you type website addresses. This is also where you can type search queries.</li>
+<li><strong>Back Button (left arrow):</strong> Go back to the previous page</li>
+<li><strong>Forward Button (right arrow):</strong> Go forward (after going back)</li>
+<li><strong>Refresh Button (circular arrow):</strong> Reload the current page</li>
+<li><strong>Tabs:</strong> Each open webpage appears as a tab at the top of the window</li>
+</ul>
+<p><strong>Step 3: Navigate to a Website</strong><br />
+- Click once on the <strong>Address Bar</strong> (it will highlight the text inside)<br />
+- Type a website address, for example: <strong>www.google.com</strong><br />
+- Press <strong>Enter</strong><br />
+- The website loads in the current tab</p>
+<p><strong>Step 4: Work with Tabs</strong></p>
+<p>Tabs let you have multiple websites open at once, like having multiple books open on your desk.</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Keyboard Shortcut</th>
+<th>Mouse Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open a new tab</td>
+<td>Ctrl + T</td>
+<td>Click the <strong>+</strong> icon next to the last tab</td>
+</tr>
+<tr>
+<td>Close current tab</td>
+<td>Ctrl + W</td>
+<td>Click the <strong>X</strong> on the tab</td>
+</tr>
+<tr>
+<td>Switch between tabs</td>
+<td>Ctrl + Tab</td>
+<td>Click on the tab you want</td>
+</tr>
+<tr>
+<td>Reopen a closed tab</td>
+<td>Ctrl + Shift + T</td>
+<td>--</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 5: Bookmark a Website</strong></p>
+<p>A bookmark saves a website so you can find it again easily, like putting a bookmark in a book.</p>
+<ul>
+<li>Navigate to a website you want to save</li>
+<li>Press <strong>Ctrl + D</strong> (or click the star icon in the address bar)</li>
+<li>A small window appears -- you can change the name if you want</li>
+<li>Click <strong>Done</strong></li>
+<li>To see your bookmarks: press <strong>Ctrl + Shift + B</strong> to show the bookmarks bar</li>
+</ul>
+<h3 id="key-points_1">Key Points</h3>
+<ul>
+<li>A browser is the program you use to view websites</li>
+<li>Chrome, Edge, and Firefox are the most common browsers</li>
+<li>The Address Bar is where you type website addresses</li>
+<li>Use tabs to have multiple websites open at once</li>
+<li>Bookmark important websites so you can find them quickly</li>
+</ul>
+<hr />
+<h2 id="topic-3-understanding-urls">Topic 3: Understanding URLs</h2>
+<h3 id="explanation_2">Explanation</h3>
+<p>A <strong>URL</strong> (Uniform Resource Locator) is the address of a webpage, just like your home has a street address. Every webpage on the Internet has a unique URL.</p>
+<p>Let us break down a URL:</p>
+<div class="codehilite"><pre><span></span><code>https://www.example.com/about
+</code></pre></div>
+
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Name</th>
+<th>What It Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>https://</td>
+<td>Protocol</td>
+<td>The rules for how data is sent. HTTPS means it is secure (encrypted).</td>
+</tr>
+<tr>
+<td>www</td>
+<td>Subdomain</td>
+<td>A section of the website. "www" stands for World Wide Web.</td>
+</tr>
+<tr>
+<td>example</td>
+<td>Domain name</td>
+<td>The name of the website (like a person's name).</td>
+</tr>
+<tr>
+<td>.com</td>
+<td>Extension</td>
+<td>The type of website (.com = commercial, .org = organization, .gov = government, .edu = education, .in = India).</td>
+</tr>
+<tr>
+<td>/about</td>
+<td>Path</td>
+<td>The specific page on the website (like a room in a building).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="why-https-matters">Why HTTPS Matters</h3>
+<p>Look at the address bar when you visit a website. You should see a <strong>padlock icon</strong> before the URL. This means:</p>
+<ul>
+<li><strong>Padlock visible (HTTPS):</strong> The connection is <strong>secure</strong>. Data you send (passwords, credit card numbers) is encrypted -- others cannot read it.</li>
+<li><strong>No padlock or "Not Secure" warning (HTTP):</strong> The connection is <strong>NOT secure</strong>. Do NOT enter passwords or personal information on these sites.</li>
+</ul>
+<p><strong>Rule:</strong> Never enter passwords or payment information on a website that does not show the padlock icon.</p>
+<h3 id="real-world-example_1">Real-World Example</h3>
+<p>When you do online banking, you will notice the URL starts with <strong>https://</strong> and shows a padlock. This encryption prevents anyone between you and the bank (like someone on the same WiFi) from reading your password or account details.</p>
+<h3 id="key-points_2">Key Points</h3>
+<ul>
+<li>A URL is a website's address</li>
+<li>HTTPS (with padlock) means the site is secure -- safe to enter personal info</li>
+<li>HTTP (without padlock) means NOT secure -- never enter passwords</li>
+<li>Common extensions: .com (commercial), .org (organization), .gov (government), .in (India)</li>
+</ul>
+<hr />
+<h2 id="topic-4-searching-google-effectively">Topic 4: Searching Google Effectively</h2>
+<h3 id="explanation_3">Explanation</h3>
+<p>Google is the most popular search engine -- a tool that helps you find information on the Internet. Most people just type a few words into Google, but there are techniques to get much better results.</p>
+<h3 id="step-by-step-guide-search-techniques">Step-by-Step Guide: Search Techniques</h3>
+<p><strong>Basic Search:</strong><br />
+- Open Google (www.google.com)<br />
+- Type what you are looking for in the search box<br />
+- Press Enter</p>
+<p><strong>Technique 1: Use Specific Keywords</strong></p>
+<p>Instead of vague searches, be specific.</p>
+<table>
+<thead>
+<tr>
+<th>Bad Search</th>
+<th>Better Search</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>food</td>
+<td>how to make butter chicken recipe</td>
+</tr>
+<tr>
+<td>computer problem</td>
+<td>Windows 11 laptop not connecting to WiFi</td>
+</tr>
+<tr>
+<td>job</td>
+<td>data entry jobs in Delhi for freshers</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Technique 2: Use Quotes for Exact Phrases</strong></p>
+<p>Put words in double quotes to search for that exact phrase.</p>
+<ul>
+<li>Searching: <strong>"to be or not to be"</strong> -- finds pages with that exact phrase</li>
+<li>Searching: <strong>"error code 0x80070005"</strong> -- finds pages about that specific error</li>
+</ul>
+<p><strong>Technique 3: Use Minus (-) to Exclude Words</strong></p>
+<p>Put a minus sign before a word to exclude it from results.</p>
+<ul>
+<li><strong>apple -fruit</strong> -- searches for Apple (the company), excluding results about the fruit</li>
+<li><strong>jaguar -car</strong> -- searches for the animal, excluding the car brand</li>
+</ul>
+<p><strong>Technique 4: Use filetype: to Find Specific Files</strong></p>
+<ul>
+<li><strong>budget template filetype:xlsx</strong> -- finds Excel files with budget templates</li>
+<li><strong>resume format filetype:pdf</strong> -- finds PDF resume templates</li>
+<li><strong>Python tutorial filetype:pdf</strong> -- finds Python tutorials in PDF format</li>
+</ul>
+<p><strong>Technique 5: Use Google Images</strong><br />
+- Go to Google.com<br />
+- Click <strong>Images</strong> (top right)<br />
+- Type your search -- you will see image results<br />
+- Useful for: finding pictures, identifying objects, visual references</p>
+<p><strong>Technique 6: Use Google Maps</strong><br />
+- Go to maps.google.com<br />
+- Type a location or address<br />
+- You can: get directions, see street view, find nearby restaurants/shops/hospitals</p>
+<h3 id="real-world-example_2">Real-World Example</h3>
+<p>You need to find a free PDF textbook on basic accounting. Instead of searching "accounting book," you search: <strong>basic accounting textbook filetype:pdf free</strong>. This gives you direct links to PDF files on accounting.</p>
+<h3 id="key-points_3">Key Points</h3>
+<ul>
+<li>Be specific with your search keywords</li>
+<li>Use "quotes" for exact phrases</li>
+<li>Use minus (-) to exclude unwanted results</li>
+<li>Use filetype: to find specific document types</li>
+<li>Google Images and Google Maps are powerful tools</li>
+</ul>
+<hr />
+<h2 id="topic-5-internet-safety">Topic 5: Internet Safety</h2>
+<h3 id="explanation_4">Explanation</h3>
+<p>The Internet is incredibly useful, but it also has dangers. Just like you lock your house door and look both ways before crossing the road, you need to follow safety rules online.</p>
+<h3 id="step-by-step-guide-staying-safe-online">Step-by-Step Guide: Staying Safe Online</h3>
+<p><strong>Rule 1: Do Not Click Suspicious Links</strong></p>
+<p>If you receive a message (email, WhatsApp, SMS) with a link you did not expect, do NOT click it. Signs of suspicious links:<br />
+- "You have won a prize! Click here!" -- you did not enter any contest<br />
+- "Your account will be closed! Click here immediately!" -- creates false urgency<br />
+- Links from unknown senders<br />
+- Shortened links (bit.ly/xyz) from unknown sources</p>
+<p><strong>Rule 2: Check the URL Before Entering Passwords</strong></p>
+<p>Before typing your password on any website:<br />
+1. Look at the <strong>address bar</strong><br />
+2. Check that the URL is correct (for example, <strong>google.com</strong> not <strong>go0gle.com</strong> or <strong>google.security-check.com</strong>)<br />
+3. Make sure you see the <strong>padlock</strong> icon (HTTPS)</p>
+<p><strong>Fake website examples:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Real URL</th>
+<th>Fake URL (DO NOT VISIT)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>google.com</td>
+<td>go0gle.com (zero instead of 'o')</td>
+</tr>
+<tr>
+<td>facebook.com</td>
+<td>faceb00k.com</td>
+</tr>
+<tr>
+<td>sbi.co.in</td>
+<td>sbi-secure-login.com</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rule 3: Handle Pop-up Ads Safely</strong></p>
+<p>Pop-up ads are small windows that suddenly appear on your screen.<br />
+- NEVER click on pop-up ads, even to close them using their own "X" button<br />
+- Instead, press <strong>Alt + F4</strong> to close the window, or close the browser tab<br />
+- If a pop-up says "Your computer has a virus!" -- it is lying. Close it immediately.<br />
+- Install an ad blocker extension (like uBlock Origin) in Chrome for extra protection</p>
+<p><strong>Rule 4: Public WiFi Dangers</strong></p>
+<p>Public WiFi (in cafes, airports, malls) is convenient but risky. Others on the same network can potentially see your data.</p>
+<ul>
+<li><strong>NEVER</strong> do online banking on public WiFi</li>
+<li><strong>NEVER</strong> enter passwords for important accounts on public WiFi</li>
+<li><strong>DO</strong> use public WiFi for general browsing (reading news, watching videos)</li>
+<li>For better safety on public WiFi, use a <strong>VPN</strong> (Virtual Private Network) -- we will cover this in a later module</li>
+</ul>
+<p><strong>Rule 5: Create Strong Passwords</strong></p>
+<ul>
+<li>Minimum <strong>12 characters</strong></li>
+<li>Mix of: uppercase (A-Z), lowercase (a-z), numbers (0-9), symbols (!@#$%^&amp;*)</li>
+<li><strong>DO NOT</strong> use: your name, birthday, "password123", "123456"</li>
+<li>Use a different password for each important account</li>
+<li>Example of a strong password: <strong>Mango$River42!Blue</strong></li>
+</ul>
+<h3 id="real-world-example_3">Real-World Example</h3>
+<p>You receive an email that says: "Dear Customer, your SBI account has been locked. Click here to verify your identity." The email looks official with the SBI logo. But you check the sender's email address -- it is from "sbi.alerts@gmail.com" instead of an official @sbi.co.in address. The link goes to "sbi-verify.fakesite.com." This is a <strong>phishing</strong> attack -- a fake email trying to steal your password. You delete it.</p>
+<h3 id="key-points_4">Key Points</h3>
+<ul>
+<li>Never click links in unexpected messages</li>
+<li>Always check the URL before entering passwords</li>
+<li>Close pop-ups using Alt+F4, never click inside them</li>
+<li>Do not do banking or enter passwords on public WiFi</li>
+<li>Use strong, unique passwords for each account</li>
+</ul>
+<hr />
+<h2 id="topic-6-creating-a-gmail-account">Topic 6: Creating a Gmail Account</h2>
+<h3 id="explanation_5">Explanation</h3>
+<p>Gmail is Google's free email service. It is one of the most popular email services in the world. Having a Gmail account also gives you access to Google Drive, Google Docs, YouTube, and many other Google services.</p>
+<h3 id="step-by-step-guide">Step-by-Step Guide</h3>
+<p><strong>Step 1: Go to Gmail</strong><br />
+- Open Chrome<br />
+- Type <strong>gmail.com</strong> in the address bar<br />
+- Press Enter<br />
+- Click <strong>Create account</strong><br />
+- Select <strong>For my personal use</strong></p>
+<p><strong>Step 2: Fill in Your Information</strong><br />
+- <strong>First name:</strong> Your real first name<br />
+- <strong>Last name:</strong> Your real last name<br />
+- Click <strong>Next</strong></p>
+<p><strong>Step 3: Enter Your Birthday and Gender</strong><br />
+- Select your birth month, day, and year<br />
+- Select your gender (or prefer not to say)<br />
+- Click <strong>Next</strong></p>
+<p><strong>Step 4: Choose Your Email Address</strong></p>
+<p>This is important. Your email address is your professional identity online.</p>
+<table>
+<thead>
+<tr>
+<th>Good Email (Professional)</th>
+<th>Bad Email (Unprofessional)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>priya.sharma@gmail.com</td>
+<td>coolgirl2005@gmail.com</td>
+</tr>
+<tr>
+<td>rahul.verma.dev@gmail.com</td>
+<td>killerbeast99@gmail.com</td>
+</tr>
+<tr>
+<td>firstname.lastname@gmail.com</td>
+<td>ilovepizza@gmail.com</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tips for choosing your email:</strong><br />
+- Use your real name: <strong>firstname.lastname</strong> or <strong>firstnamelastname</strong><br />
+- If taken, add a number: <strong>priya.sharma42</strong><br />
+- Avoid nicknames, jokes, or random words<br />
+- This email will go on your resume and job applications</p>
+<p><strong>Step 5: Create a Strong Password</strong><br />
+- Minimum 12 characters<br />
+- Mix uppercase, lowercase, numbers, and symbols<br />
+- Example: <strong>MyGmail$2024!Secure</strong><br />
+- Type it again to confirm<br />
+- <strong>Write this password down and keep it in a safe place</strong> (physically, not on the computer)</p>
+<p><strong>Step 6: Add Recovery Information</strong><br />
+- Add a <strong>phone number</strong> (for password recovery and security)<br />
+- Add a <strong>recovery email</strong> (optional, but recommended)<br />
+- These help you get back into your account if you forget your password</p>
+<p><strong>Step 7: Accept Terms and Finish</strong><br />
+- Read (or at least skim) Google's Terms of Service<br />
+- Click <strong>I agree</strong><br />
+- Your Gmail account is now created</p>
+<h3 id="key-points_5">Key Points</h3>
+<ul>
+<li>Choose a professional email address using your real name</li>
+<li>Use a strong password (12+ characters with mixed types)</li>
+<li>Add a phone number for account recovery</li>
+<li>Your Gmail account gives you access to all Google services</li>
+</ul>
+<hr />
+<h2 id="topic-7-the-gmail-interface">Topic 7: The Gmail Interface</h2>
+<h3 id="explanation_6">Explanation</h3>
+<p>Once you are logged into Gmail, you will see the Gmail interface. Let us understand each part.</p>
+<h3 id="step-by-step-guide-gmail-layout">Step-by-Step Guide: Gmail Layout</h3>
+<p><strong>Left Sidebar:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What It Is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inbox</strong></td>
+<td>Where new emails arrive. This is your main view.</td>
+</tr>
+<tr>
+<td><strong>Starred</strong></td>
+<td>Emails you have marked with a star (important emails).</td>
+</tr>
+<tr>
+<td><strong>Snoozed</strong></td>
+<td>Emails you postponed to read later.</td>
+</tr>
+<tr>
+<td><strong>Sent</strong></td>
+<td>Emails you have sent to others.</td>
+</tr>
+<tr>
+<td><strong>Drafts</strong></td>
+<td>Emails you started writing but did not send yet.</td>
+</tr>
+<tr>
+<td><strong>Spam</strong></td>
+<td>Emails that Gmail thinks are junk/unwanted. Check occasionally -- sometimes real emails land here.</td>
+</tr>
+<tr>
+<td><strong>Trash</strong></td>
+<td>Emails you deleted. They stay here for 30 days, then are permanently deleted.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Categories (Tabs at the Top of Inbox):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>What Goes Here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primary</strong></td>
+<td>Important emails from real people</td>
+</tr>
+<tr>
+<td><strong>Social</strong></td>
+<td>Notifications from Facebook, Twitter, LinkedIn, etc.</td>
+</tr>
+<tr>
+<td><strong>Promotions</strong></td>
+<td>Marketing emails, sale notifications, newsletters</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Top Bar:</strong><br />
+- <strong>Search bar</strong> at the top -- search for any email by typing keywords, sender name, or subject<br />
+- <strong>Settings gear icon</strong> (top right) -- change Gmail appearance and settings<br />
+- <strong>Profile picture</strong> (top right corner) -- your Google account settings</p>
+<h3 id="key-points_6">Key Points</h3>
+<ul>
+<li>Inbox is where new emails arrive</li>
+<li>Starred emails are ones you marked as important</li>
+<li>Check your Spam folder occasionally -- real emails sometimes end up there</li>
+<li>Use the search bar to find old emails quickly</li>
+<li>Primary, Social, and Promotions categories automatically sort your emails</li>
+</ul>
+<hr />
+<h2 id="topic-8-composing-and-sending-an-email">Topic 8: Composing and Sending an Email</h2>
+<h3 id="explanation_7">Explanation</h3>
+<p>Sending an email is like writing a letter, but it arrives instantly. Understanding each part of an email ensures your message is clear and professional.</p>
+<h3 id="step-by-step-guide_1">Step-by-Step Guide</h3>
+<p><strong>Step 1: Start a New Email</strong><br />
+- Click the <strong>Compose</strong> button (top-left of Gmail, usually a large button with a "+" or pencil icon)<br />
+- A new email window appears at the bottom-right of your screen</p>
+<p><strong>Step 2: Fill in the Recipients</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>What It Means</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>To</strong></td>
+<td>The main recipient(s)</td>
+<td>Always -- this is who the email is for</td>
+</tr>
+<tr>
+<td><strong>CC</strong> (Carbon Copy)</td>
+<td>Others who should see the email</td>
+<td>When you want someone informed but they do not need to act</td>
+</tr>
+<tr>
+<td><strong>BCC</strong> (Blind Carbon Copy)</td>
+<td>Others who receive a copy, but no one else can see their name</td>
+<td>When sending to many people who do not know each other (like a newsletter)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong><br />
+- You are emailing your teacher about a project. You put your teacher in <strong>To</strong>. You put your project partner in <strong>CC</strong> (so they know what you said). You put your parent in <strong>BCC</strong> (they get a copy, but your teacher does not see their email).</p>
+<p><strong>Step 3: Write the Subject Line</strong><br />
+- The subject line is a brief description of what the email is about<br />
+- Keep it clear and specific</p>
+<table>
+<thead>
+<tr>
+<th>Bad Subject</th>
+<th>Good Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hi</td>
+<td>Question about Assignment 3 Deadline</td>
+</tr>
+<tr>
+<td>Help</td>
+<td>Request for Leave on 15th November</td>
+</tr>
+<tr>
+<td>(blank)</td>
+<td>Meeting Rescheduled to 3 PM Friday</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 4: Write the Body</strong></p>
+<p>A professional email body has:</p>
+<ol>
+<li><strong>Greeting:</strong> "Dear Mr./Ms. [Name]," or "Hello [Name],"</li>
+<li><strong>Purpose:</strong> State why you are writing in the first line</li>
+<li><strong>Details:</strong> Provide necessary information</li>
+<li><strong>Closing request:</strong> What you need from them</li>
+<li><strong>Sign-off:</strong> "Thank you," or "Best regards," followed by your name</li>
+</ol>
+<p><strong>Step 5: Format Your Text (Optional)</strong><br />
+- At the bottom of the compose window, you will see formatting options:<br />
+- <strong>B</strong> = Bold, <strong>I</strong> = Italic, <strong>U</strong> = Underline<br />
+- Text color, bullet points, numbered lists<br />
+- Keep formatting minimal in professional emails</p>
+<p><strong>Step 6: Review and Send</strong><br />
+- Read your email once more for spelling and grammar errors<br />
+- Check that you have the right recipient in the "To" field<br />
+- Click the <strong>Send</strong> button (blue button with an arrow)</p>
+<h3 id="real-world-example_4">Real-World Example</h3>
+<div class="codehilite"><pre><span></span><code>To: hr.manager@company.com
+CC: recruitment@company.com
+Subject: Application for Data Entry Position - Priya Sharma
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Entry Position advertised 
+on your website. I have completed my BCA and have strong typing skills 
+(45 WPM) and proficiency in MS Office.
+
+I have attached my resume for your review. I am available for an interview 
+at your convenience.
+
+Thank you for considering my application.
+
+Best regards,
+Priya Sharma
+Phone: 98765-43210
+</code></pre></div>
+
+<h3 id="key-points_7">Key Points</h3>
+<ul>
+<li>Always write a clear, specific subject line</li>
+<li>Use To for the main recipient, CC to keep others informed, BCC for hidden recipients</li>
+<li>Follow the professional email structure: greeting, purpose, details, sign-off</li>
+<li>Always review your email before clicking Send</li>
+</ul>
+<hr />
+<h2 id="topic-9-replying-forwarding-and-reply-all">Topic 9: Replying, Forwarding, and Reply All</h2>
+<h3 id="explanation_8">Explanation</h3>
+<p>When you receive an email, you have three options to respond:</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>What It Does</th>
+<th>When to Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reply</strong></td>
+<td>Sends a response to the person who sent you the email</td>
+<td>When only the sender needs your response</td>
+</tr>
+<tr>
+<td><strong>Reply All</strong></td>
+<td>Sends a response to the sender AND everyone in CC</td>
+<td>When everyone in the conversation needs to see your response</td>
+</tr>
+<tr>
+<td><strong>Forward</strong></td>
+<td>Sends the email to someone new who was not in the original conversation</td>
+<td>When you want to share the email with someone else</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-by-step-guide_2">Step-by-Step Guide</h3>
+<p><strong>To Reply:</strong><br />
+1. Open the email you want to reply to<br />
+2. Click the <strong>Reply</strong> button (curved arrow icon at the bottom of the email, or top right)<br />
+3. Type your response<br />
+4. Click <strong>Send</strong></p>
+<p><strong>To Reply All:</strong><br />
+1. Open the email<br />
+2. Click the small <strong>dropdown arrow</strong> next to the Reply button<br />
+3. Select <strong>Reply All</strong><br />
+4. Type your response (remember: EVERYONE on the email will see this)<br />
+5. Click <strong>Send</strong></p>
+<p><strong>To Forward:</strong><br />
+1. Open the email<br />
+2. Click the <strong>Forward</strong> button (arrow pointing right)<br />
+3. Type the email address of the person you want to send it to<br />
+4. Optionally add a note above the forwarded content: "Hi Rahul, please see the email below."<br />
+5. Click <strong>Send</strong></p>
+<p><strong>WARNING about Reply All:</strong><br />
+Be very careful with Reply All. If someone sends an email to 50 people and you click Reply All, all 50 people receive your response. This has caused many embarrassing situations in workplaces. <strong>Only use Reply All when everyone genuinely needs to see your response.</strong></p>
+<h3 id="key-points_8">Key Points</h3>
+<ul>
+<li>Reply goes to the sender only</li>
+<li>Reply All goes to everyone on the email -- use with caution</li>
+<li>Forward sends the email to someone new</li>
+<li>Always double-check who will receive your message before sending</li>
+</ul>
+<hr />
+<h2 id="topic-10-email-attachments">Topic 10: Email Attachments</h2>
+<h3 id="explanation_9">Explanation</h3>
+<p>An attachment is a file you send along with an email -- like putting a document inside an envelope with your letter. You can attach documents, photos, PDFs, spreadsheets, and more.</p>
+<h3 id="step-by-step-guide-sending-attachments">Step-by-Step Guide: Sending Attachments</h3>
+<p><strong>Step 1: Compose a New Email</strong> (or Reply to one)</p>
+<p><strong>Step 2: Click the Attachment Icon</strong><br />
+- At the bottom of the compose window, look for the <strong>paperclip icon</strong><br />
+- Click it</p>
+<p><strong>Step 3: Select Your File</strong><br />
+- A file browser window opens<br />
+- Navigate to the file you want to attach<br />
+- Click the file, then click <strong>Open</strong><br />
+- The file appears at the bottom of your email (you will see its name and size)</p>
+<p><strong>Step 4: Send the Email</strong><br />
+- Click <strong>Send</strong> as normal</p>
+<p><strong>Important Rules for Attachments:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Size limit</strong></td>
+<td>Gmail allows attachments up to <strong>25 MB</strong>. For larger files, use Google Drive (covered below).</td>
+</tr>
+<tr>
+<td><strong>Common file types</strong></td>
+<td>.pdf, .docx, .xlsx, .pptx, .jpg, .png, .zip</td>
+</tr>
+<tr>
+<td><strong>Blocked file types</strong></td>
+<td>Gmail blocks .exe, .bat, .cmd files (because they could contain viruses)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-by-step-guide-downloading-attachments-safely">Step-by-Step Guide: Downloading Attachments Safely</h3>
+<p><strong>Step 1:</strong> Open the email that has an attachment (you will see a paperclip icon or file preview at the bottom of the email)</p>
+<p><strong>Step 2:</strong> Hover over the attachment to see options:<br />
+- <strong>Download icon (down arrow):</strong> Save the file to your Downloads folder<br />
+- <strong>Google Drive icon:</strong> Save directly to your Google Drive</p>
+<p><strong>Step 3: Safety Check Before Downloading</strong><br />
+- Do you know the sender? If not, do NOT download the attachment.<br />
+- Does the file type make sense? If someone sends you a ".exe" file claiming it is a "photo," it is likely a virus.<br />
+- Gmail automatically scans attachments for viruses, but always be cautious.</p>
+<h3 id="key-points_9">Key Points</h3>
+<ul>
+<li>Use the paperclip icon to attach files</li>
+<li>Gmail limit is 25 MB per email</li>
+<li>Never download attachments from unknown senders</li>
+<li>Gmail blocks dangerous file types (.exe, .bat) for your protection</li>
+</ul>
+<hr />
+<h2 id="topic-11-email-etiquette-for-professional-use">Topic 11: Email Etiquette for Professional Use</h2>
+<h3 id="explanation_10">Explanation</h3>
+<p>Email etiquette is the set of rules for writing polite, clear, and professional emails. Following these rules makes you look competent and respectful.</p>
+<p><strong>Professional Email Rules:</strong></p>
+<ol>
+<li><strong>Always use a clear subject line</strong> -- never leave it blank</li>
+<li><strong>Start with a greeting</strong> -- "Dear [Name]," or "Hello [Name],"</li>
+<li><strong>Get to the point quickly</strong> -- state your purpose in the first sentence</li>
+<li><strong>Keep it concise</strong> -- short paragraphs, no unnecessary details</li>
+<li><strong>Use proper grammar and spelling</strong> -- do not use SMS language (u, ur, plz, thx)</li>
+<li><strong>End with a sign-off</strong> -- "Best regards," "Thank you," "Sincerely,"</li>
+<li><strong>Add an email signature</strong> -- your name, phone number, designation</li>
+</ol>
+<p><strong>Setting Up an Email Signature in Gmail:</strong><br />
+1. Click the <strong>gear icon</strong> (Settings) in the top right<br />
+2. Click <strong>See all settings</strong><br />
+3. Scroll down to <strong>Signature</strong><br />
+4. Click <strong>Create new</strong><br />
+5. Type your signature. Example:</p>
+<div class="codehilite"><pre><span></span><code>Best regards,
+Priya Sharma
+Phone: 98765-43210
+Email: priya.sharma@gmail.com
+</code></pre></div>
+
+<ol>
+<li>Click <strong>Save Changes</strong> at the bottom</li>
+</ol>
+<p><strong>When to Use CC vs BCC:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Keeping your manager informed about a conversation</td>
+<td>CC your manager</td>
+</tr>
+<tr>
+<td>Sending a job application and wanting your reference to know</td>
+<td>BCC your reference</td>
+</tr>
+<tr>
+<td>Sending a group invitation to people who do not know each other</td>
+<td>BCC everyone (protects privacy)</td>
+</tr>
+<tr>
+<td>Team discussion where everyone needs to see all replies</td>
+<td>CC the team</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-points_10">Key Points</h3>
+<ul>
+<li>Professional emails: clear subject, greeting, concise body, sign-off</li>
+<li>Never use SMS language in professional emails</li>
+<li>Set up an email signature for a professional touch</li>
+<li>CC when others need to see the conversation, BCC to protect privacy</li>
+</ul>
+<hr />
+<h2 id="topic-12-google-drive-integration-with-gmail">Topic 12: Google Drive Integration with Gmail</h2>
+<h3 id="explanation_11">Explanation</h3>
+<p>When you need to send a file larger than 25 MB, or when you want to share a file that the recipient can view or edit online, use <strong>Google Drive</strong>.</p>
+<p>Google Drive is Google's cloud storage service. Every Gmail account comes with <strong>15 GB of free storage</strong>.</p>
+<h3 id="step-by-step-guide-sharing-files-via-google-drive-in-gmail">Step-by-Step Guide: Sharing Files via Google Drive in Gmail</h3>
+<p><strong>Step 1: Upload to Google Drive (if not already there)</strong><br />
+- Open a new tab and go to <strong>drive.google.com</strong><br />
+- Click the <strong>+ New</strong> button (top left)<br />
+- Click <strong>File upload</strong><br />
+- Select your file and click <strong>Open</strong><br />
+- Wait for the upload to finish</p>
+<p><strong>Step 2: Share via Gmail</strong><br />
+- Go back to Gmail and click <strong>Compose</strong><br />
+- At the bottom of the compose window, find the <strong>Google Drive icon</strong> (triangle shape)<br />
+- Click it<br />
+- Select the file you want to share<br />
+- Click <strong>Insert</strong><br />
+- Gmail inserts a Drive link in your email</p>
+<p><strong>Step 3: Set Permissions</strong><br />
+- Gmail may ask you to set sharing permissions<br />
+- <strong>Viewer:</strong> The recipient can only view the file (cannot edit)<br />
+- <strong>Commenter:</strong> The recipient can view and add comments<br />
+- <strong>Editor:</strong> The recipient can view and edit the file<br />
+- Choose the appropriate permission and click <strong>Send</strong></p>
+<h3 id="real-world-example_5">Real-World Example</h3>
+<p>You need to send a 50 MB video of a school project to your teacher. Gmail's 25 MB limit will not allow a direct attachment. Instead, you upload the video to Google Drive, then share the Drive link in your email. Your teacher clicks the link and can watch the video directly in their browser.</p>
+<h3 id="key-points_11">Key Points</h3>
+<ul>
+<li>Google Drive gives you 15 GB of free cloud storage</li>
+<li>Use Drive links to share files larger than 25 MB</li>
+<li>You control who can view, comment, or edit your shared files</li>
+<li>Drive links work better than attachments for large files or files you want to collaborate on</li>
+</ul>
+<hr />
+<h2 id="module-summary">Module Summary</h2>
+<p>In this module, you learned:</p>
+<ol>
+<li><strong>The Internet</strong> is a global network -- your computer connects through your router and ISP</li>
+<li><strong>Web browsers</strong> (Chrome, Edge, Firefox) are your window to the Internet</li>
+<li><strong>URLs</strong> are website addresses -- always check for HTTPS and the padlock</li>
+<li><strong>Google search</strong> techniques help you find information faster</li>
+<li><strong>Internet safety</strong> protects you from scams, fake websites, and data theft</li>
+<li><strong>Gmail</strong> lets you send and receive professional emails</li>
+<li><strong>Email attachments</strong> let you share files -- with safety precautions</li>
+<li><strong>Google Drive</strong> helps you share large files through email</li>
+</ol>
+<p><strong>Next Module:</strong> Module 7 -- Mastering Microsoft Word</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>

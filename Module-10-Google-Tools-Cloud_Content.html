@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module-10-Google-Tools-Cloud — Content</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #0f3460;
+    border-bottom: 3px solid #0f3460;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #16213e;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #1a3a5c;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2d4a6f;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 12px;
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+code {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 9.5pt;
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #d63384;
+}
+
+pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 12px 0 16px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 4px solid #0f3460;
+    background: #f0f4ff;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #374151;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 10pt;
+}
+
+th {
+    background: #0f3460;
+    color: #ffffff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 24px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #0f3460;
+}
+
+em {
+    color: #4b5563;
+}
+
+.header-badge {
+    display: inline-block;
+    background: #0f3460;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2px solid #0f3460;
+    text-align: center;
+    font-size: 9pt;
+    color: #6b7280;
+}
+
+@media print {
+    body {
+        padding: 20px 30px;
+        font-size: 10pt;
+    }
+    pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header-badge">Digital Skills Training Course</div>
+<h1 id="module-10-google-tools-cloud-platforms">Module 10: Google Tools &amp; Cloud Platforms</h1>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this module, you will be able to:</p>
+<ol>
+<li>Understand what cloud computing is and why it matters</li>
+<li>Use Google Drive to store, organize, and share files</li>
+<li>Create and collaborate on documents using Google Docs</li>
+<li>Build spreadsheets with formulas using Google Sheets</li>
+<li>Create presentations using Google Slides</li>
+<li>Build surveys and forms using Google Forms</li>
+<li>Manage your schedule with Google Calendar</li>
+<li>Conduct video meetings with Google Meet</li>
+<li>Create a simple blog using Blogger</li>
+<li>Manage sharing permissions across all Google tools</li>
+</ol>
+<h2 id="duration">Duration</h2>
+<p><strong>8 hours</strong> (4 sessions of 2 hours each)</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Module 6: Internet and Email (Google account created)</li>
+<li>Module 7: Microsoft Word (to compare with Google Docs)</li>
+<li>Module 8: Microsoft Excel (to compare with Google Sheets)</li>
+<li>Basic typing skills (Module 4)</li>
+</ul>
+<hr />
+<h2 id="topic-1-what-is-cloud-computing">Topic 1: What is Cloud Computing?</h2>
+<h3 id="explanation">Explanation</h3>
+<p>Until now, every file you have created — documents, photos, videos — lives on YOUR computer's hard drive. If your computer breaks, those files could be lost forever. If you want to access them from another computer, you need a USB drive.</p>
+<p><strong>Cloud computing</strong> changes all of this. "The cloud" means storing your files on powerful computers owned by companies like Google, Microsoft, and Amazon. These computers sit in huge buildings called <strong>data centers</strong> spread across the world. When you save a file "to the cloud," it gets stored on these remote computers, not just on yours.</p>
+<p>Think of it like this: your hard drive is like keeping cash in your pocket — if you lose your pants, the money is gone. Cloud storage is like keeping money in a bank — you can access it from any ATM, anywhere.</p>
+<h3 id="real-world-example">Real-World Example</h3>
+<p>Imagine you are working on a college assignment on your laptop at home. You save it to Google Drive. Next day, you are at a friend's house and want to continue working. You open Google Drive on their computer, log in with your Google account, and your file is right there. You can even open it on your phone while riding the bus. Same file, any device, anywhere.</p>
+<h3 id="key-points">Key Points</h3>
+<ul>
+<li><strong>Cloud = someone else's computer</strong> that you can access over the internet</li>
+<li><strong>Access anywhere</strong>: Any device with internet and a browser can reach your cloud files</li>
+<li><strong>Automatic backup</strong>: Files in the cloud are backed up by Google — they will not disappear if your laptop crashes</li>
+<li><strong>Free storage</strong>: Google gives you <strong>15 GB free</strong> (shared across Drive, Gmail, and Photos)</li>
+<li><strong>No software needed</strong>: Everything runs in your web browser</li>
+</ul>
+<hr />
+<h2 id="topic-2-google-drive-your-cloud-storage">Topic 2: Google Drive — Your Cloud Storage</h2>
+<h3 id="explanation_1">Explanation</h3>
+<p>Google Drive is your personal cloud storage from Google. Think of it as a virtual hard drive that you access through your browser. You get <strong>15 GB of free storage</strong> (this is shared between Drive, Gmail, and Google Photos).</p>
+<p>With Google Drive you can:<br />
+- Upload files from your computer (documents, photos, videos, PDFs)<br />
+- Create folders to organize your files<br />
+- Share files or folders with other people<br />
+- Access everything from your phone, tablet, or any computer</p>
+<h3 id="step-by-step-guide-getting-started-with-google-drive">Step-by-Step Guide: Getting Started with Google Drive</h3>
+<p><strong>Step 1: Open Google Drive</strong><br />
+1. Open Chrome browser<br />
+2. Go to <strong>drive.google.com</strong><br />
+3. You are automatically logged in with your Google account (from Module 6)<br />
+4. You will see the Drive home screen with "My Drive"</p>
+<p><strong>Step 2: Upload Files</strong><br />
+1. Click the <strong>"+ New"</strong> button (top-left corner)<br />
+2. Click <strong>"File upload"</strong><br />
+3. Browse your computer and select a file<br />
+4. Wait for the upload to complete (you will see a progress bar at bottom-right)<br />
+5. The file now appears in your Drive</p>
+<p><strong>Step 3: Create Folders</strong><br />
+1. Click <strong>"+ New"</strong> button<br />
+2. Click <strong>"New folder"</strong><br />
+3. Type a folder name (example: "College Work")<br />
+4. Click <strong>"Create"</strong><br />
+5. The folder appears in your Drive</p>
+<p><strong>Step 4: Move Files into Folders</strong><br />
+1. Right-click on a file<br />
+2. Click <strong>"Move to"</strong><br />
+3. Select the destination folder<br />
+4. Click <strong>"Move"</strong></p>
+<p><strong>Step 5: Share a File or Folder</strong><br />
+1. Right-click on the file or folder<br />
+2. Click <strong>"Share"</strong><br />
+3. Type the email address of the person you want to share with<br />
+4. Choose their permission level:<br />
+   - <strong>Viewer</strong>: Can only look at the file<br />
+   - <strong>Commenter</strong>: Can look and add comments<br />
+   - <strong>Editor</strong>: Can make changes to the file<br />
+5. Click <strong>"Send"</strong></p>
+<p><strong>Step 6: Get a Shareable Link</strong><br />
+1. Right-click on the file<br />
+2. Click <strong>"Share"</strong> then <strong>"Copy link"</strong><br />
+3. Under "General access," change from "Restricted" to <strong>"Anyone with the link"</strong><br />
+4. Choose: Viewer, Commenter, or Editor<br />
+5. Click <strong>"Copy link"</strong> and share it with anyone</p>
+<h3 id="key-points_1">Key Points</h3>
+<ul>
+<li><strong>"My Drive"</strong> is your main storage area</li>
+<li><strong>"Shared with me"</strong> shows files others have shared with you</li>
+<li><strong>"Recent"</strong> shows files you opened recently</li>
+<li><strong>"Starred"</strong> shows files you marked as important (right-click &gt; "Add to Starred")</li>
+<li><strong>Trash</strong> holds deleted files for 30 days before permanent deletion</li>
+<li>You can search for files using the search bar at the top</li>
+</ul>
+<hr />
+<h2 id="topic-3-google-docs-online-word-processor">Topic 3: Google Docs — Online Word Processor</h2>
+<h3 id="explanation_2">Explanation</h3>
+<p>Google Docs is like Microsoft Word, but it runs entirely in your browser. You do not need to install anything. The biggest advantage? <strong>Real-time collaboration</strong> — multiple people can edit the same document at the same time, and you can see their changes happening live.</p>
+<h3 id="google-docs-vs-microsoft-word">Google Docs vs Microsoft Word</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Google Docs</th>
+<th>Microsoft Word</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cost</td>
+<td>Free</td>
+<td>Paid (part of Office)</td>
+</tr>
+<tr>
+<td>Needs internet?</td>
+<td>Yes (but has offline mode)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Collaboration</td>
+<td>Real-time, multiple people</td>
+<td>Limited, one at a time usually</td>
+</tr>
+<tr>
+<td>Access</td>
+<td>Any browser, any device</td>
+<td>Only on installed devices</td>
+</tr>
+<tr>
+<td>Advanced formatting</td>
+<td>Basic to medium</td>
+<td>Very advanced</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Group projects, quick documents</td>
+<td>Professional reports, complex layouts</td>
+</tr>
+</tbody>
+</table>
+<p><strong>When to use Google Docs:</strong> Group projects, quick notes, documents you need to access from multiple devices, anything collaborative.</p>
+<p><strong>When to use Microsoft Word:</strong> Job application documents (resume), formal reports with complex formatting, documents that need to look perfect when printed.</p>
+<h3 id="step-by-step-guide-creating-a-document">Step-by-Step Guide: Creating a Document</h3>
+<p><strong>Step 1: Create a New Document</strong><br />
+1. Go to <strong>docs.google.com</strong> (or click "+ New" &gt; "Google Docs" in Drive)<br />
+2. Click <strong>"Blank document"</strong> (or choose a template)<br />
+3. Click on "Untitled document" at the top-left to give it a name</p>
+<p><strong>Step 2: Type and Format</strong><br />
+- Type your content just like in Word<br />
+- <strong>Bold</strong>: Select text &gt; Ctrl + B<br />
+- <strong>Italic</strong>: Select text &gt; Ctrl + I<br />
+- <strong>Headings</strong>: Click the dropdown that says "Normal text" &gt; choose Heading 1, 2, or 3<br />
+- <strong>Bullet list</strong>: Click the bullet list icon in the toolbar<br />
+- <strong>Font and size</strong>: Use the dropdown menus in the toolbar</p>
+<p><strong>Step 3: Share and Collaborate</strong><br />
+1. Click the blue <strong>"Share"</strong> button (top-right corner)<br />
+2. Add people by email, or get a shareable link<br />
+3. Choose permissions (Viewer, Commenter, Editor)<br />
+4. When someone edits, you see their cursor in a different color with their name</p>
+<p><strong>Step 4: View Version History</strong><br />
+1. Click <strong>File &gt; Version history &gt; See version history</strong><br />
+2. You can see every change ever made, who made it, and when<br />
+3. Click on any previous version to see it<br />
+4. Click <strong>"Restore this version"</strong> to go back to an older version</p>
+<h3 id="key-points_2">Key Points</h3>
+<ul>
+<li>Documents save <strong>automatically</strong> — no need to press Ctrl + S (though you can, it does nothing wrong)</li>
+<li><strong>Suggesting mode</strong>: Click the pencil icon (top-right of document) &gt; "Suggesting" — your edits appear as suggestions that the owner can accept or reject</li>
+<li><strong>Comments</strong>: Select text &gt; right-click &gt; "Comment" — great for feedback without changing the document</li>
+<li><strong>Download as Word</strong>: File &gt; Download &gt; Microsoft Word (.docx)</li>
+</ul>
+<hr />
+<h2 id="topic-4-google-sheets-online-spreadsheet">Topic 4: Google Sheets — Online Spreadsheet</h2>
+<h3 id="explanation_3">Explanation</h3>
+<p>Google Sheets is the online version of Microsoft Excel. If you learned Excel in Module 8, you already know most of what Sheets can do. The same formulas work (SUM, AVERAGE, IF, COUNT), and you get the same collaboration features as Google Docs.</p>
+<h3 id="step-by-step-guide-creating-a-spreadsheet">Step-by-Step Guide: Creating a Spreadsheet</h3>
+<p><strong>Step 1: Create a New Sheet</strong><br />
+1. Go to <strong>sheets.google.com</strong> (or "+ New" &gt; "Google Sheets" in Drive)<br />
+2. Click <strong>"Blank spreadsheet"</strong><br />
+3. Name your spreadsheet (click "Untitled spreadsheet")</p>
+<p><strong>Step 2: Enter Data and Use Formulas</strong><br />
+- Click on a cell and start typing<br />
+- Press <strong>Tab</strong> to move to the next cell, <strong>Enter</strong> to move down<br />
+- Formulas start with <strong>=</strong> just like Excel:<br />
+  - <code>=SUM(A1:A10)</code> — adds all numbers in cells A1 through A10<br />
+  - <code>=AVERAGE(B1:B10)</code> — average of cells B1 through B10<br />
+  - <code>=IF(C1&gt;=35, "Pass", "Fail")</code> — shows "Pass" if C1 is 35 or more, "Fail" otherwise</p>
+<p><strong>Step 3: Create a Chart</strong><br />
+1. Select your data (click and drag to highlight)<br />
+2. Click <strong>Insert &gt; Chart</strong><br />
+3. Choose chart type (bar, line, pie, etc.)<br />
+4. Customize using the Chart editor panel on the right</p>
+<p><strong>Step 4: Share</strong><br />
+- Same sharing options as Google Docs (Share button, top-right)<br />
+- You can share as "View Only" so people can see but not change your data</p>
+<h3 id="key-points_3">Key Points</h3>
+<ul>
+<li>You can <strong>import Excel files</strong> into Sheets (File &gt; Import)</li>
+<li>You can <strong>download as Excel</strong> (File &gt; Download &gt; Microsoft Excel)</li>
+<li><strong>Conditional formatting</strong>: Format &gt; Conditional formatting — automatically color cells based on values (e.g., red for failing marks, green for passing)</li>
+<li><strong>Filter</strong>: Select data &gt; Data &gt; Create a filter — lets you sort and filter data easily</li>
+</ul>
+<hr />
+<h2 id="topic-5-google-slides-online-presentations">Topic 5: Google Slides — Online Presentations</h2>
+<h3 id="explanation_4">Explanation</h3>
+<p>Google Slides is the online version of Microsoft PowerPoint. You can create presentations directly in your browser, collaborate with others in real time, and present from any computer without carrying a USB drive.</p>
+<h3 id="step-by-step-guide-creating-a-presentation">Step-by-Step Guide: Creating a Presentation</h3>
+<ol>
+<li>Go to <strong>slides.google.com</strong> (or "+ New" &gt; "Google Slides" in Drive)</li>
+<li>Choose a <strong>blank presentation</strong> or pick a <strong>template</strong> from the gallery</li>
+<li>Click on text boxes to type your content</li>
+<li>Use the toolbar to format text, add images, shapes, and transitions</li>
+<li><strong>Add new slide</strong>: Click the "+" button at the top-left, or press Ctrl + M</li>
+<li><strong>Present</strong>: Click the "Present" button (top-right) or press Ctrl + F5</li>
+<li><strong>Share</strong>: Same sharing features as Docs and Sheets</li>
+</ol>
+<h3 id="key-points_4">Key Points</h3>
+<ul>
+<li><strong>Template Gallery</strong>: Click "Template gallery" at the top for pre-designed layouts</li>
+<li><strong>Speaker notes</strong>: Click "Click to add speaker notes" at the bottom of each slide</li>
+<li><strong>Import PowerPoint</strong>: File &gt; Import slides — you can import from PowerPoint files</li>
+<li><strong>Download as PowerPoint</strong>: File &gt; Download &gt; Microsoft PowerPoint</li>
+<li><strong>Laser pointer</strong>: During presentation, press "L" to toggle laser pointer</li>
+</ul>
+<hr />
+<h2 id="topic-6-google-forms-surveys-and-quizzes">Topic 6: Google Forms — Surveys and Quizzes</h2>
+<h3 id="explanation_5">Explanation</h3>
+<p>Google Forms lets you create surveys, quizzes, feedback forms, and registration forms for free. When people fill out your form, their responses are collected automatically and can be viewed in Google Sheets. This is incredibly useful for teachers, event organizers, and anyone collecting information.</p>
+<h3 id="step-by-step-guide-creating-a-form">Step-by-Step Guide: Creating a Form</h3>
+<p><strong>Step 1: Create a New Form</strong><br />
+1. Go to <strong>forms.google.com</strong> (or "+ New" &gt; "Google Forms" in Drive)<br />
+2. Click <strong>"Blank form"</strong> or choose a template<br />
+3. Give your form a title and description</p>
+<p><strong>Step 2: Add Questions</strong><br />
+1. Click the <strong>"+"</strong> button on the right panel to add a new question<br />
+2. Choose the question type:<br />
+   - <strong>Short answer</strong>: One line of text (name, email)<br />
+   - <strong>Paragraph</strong>: Long text (feedback, comments)<br />
+   - <strong>Multiple choice</strong>: Choose one option from a list<br />
+   - <strong>Checkboxes</strong>: Choose multiple options<br />
+   - <strong>Dropdown</strong>: Choose one from a dropdown menu<br />
+   - <strong>Linear scale</strong>: Rate on a scale (1 to 5, 1 to 10)<br />
+   - <strong>Date</strong>: Pick a date<br />
+   - <strong>Time</strong>: Pick a time<br />
+3. Type your question<br />
+4. Toggle <strong>"Required"</strong> if the question must be answered</p>
+<p><strong>Step 3: Customize</strong><br />
+- Click the <strong>palette icon</strong> (top-right) to change colors and add a header image<br />
+- Click the <strong>gear icon</strong> for settings (collect email addresses, limit to one response, etc.)</p>
+<p><strong>Step 4: Share the Form</strong><br />
+1. Click <strong>"Send"</strong> (top-right)<br />
+2. Choose how to share:<br />
+   - <strong>Email</strong>: Send directly to email addresses<br />
+   - <strong>Link</strong>: Copy a shareable link<br />
+   - <strong>Embed</strong>: Get HTML code to put on a website</p>
+<p><strong>Step 5: View Responses</strong><br />
+1. Click the <strong>"Responses"</strong> tab at the top<br />
+2. See a summary of all responses with charts<br />
+3. Click the <strong>green Sheets icon</strong> to view responses in Google Sheets</p>
+<h3 id="real-world-example_1">Real-World Example</h3>
+<p>Your college cultural fest needs registrations. You create a Google Form with: Name, Phone, Email, Department, Events interested in (checkboxes), T-shirt size. You share the link on WhatsApp groups. 300 students fill it out. You open the responses in Sheets and have a perfectly organized list ready for the event team. No paper forms, no manual data entry.</p>
+<hr />
+<h2 id="topic-7-google-calendar">Topic 7: Google Calendar</h2>
+<h3 id="explanation_6">Explanation</h3>
+<p>Google Calendar helps you organize your schedule. You can create events, set reminders, share calendars with others, and even schedule meetings that automatically send invitations.</p>
+<h3 id="step-by-step-guide">Step-by-Step Guide</h3>
+<ol>
+<li>Go to <strong>calendar.google.com</strong></li>
+<li><strong>Create an event</strong>: Click on a date and time, or click the <strong>"+"</strong> button</li>
+<li>Fill in: Event title, date, time, location, description</li>
+<li><strong>Set a reminder</strong>: Click "Add notification" — get alerted before the event</li>
+<li><strong>Invite people</strong>: Add their email addresses — they get an email invitation</li>
+<li><strong>Color-code events</strong>: Click on an event &gt; click the colored circle to change its color</li>
+<li>Example: Blue for college, Green for personal, Red for deadlines</li>
+<li><strong>Recurring events</strong>: When creating, click "Does not repeat" &gt; choose Weekly, Monthly, etc.</li>
+</ol>
+<h3 id="key-points_5">Key Points</h3>
+<ul>
+<li><strong>Multiple calendars</strong>: You can have separate calendars for Work, Personal, College</li>
+<li><strong>Share your calendar</strong>: Settings &gt; Share with specific people (useful for team coordination)</li>
+<li><strong>Google Meet integration</strong>: When creating an event, click "Add Google Meet video conferencing" — a meeting link is automatically added</li>
+</ul>
+<hr />
+<h2 id="topic-8-google-meet-video-calling">Topic 8: Google Meet — Video Calling</h2>
+<h3 id="explanation_7">Explanation</h3>
+<p>Google Meet is Google's video calling tool. You can use it for online classes, job interviews, team meetings, or catching up with friends and family. It works in your browser — no software to install.</p>
+<h3 id="step-by-step-guide_1">Step-by-Step Guide</h3>
+<p><strong>Starting a Meeting:</strong><br />
+1. Go to <strong>meet.google.com</strong><br />
+2. Click <strong>"New meeting"</strong> &gt; choose:<br />
+   - "Create a meeting for later" — get a link to share<br />
+   - "Start an instant meeting" — start right now<br />
+   - "Schedule in Google Calendar" — pick a date and time<br />
+3. Share the meeting link with participants</p>
+<p><strong>Joining a Meeting:</strong><br />
+1. Click the meeting link someone shared with you<br />
+2. Or go to meet.google.com and enter the meeting code<br />
+3. Check your camera and microphone, then click <strong>"Join now"</strong></p>
+<p><strong>During a Meeting:</strong><br />
+- <strong>Mute/Unmute</strong>: Click the microphone icon<br />
+- <strong>Camera on/off</strong>: Click the camera icon<br />
+- <strong>Share screen</strong>: Click the "Present now" button (share your entire screen or a specific window)<br />
+- <strong>Chat</strong>: Click the chat icon to send text messages during the meeting<br />
+- <strong>Raise hand</strong>: Click the hand icon to signal you want to speak<br />
+- <strong>End call</strong>: Click the red phone icon</p>
+<h3 id="key-points_6">Key Points</h3>
+<ul>
+<li>Google Meet is <strong>free</strong> for meetings up to 60 minutes with up to 100 people</li>
+<li>Always <strong>test your microphone and camera</strong> before important meetings</li>
+<li><strong>Mute yourself</strong> when not speaking to avoid background noise</li>
+<li>Use <strong>good lighting</strong> — face a window or lamp, do not sit with a window behind you</li>
+<li>Recording is available on paid plans (Google Workspace)</li>
+</ul>
+<hr />
+<h2 id="topic-9-introduction-to-blogger">Topic 9: Introduction to Blogger</h2>
+<h3 id="explanation_8">Explanation</h3>
+<p>Blogger is a free blogging platform by Google. You can create your own blog (a personal website where you write articles) in minutes without any coding knowledge. It is perfect for personal blogs, portfolios, or small business information sites.</p>
+<h3 id="step-by-step-guide-creating-a-blog">Step-by-Step Guide: Creating a Blog</h3>
+<p><strong>Step 1: Set Up Your Blog</strong><br />
+1. Go to <strong>blogger.com</strong><br />
+2. Sign in with your Google account<br />
+3. Click <strong>"Create New Blog"</strong><br />
+4. Enter your blog title (example: "Rahul's Tech Corner")<br />
+5. Choose a URL/address (example: rahulstechcorner.blogspot.com)<br />
+6. Choose a template (the visual design of your blog)<br />
+7. Click <strong>"Create blog!"</strong></p>
+<p><strong>Step 2: Write Your First Post</strong><br />
+1. Click <strong>"New post"</strong> (or the orange pencil icon)<br />
+2. Enter a post title<br />
+3. Write your content in the editor (it works like a simple word processor)<br />
+4. <strong>Add an image</strong>: Click the image icon in the toolbar &gt; Upload from computer or enter URL<br />
+5. <strong>Format text</strong>: Use the toolbar for bold, italic, headings, links, lists<br />
+6. Click <strong>"Publish"</strong> when ready (or "Save" to save as draft)</p>
+<p><strong>Step 3: Customize Your Blog</strong><br />
+1. Click <strong>"Theme"</strong> in the left menu<br />
+2. Browse available themes and click one to preview<br />
+3. Click <strong>"Customize"</strong> to change colors, fonts, and layout<br />
+4. Click <strong>"Layout"</strong> in the left menu to add/remove widgets (sidebar elements)</p>
+<p><strong>Step 4: Share Your Blog</strong><br />
+- Your blog URL is: <strong>yourblogname.blogspot.com</strong><br />
+- Share this URL on WhatsApp, Instagram, LinkedIn, or email<br />
+- Anyone with the link can read your blog</p>
+<h3 id="real-world-example_2">Real-World Example</h3>
+<p>A college student creates a blog called "My Coding Journey" where they write about what they learn each week — Python basics, their first HTML page, how they solved a coding problem. After 6 months, they have 25 posts. When they apply for an internship, they share this blog link in their resume. The interviewer is impressed because it shows consistency, communication skills, and genuine interest in learning.</p>
+<hr />
+<h2 id="topic-10-sharing-permissions-understanding-access-control">Topic 10: Sharing &amp; Permissions — Understanding Access Control</h2>
+<h3 id="explanation_9">Explanation</h3>
+<p>Whenever you share a file, folder, or document in Google, you are giving someone <strong>permission</strong> to access it. Understanding permissions is crucial — you do not want to accidentally give someone the ability to delete your important files.</p>
+<h3 id="permission-levels">Permission Levels</h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>What they can do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Viewer</strong></td>
+<td>Can only look at the file. Cannot change or comment.</td>
+</tr>
+<tr>
+<td><strong>Commenter</strong></td>
+<td>Can look and add comments, but cannot change the file content.</td>
+</tr>
+<tr>
+<td><strong>Editor</strong></td>
+<td>Can change the file, add content, delete content. Full editing power.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="access-types">Access Types</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Who can access</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Restricted</strong></td>
+<td>Only people you specifically add by email. Most secure.</td>
+</tr>
+<tr>
+<td><strong>Anyone with the link</strong></td>
+<td>Anyone who has the URL can access. Less secure but convenient.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-to-revoke-access">How to Revoke Access</h3>
+<ol>
+<li>Right-click the file &gt; Share</li>
+<li>Find the person's name or email</li>
+<li>Click the dropdown next to their name</li>
+<li>Select <strong>"Remove"</strong></li>
+<li>Click <strong>"Save"</strong></li>
+</ol>
+<h3 id="key-points_7">Key Points</h3>
+<ul>
+<li><strong>Default is Restricted</strong> — only you can see your files unless you share them</li>
+<li><strong>Be careful with "Anyone with the link"</strong> — if the link gets forwarded, anyone can access it</li>
+<li><strong>Editor access is powerful</strong> — only give Editor access to people you trust</li>
+<li><strong>"Make a copy"</strong> link: Instead of giving Editor access, share as Viewer and let people make their own copy</li>
+<li><strong>Ownership transfer</strong>: You can transfer ownership of a file to someone else (right-click &gt; Share &gt; click dropdown next to their name &gt; "Transfer ownership")</li>
+</ul>
+<hr />
+<h2 id="module-summary">Module Summary</h2>
+<p>In this module, you learned to use the Google ecosystem for productivity:</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>What It Does</th>
+<th>Like...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google Drive</td>
+<td>Cloud file storage</td>
+<td>A virtual hard drive</td>
+</tr>
+<tr>
+<td>Google Docs</td>
+<td>Word processing</td>
+<td>Microsoft Word in a browser</td>
+</tr>
+<tr>
+<td>Google Sheets</td>
+<td>Spreadsheets</td>
+<td>Microsoft Excel in a browser</td>
+</tr>
+<tr>
+<td>Google Slides</td>
+<td>Presentations</td>
+<td>Microsoft PowerPoint in a browser</td>
+</tr>
+<tr>
+<td>Google Forms</td>
+<td>Surveys and forms</td>
+<td>Paper forms, but digital</td>
+</tr>
+<tr>
+<td>Google Calendar</td>
+<td>Scheduling</td>
+<td>A digital diary</td>
+</tr>
+<tr>
+<td>Google Meet</td>
+<td>Video calls</td>
+<td>Zoom or Skype</td>
+</tr>
+<tr>
+<td>Blogger</td>
+<td>Blog/website creation</td>
+<td>WordPress (simpler)</td>
+</tr>
+</tbody>
+</table>
+<p>The biggest advantage of Google tools is <strong>collaboration</strong> — multiple people working on the same file at the same time, from anywhere in the world, for free.</p>
+<hr />
+<h2 id="next-module">Next Module</h2>
+<p>In Module 11, you will learn the basics of programming with Python and HTML — taking your first steps into creating things with code.</p>
+<div class="footer">
+    <p>Basic to Intermediate Digital Skills Training &mdash; For Complete Beginners</p>
+    <p>Instructor: Security Consultant | 6 Years Teaching Experience</p>
+</div>
+</body>
+</html>
